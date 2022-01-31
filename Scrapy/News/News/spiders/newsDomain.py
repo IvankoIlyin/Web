@@ -31,20 +31,22 @@ class NewsdomainSpider(scrapy.Spider):
         htmlNews = requests.get(response.url)
         newsSoup= htmlNews.text
         print(response)
-        title = Write(newsSoup.find_all('title'))  # check
-        ptime = Write(newsSoup.find_all('span', class_='DateLine__date___12trWy'))  # check
-        articleSoup = (newsSoup.find('article'))  # check
-        articleText = Write(list(articleSoup.find_all('p')))  # check
-        UrlImg = WriteUrl(newsSoup.find_all('img'))  # check
-        author = Write(newsSoup.find_all('a', class_='AuthorName__author___1tcHiY'))  # check
-        newsData = {
-            "title": title,
-            "published_time":ptime,
-            "author": author,
-            "article_text":articleText,
-            "URL_of_the_image":UrlImg
-        }
-        jsonNewsData = json.dumps(newsData)
-        with open('News.json', 'a') as fj:
-            fj.write(jsonNewsData)
+        if 'AuthorName__author___1tcHiY' in newsSoup:
+            title = Write(newsSoup.find_all('title'))  # check
+            ptime = Write(newsSoup.find_all('span', class_='DateLine__date___12trWy'))  # check
+            articleSoup = (newsSoup.find('article'))  # check
+            articleText = Write(list(articleSoup.find_all('p')))  # check
+            UrlImg = WriteUrl(newsSoup.find_all('img'))  # check
+            author = Write(newsSoup.find_all('a', class_='AuthorName__author___1tcHiY'))  # check
+            newsData = {
+                "title": title,
+                "published_time":ptime,
+                "author": author,
+                "article_text":articleText,
+                "URL_of_the_image":UrlImg
+            }
+            jsonNewsData = json.dumps(newsData)
+            with open('News.json', 'a') as fj:
+                fj.write(jsonNewsData)
+        else: pass
 
