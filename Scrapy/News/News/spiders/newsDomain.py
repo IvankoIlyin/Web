@@ -19,6 +19,15 @@ def WriteUrl(htmlList):
         list.append(url)
     return list
 
+def checkUrl(html):
+    flag=0
+    NAhead=html.find_all('head')
+    NAscript=NAhead.find_all('script', type_='application/ld+json')
+    if 'NewsArticle' in NAscript:
+        flag=1
+    return flag
+
+
 
 
 
@@ -31,7 +40,8 @@ class NewsdomainSpider(scrapy.Spider):
         htmlNews = requests.get(response.url)
         newsSoup= htmlNews.text
         print(response)
-        if 'AuthorName__author___1tcHiY' in newsSoup:
+        flag=checkUrl(newsSoup)
+        if flag==1 :
             title = Write(newsSoup.find_all('title'))  # check
             ptime = Write(newsSoup.find_all('span', class_='DateLine__date___12trWy'))  # check
             articleSoup = (newsSoup.find('article'))  # check
