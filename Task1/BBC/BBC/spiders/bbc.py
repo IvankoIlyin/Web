@@ -15,10 +15,11 @@ class BbcSpider(scrapy.Spider):
 
 
     def article_links(self,response):
-        data=response.xpath('a.chanel')
+        data=response.css('h3::text')
+        data1=data.css('a::text')
         print("RESULT")
-        print(data)
-        for link in data:
+        print(data1)
+        for link in data1:
             try:
                 yield {
                     "News_links": link.attrib['href']
