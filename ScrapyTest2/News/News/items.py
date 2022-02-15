@@ -7,8 +7,6 @@ import scrapy
 
 
 class NewsItem(scrapy.Item):
-  title = scrapy.Field()
-  ptime = scrapy.Field()
-  articleText = scrapy.Field()
-  UrlImg = scrapy.Field()
-  author = scrapy.Field()
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    pass

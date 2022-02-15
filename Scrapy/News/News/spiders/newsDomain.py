@@ -1,4 +1,7 @@
 import scrapy
+from scrapy.spiders import CrawlSpider, Rule
+from scrapy.linkextractors import LinkExtractor
+
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -34,9 +37,13 @@ def checkUrl(html):
 class NewsdomainSpider(scrapy.Spider):
     name = 'newsDomain'
     allowed_domains = ['reuters.com']
-    start_urls = ['https://www.reuters.com/']
+    start_urls = ['https://www.reuters.com/world/chinas-xi-meets-four-more-heads-state-olympic-diplomacy-push-2022-02-05/']
+    rules=(
+
+    )
 
     def parse(self, response):
+
         htmlNews = requests.get(response.url)
         newsSoup= htmlNews.text
         print(response)
@@ -58,5 +65,6 @@ class NewsdomainSpider(scrapy.Spider):
             jsonNewsData = json.dumps(newsData)
             with open('News.json', 'a') as fj:
                 fj.write(jsonNewsData)
+
         else: pass
 
