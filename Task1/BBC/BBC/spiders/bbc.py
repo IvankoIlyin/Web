@@ -18,4 +18,12 @@ class BbcSpider(scrapy.Spider):
     def article_links(self,response):
         data=response.css('h3')
         for link in data:
-           print('https://www.bangkokpost.com/'+link.css('a').attrib['href'])
+            try:
+                yield {
+                    "News_links": link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+        print('https://www.bangkokpost.com/'+link.css('a').attrib['href'])
