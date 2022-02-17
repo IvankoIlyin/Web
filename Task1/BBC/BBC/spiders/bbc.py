@@ -8,23 +8,14 @@ class BbcSpider(scrapy.Spider):
     start_urls = ['https://www.bangkokpost.com/']
 
     def parse(self, response):
-        result = response.css('.menu-list a')
-        for r in result:
-            category_link='https://www.bangkokpost.com/'+r.attrib['href']
+        result = response.css('div.menu-panel')
+        res=result.css('a::attr(href)').getall()
+        for r in res:
+            category_link='https://www.bangkokpost.com/'+r
             yield response.follow(category_link,callback=self.article_links)
 
 
     def article_links(self,response):
-        data=response.css('h3::text')
-        data1=data.css('a::text')
-        print("RESULT")
-        print(data1)
-        for link in data1:
-            try:
-                yield {
-                    "News_links": link.attrib['href']
-                }
-            except:
-                yield {
-                    "News_links": None
-                }
+        data=response.css('h3')
+        for link in data:
+           print('https://www.bangkokpost.com/'+link.css('a').attrib['href'])
