@@ -2,8 +2,8 @@ import scrapy
 import requests
 from bs4 import BeautifulSoup
 
-class BbcSpider(scrapy.Spider):
-    name = 'bbc'
+class bangkokpostSpider(scrapy.Spider):
+    name = 'bangkokpost'
     allowed_domains = ['bangkokpost.com']
     start_urls = ['https://www.bangkokpost.com/']
 
@@ -28,7 +28,7 @@ class BbcSpider(scrapy.Spider):
                 }
         print('https://www.bangkokpost.com/'+link.css('a').attrib['href'])
 
-class BbcSpider(scrapy.Spider):
+class indiatvSpider(scrapy.Spider):
     name = 'indiatv'
     allowed_domains = ['indiatvnews.com']
     start_urls = ['https://www.indiatvnews.com/']
@@ -41,7 +41,7 @@ class BbcSpider(scrapy.Spider):
 
 
     def article_links(self,response):
-        data=response.css('h3.title')
+        data=response.css('.text_box a , .p_news:nth-child(2) a , li:nth-child(1) a , .trc_ellipsis, .title')
         for link in data:
             try:
                 yield {
@@ -53,7 +53,7 @@ class BbcSpider(scrapy.Spider):
                 }
         print('https://www.bangkokpost.com/'+link.css('a').attrib['href'])
 
-class BbcSpider(scrapy.Spider):
+class asiaoneSpider(scrapy.Spider):
     name = 'asiaone'
     allowed_domains = ['asiaone.com']
     start_urls = ['https://www.asiaone.com/']
@@ -79,7 +79,7 @@ class BbcSpider(scrapy.Spider):
                 }
             print(link.css('a').attrib['href'])
 
-class BbcSpider(scrapy.Spider):
+class chicagoSpider(scrapy.Spider):
     name = 'chicago'
     allowed_domains = ['chicagotribune.com']
     start_urls = ['https://www.chicagotribune.com/']
@@ -105,7 +105,7 @@ class BbcSpider(scrapy.Spider):
                 }
             print(link.css('a::attr(href)').get())
 
-class BbcSpider(scrapy.Spider):
+class standardmediaSpider(scrapy.Spider):
     name = 'standardmedia'
     allowed_domains = ['standardmedia.co.ke']
     start_urls = ['https://www.standardmedia.co.ke/']
@@ -130,3 +130,54 @@ class BbcSpider(scrapy.Spider):
                     "News_links": None
                 }
             print(link.css('a').attrib['href'])
+
+class cbsnewsSpider(scrapy.Spider):
+    name = 'cbsnews'
+    allowed_domains = ['cbsnews.com']
+    start_urls = ['https://www.cbsnews.com/']
+
+    def parse(self, response):
+        res = response.css('.site-nav__item,.site-nav__item--level-2')
+        for r in res:
+            category_link='https://www.cbsnews.com'+r.css('a').attrib['href']
+            print('Result:',category_link)
+            yield response.follow(category_link,callback=self.article_links)
+
+
+    def article_links(self,response):
+        data=response.css('article.item')
+        for link in data:
+            try:
+                yield {
+                    "News_links": link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+            print(link.css('a').attrib['href'])
+
+class nsnewsSpider(scrapy.Spider):
+    name = 'nsnews'
+    allowed_domains = ['nsnews.com']
+    start_urls = ['https://www.nsnews.com/']
+
+    def parse(self, response):
+        res = response.css('li.nav-1')
+        for r in res:
+            category_link='https://www.nsnews.com'+r.css('a').attrib['href']
+            print('Result:',category_link)
+            yield response.follow(category_link,callback=self.article_links)
+
+
+    def article_links(self,response):
+        data=response.css('a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.nsnews.com'+link.attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
