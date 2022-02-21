@@ -27,7 +27,7 @@ class bangkokpostSpider(scrapy.Spider):
                     "News_links": None
                 }
         print('https://www.bangkokpost.com/'+link.css('a').attrib['href'])
-
+#20.02.2022
 class indiatvSpider(scrapy.Spider):
     name = 'indiatv'
     allowed_domains = ['indiatvnews.com']
@@ -130,7 +130,7 @@ class standardmediaSpider(scrapy.Spider):
                     "News_links": None
                 }
             print(link.css('a').attrib['href'])
-
+#21.02.2022
 class cbsnewsSpider(scrapy.Spider):
     name = 'cbsnews'
     allowed_domains = ['cbsnews.com']
@@ -176,6 +176,56 @@ class nsnewsSpider(scrapy.Spider):
             try:
                 yield {
                     "News_links":'https://www.nsnews.com'+link.attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class ibtimesSpider(scrapy.Spider):
+    name = 'ibtimes'
+    allowed_domains = ['ibtimes.com']
+    start_urls = ['https://www.ibtimes.com/']
+
+    def parse(self, response):
+        res = response.css('li.leaf')
+        for r in res:
+            category_link='https://www.ibtimes.com'+r.css('a').attrib['href']
+            print('Result:',category_link)
+            yield response.follow(category_link,callback=self.article_links)
+
+
+    def article_links(self,response):
+        data=response.css('.item-link , .title , .clearfix')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.ibtimes.com'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class thehindubusinesslineSpider(scrapy.Spider):
+    name = 'thehindubusinessline'
+    allowed_domains = ['thehindubusinessline.com']
+    start_urls = ['https://www.thehindubusinessline.com/']
+
+    def parse(self, response):
+        res = response.css('li.f6')
+        for r in res:
+            category_link=r.css('a').attrib['href']
+            print('Result:',category_link)
+            yield response.follow(category_link,callback=self.article_links)
+
+
+    def article_links(self,response):
+        data=response.css('a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.attrib['href']
                 }
             except:
                 yield {
