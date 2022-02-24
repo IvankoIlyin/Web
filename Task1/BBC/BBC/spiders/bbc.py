@@ -231,7 +231,7 @@ class thehindubusinesslineSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-#24.02.2022 / 2hour
+#24.02.2022 / 3hour
 
 class thesundailySpider(scrapy.Spider):
     name = 'thesundaily'
@@ -327,6 +327,56 @@ class peopleSpider(scrapy.Spider):
             try:
                 yield {
                     "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class businessliveSpider(scrapy.Spider):
+    name = 'businesslive'
+    allowed_domains = ['businesslive.co.za']
+    start_urls = ['https://www.businesslive.co.za/']
+
+    def parse(self, response):
+        res = response.css('li.dropdown')
+        for r in res:
+            category_link='https://www.businesslive.co.za'+r.css('a').attrib['href']
+            print('Result:',category_link)
+            yield response.follow(category_link,callback=self.article_links)
+
+
+    def article_links(self,response):
+        data=response.css('.title , .article-title')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.businesslive.co.za/'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class albawabaSpider(scrapy.Spider):
+    name = 'albawaba'
+    allowed_domains = ['albawaba.com']
+    start_urls = ['https://www.albawaba.com/']
+
+    def parse(self, response):
+        res = response.css('li')
+        for r in res:
+            category_link='https://www.albawaba.com'+r.css('a').attrib['href']
+            print('Result:',category_link)
+            yield response.follow(category_link,callback=self.article_links)
+
+
+    def article_links(self,response):
+        data=response.css('.field--name-node-title, .press_release')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.albawaba.com'+link.css('a').attrib['href']
                 }
             except:
                 yield {
