@@ -24,7 +24,7 @@ class bangkokpostSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-        print('https://www.bangkokpost.com/'+link.css('a').attrib['href'])
+
 #20.02.2022 / 2hour
 class indiatvSpider(scrapy.Spider):
     name = 'indiatv'
@@ -49,7 +49,6 @@ class indiatvSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-        print('https://www.bangkokpost.com/'+link.css('a').attrib['href'])
 
 class asiaoneSpider(scrapy.Spider):
     name = 'asiaone'
@@ -405,7 +404,7 @@ class InewsSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-        print('https://www.bangkokpost.com/' + link.css('a').attrib['href'])
+
 
 class lawSpider(scrapy.Spider):
     name = 'law'
@@ -429,7 +428,7 @@ class lawSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-        print('https://www.bangkokpost.com/' + link.css('a').attrib['href'])
+
 
 class cityamSpider(scrapy.Spider):
     name = 'cityam'
@@ -453,7 +452,7 @@ class cityamSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-        print('https://www.bangkokpost.com/' + link.css('a').attrib['href'])
+
 
 class cityamSpider(scrapy.Spider):
     name = 'investorplace'
@@ -477,7 +476,7 @@ class cityamSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-        print('https://www.bangkokpost.com/' + link.css('a').attrib['href'])
+
 
 class theedgemarketsSpider(scrapy.Spider):
     name = 'theedgemarkets'
@@ -501,7 +500,7 @@ class theedgemarketsSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-        print('https://www.bangkokpost.com/' + link.css('a').attrib['href'])
+
 
 class insidermonkeySpider(scrapy.Spider):
     name = 'insidermonkey'
@@ -525,4 +524,3 @@ class insidermonkeySpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-        print('https://www.bangkokpost.com/' + link.css('a').attrib['href'])
