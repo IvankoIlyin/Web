@@ -1,6 +1,5 @@
 import scrapy
-import requests
-from bs4 import BeautifulSoup
+
 
 class bangkokpostSpider(scrapy.Spider):
     name = 'bangkokpost'
