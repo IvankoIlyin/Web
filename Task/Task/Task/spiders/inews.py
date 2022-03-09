@@ -6,34 +6,37 @@ class bangkokpostSpider(scrapy.Spider):
     start_urls = ['https://www.bangkokpost.com/']
 
     def parse(self, response):
-        result = response.css('div.menu-panel')
-        res=result.css('a::attr(href)').getall()
+        res=response.css('.divNav--row').css('li')
         for r in res:
-            category_link='https://www.bangkokpost.com/'+r
+            category_link='https://www.bangkokpost.com/'+r.css('a').attrib['href']
             yield response.follow(category_link,callback=self.article_links)
 
 
     def article_links(self,response):
-        data=response.css('h3')
+        data=response.css('.list-detail, .listnews-text').css('h3,h2')
         for link in data:
             try:
                 yield {
-                    "News_links": link.css('a').attrib['href']
+                    "News_links":'https://www.bangkokpost.com/'+ link.css('a').attrib['href']
                 }
             except:
                 yield {
                     "News_links": None
                 }
 
-#20.02.2022 / 2hour
+#20.02.2022
 class indiatvSpider(scrapy.Spider):
     name = 'indiatv'
     allowed_domains = ['indiatvnews.com']
     start_urls = ['https://www.indiatvnews.com/']
 
     def parse(self, response):
-        res = response.css('li.dropdown')
-        for r in res:
+        res2=response.css('ul.menu_link').css('li')
+        res1 = response.css('#li-trending a , #li-health a , #li-photos a , #li-technology a , #li-entertainment a , #li-sports a , #li-world a , #li-india a , .link_elections_2022 a , #li-astrology a , #li-video a')
+        for r in res1:
+            category_link=r.css('a').attrib['href']
+            yield response.follow(category_link,callback=self.article_links)
+        for r in res2:
             category_link=r.css('a').attrib['href']
             yield response.follow(category_link,callback=self.article_links)
 
@@ -82,7 +85,7 @@ class chicagoSpider(scrapy.Spider):
     start_urls = ['https://www.chicagotribune.com/']
 
     def parse(self, response):
-        res = response.css('li.link-list')
+        res = response.css('#trending-topics-wrapper .tag-solid')
         for r in res:
             category_link='https://www.chicagotribune.com'+r.css('a').attrib['href']
             print('Result:',category_link)
@@ -90,11 +93,11 @@ class chicagoSpider(scrapy.Spider):
 
 
     def article_links(self,response):
-        data=response.css('div.crd--cnt')
+        data=response.css('div.crd--cnt, .clln-it-bdr-btm , .ntv-ad-text , .crd--tle , .river')
         for link in data:
             try:
                 yield {
-                    "News_links": link.css('a::attr(href)').get()
+                    "News_links":'https://www.chicagotribune.com'+ link.css('a::attr(href)').get()
                 }
             except:
                 yield {
@@ -108,9 +111,9 @@ class standardmediaSpider(scrapy.Spider):
     start_urls = ['https://www.standardmedia.co.ke/']
 
     def parse(self, response):
-        res = response.css('li.nav-item')
-        for r in res:
-            category_link=r.css('a').attrib['href']
+        res = response.css('.nav-item:nth-child(2) .nav-link , .nav-item:nth-child(3) .nav-link , .nav-item:nth-child(4) .nav-link , .nav-item:nth-child(5) .nav-link , .nav-item:nth-child(6) .nav-link , .nav-item:nth-child(7) .nav-link , .nav-item:nth-child(8) .nav-link , .nav-item:nth-child(9) .nav-link , .nav-item:nth-child(10) .nav-link , .w-15 .nav-link , .nav-item:nth-child(1) .nav-link')
+        for r in range(0,10):
+            category_link=res[r].css('a').attrib['href']
             print('Result:',category_link)
             yield response.follow(category_link,callback=self.article_links)
 
@@ -127,7 +130,7 @@ class standardmediaSpider(scrapy.Spider):
                     "News_links": None
                 }
             print(link.css('a').attrib['href'])
-#21.02.2022 / 2hour
+#21.02.2022
 class cbsnewsSpider(scrapy.Spider):
     name = 'cbsnews'
     allowed_domains = ['cbsnews.com']
@@ -228,7 +231,7 @@ class thehindubusinesslineSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-#24.02.2022 / 3hour
+#24.02.2022
 
 class thesundailySpider(scrapy.Spider):
     name = 'thesundaily'
@@ -379,7 +382,7 @@ class albawabaSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-#02.03.2022 3hour
+#02.03.2022
 
 class InewsSpider(scrapy.Spider):
     name = 'inews'
@@ -519,7 +522,7 @@ class insidermonkeySpider(scrapy.Spider):
                     "News_links": None
                 }
 
-#05.03.2022 3hour
+#05.03.2022
 class digitaltrendsSpider(scrapy.Spider):
     name = 'digitaltrends'
     allowed_domains = ['digitaltrends.com']
