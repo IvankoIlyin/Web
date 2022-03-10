@@ -7,8 +7,9 @@ class bangkokpostSpider(scrapy.Spider):
 
     def parse(self, response):
         res=response.css('.divNav--row').css('li')
-        for r in res:
-            category_link='https://www.bangkokpost.com/'+r.css('a').attrib['href']
+        for r in range(0,32):
+            category_link='https://www.bangkokpost.com/'+res[r].css('a').attrib['href']
+            print('Res: ',category_link)
             yield response.follow(category_link,callback=self.article_links)
 
 
@@ -137,15 +138,15 @@ class cbsnewsSpider(scrapy.Spider):
     start_urls = ['https://www.cbsnews.com/']
 
     def parse(self, response):
-        res = response.css('.site-nav__item,.site-nav__item--level-2')
-        for r in res:
-            category_link='https://www.cbsnews.com'+r.css('a').attrib['href']
+        res = response.css('li.site-nav__item--first').css('ul').css('li.site-nav__item--level-2')
+        for r in range(0,12):
+            category_link='https://www.cbsnews.com'+res[r].css('a').attrib['href']
             print('Result:',category_link)
             yield response.follow(category_link,callback=self.article_links)
 
 
     def article_links(self,response):
-        data=response.css('article.item')
+        data=response.css('.item__anchor , #component-topic-world .lazyloaded')
         for link in data:
             try:
                 yield {
@@ -155,7 +156,6 @@ class cbsnewsSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-            print(link.css('a').attrib['href'])
 
 class nsnewsSpider(scrapy.Spider):
     name = 'nsnews'
@@ -163,7 +163,7 @@ class nsnewsSpider(scrapy.Spider):
     start_urls = ['https://www.nsnews.com/']
 
     def parse(self, response):
-        res = response.css('li.nav-1')
+        res=response.css('#nav-home+ .theme-blue .navitem')
         for r in res:
             category_link='https://www.nsnews.com'+r.css('a').attrib['href']
             print('Result:',category_link)
@@ -171,7 +171,7 @@ class nsnewsSpider(scrapy.Spider):
 
 
     def article_links(self,response):
-        data=response.css('a')
+        data=response.css('#category-items,.section-items').css('a')
         for link in data:
             try:
                 yield {
@@ -188,7 +188,7 @@ class ibtimesSpider(scrapy.Spider):
     start_urls = ['https://www.ibtimes.com/']
 
     def parse(self, response):
-        res = response.css('li.leaf')
+        res = response.css('#block-ibtimes-footer-ibtimes-footer .leaf')
         for r in res:
             category_link='https://www.ibtimes.com'+r.css('a').attrib['href']
             print('Result:',category_link)
@@ -196,7 +196,7 @@ class ibtimesSpider(scrapy.Spider):
 
 
     def article_links(self,response):
-        data=response.css('.item-link , .title , .clearfix')
+        data=response.css('.item-link , .title , .clearfix,article ')
         for link in data:
             try:
                 yield {
@@ -213,7 +213,7 @@ class thehindubusinesslineSpider(scrapy.Spider):
     start_urls = ['https://www.thehindubusinessline.com/']
 
     def parse(self, response):
-        res = response.css('li.f6')
+        res = response.css('.News+ .dropdown-menu .nav-link')
         for r in res:
             category_link=r.css('a').attrib['href']
             print('Result:',category_link)
@@ -221,11 +221,11 @@ class thehindubusinesslineSpider(scrapy.Spider):
 
 
     def article_links(self,response):
-        data=response.css('a')
+        data=response.css('article')
         for link in data:
             try:
                 yield {
-                    "News_links":link.attrib['href']
+                    "News_links":link.css('a').attrib['href']
                 }
             except:
                 yield {
@@ -239,15 +239,15 @@ class thesundailySpider(scrapy.Spider):
     start_urls = ['https://www.thesundaily.my/']
 
     def parse(self, response):
-        res = response.css('li.lst-item,li.tabnav')
-        for r in res:
-            category_link='https://www.thesundaily.my'+r.css('a').attrib['href']
+        res = response.css('li.tabnav')
+        for r in range(0,10):
+            category_link='https://www.thesundaily.my'+res[r].css('a').attrib['href']
             print('Result:',category_link)
             yield response.follow(category_link,callback=self.article_links)
 
 
     def article_links(self,response):
-        data=response.css('.trc_excludable,.text_block,div.headline')
+        data=response.css('.trc_excludable,div.headline')
         for link in data:
             try:
                 yield {
@@ -264,9 +264,9 @@ class thisdayliveSpider(scrapy.Spider):
     start_urls = ['https://www.thisdaylive.com/']
 
     def parse(self, response):
-        res = response.css('li.menu-item')
-        for r in res:
-            category_link=r.css('a').attrib['href']
+        res = response.css('#menu-mr-solomon-arase-1 a')
+        for r in range(0,9):
+            category_link=res[r].css('a').attrib['href']
             print('Result:',category_link)
             yield response.follow(category_link,callback=self.article_links)
 
@@ -290,8 +290,8 @@ class washingtonexaminerSpider(scrapy.Spider):
 
     def parse(self, response):
         res = response.css('li.NavigationItem-items-item')
-        for r in res:
-            category_link=r.css('a').attrib['href']
+        for r in range(0,8):
+            category_link=res[r].css('a').attrib['href']
             print('Result:',category_link)
             yield response.follow(category_link,callback=self.article_links)
 
@@ -314,7 +314,7 @@ class peopleSpider(scrapy.Spider):
     start_urls = ['https://people.com/']
 
     def parse(self, response):
-        res = response.css('.menu-item-main,.heading-menu,.submenu-multi-level')
+        res = response.css('.open-channel-page:nth-child(1) .elementFont__subtitle--navigation')
         for r in res:
             category_link=r.css('a').attrib['href']
             print('Result:',category_link)
@@ -339,7 +339,7 @@ class businessliveSpider(scrapy.Spider):
     start_urls = ['https://www.businesslive.co.za/']
 
     def parse(self, response):
-        res = response.css('li.dropdown')
+        res = response.css('.section:nth-child(2) h3 a , .mobile-hide .col-12 h3')
         for r in res:
             category_link='https://www.businesslive.co.za'+r.css('a').attrib['href']
             print('Result:',category_link)
@@ -364,9 +364,9 @@ class albawabaSpider(scrapy.Spider):
     start_urls = ['https://www.albawaba.com/']
 
     def parse(self, response):
-        res = response.css('li')
-        for r in res:
-            category_link='https://www.albawaba.com'+r.css('a').attrib['href']
+        res = response.css('#block-abn-main-menu li:nth-child(8) a , #block-abn-main-menu li:nth-child(7) a , #block-abn-main-menu li:nth-child(6) a , li:nth-child(5) a , #block-abn-main-menu li:nth-child(4) a , #block-abn-main-menu li:nth-child(3) a , #block-abn-main-menu .first+ li a , .is-active')
+        for r in range(0,8):
+            category_link='https://www.albawaba.com'+res[r].css('a').attrib['href']
             print('Result:',category_link)
             yield response.follow(category_link,callback=self.article_links)
 
