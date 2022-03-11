@@ -390,13 +390,14 @@ class InewsSpider(scrapy.Spider):
     start_urls = ['http://inews.co.uk/']
 
     def parse(self, response):
-        res = response.css('li.inews-menu-item-category')
+        res = response.css('.inews-menu-item-has-children:nth-child(1) a')
         for r in res:
             category_link = r.css('a').attrib['href']
+            print('Result:', category_link)
             yield response.follow(category_link, callback=self.article_links)
 
     def article_links(self, response):
-        data = response.css('h2,div.inews__post')
+        data = response.css('.inews__post-puff__content-headline a , .inews__post-teaser__content__headline a , .inews__post-jot__content-headline a , .inews__post-hero__headline')
         for link in data:
             try:
                 yield {
@@ -410,20 +411,20 @@ class InewsSpider(scrapy.Spider):
 class lawSpider(scrapy.Spider):
     name = 'law'
     allowed_domains = ['law.com']
-    start_urls = ['https://www.law.com/']
+    start_urls = ['https://www.law.com/topics/']
 
     def parse(self, response):
-        res = response.css('li')
+        res = response.css('.dl-astyle')
         for r in res:
-            category_link = 'https://www.law.com/'+r.css('a::attr(href)').get()
+            category_link = 'https://www.law.com'+r.css('a').attrib['href']
             yield response.follow(category_link, callback=self.article_links)
 
     def article_links(self, response):
-        data = response.css('li, h4, p')
+        data = response.css('#trending a , .my-3 a , .brief')
         for link in data:
             try:
                 yield {
-                    "News_links": 'https://www.law.com/'+link.css('a::attr(href)').get()
+                    "News_links": 'https://www.law.com'+link.css('a::attr(href)').get()
                 }
             except:
                 yield {
@@ -452,20 +453,20 @@ class cityamSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-
+#cityamSpider dont work
 class cityamSpider(scrapy.Spider):
     name = 'investorplace'
     allowed_domains = ['investorplace.com']
     start_urls = ['https://investorplace.com/']
 
     def parse(self, response):
-        res = response.css('li.menu-item-type-taxonomy')
+        res = response.css('#primary-menu a')
         for r in res:
-            category_link =r.css('a::attr(href)').get()
+            category_link =r.css('a').attrib['href']
             yield response.follow(category_link, callback=self.article_links)
 
     def article_links(self, response):
-        data = response.css('.contents , .ipm_content_type-article')
+        data = response.css('.headline-c , .ipm_content_type-article')
         for link in data:
             try:
                 yield {
@@ -482,9 +483,9 @@ class theedgemarketsSpider(scrapy.Spider):
     start_urls = ['https://www.theedgemarkets.com/']
 
     def parse(self, response):
-        res = response.css('li.tb-megamenu-item')
+        res = response.css('#tb-megamenu-column-1 .mega')
         for r in res:
-            category_link ='https://www.theedgemarkets.com'+r.css('a::attr(href)').get()
+            category_link ='https://www.theedgemarkets.com'+r.css('a').attrib['href']
             yield response.follow(category_link, callback=self.article_links)
 
     def article_links(self, response):
@@ -505,7 +506,7 @@ class insidermonkeySpider(scrapy.Spider):
     start_urls = ['https://www.insidermonkey.com/']
 
     def parse(self, response):
-        res = response.css('li')
+        res = response.css('.dropdown:nth-child(5) .dropdown-toggle , .dropdown:nth-child(4) .dropdown-toggle , .dropdown:nth-child(3) .dropdown-toggle , .dropdown:nth-child(2) .dropdown-toggle , .dropdown:nth-child(1) a')
         for r in res:
             category_link =r.css('a').attrib['href']
             yield response.follow(category_link, callback=self.article_links)
@@ -545,7 +546,7 @@ class digitaltrendsSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
-
+#
 class cointelegraphSpider(scrapy.Spider):
     name = 'cointelegraph'
     allowed_domains = ['cointelegraph.com']
@@ -575,7 +576,7 @@ class techstorySpider(scrapy.Spider):
     start_urls = ['https://techstory.in/']
 
     def parse(self, response):
-        res = response.css('li.menu-item-type-taxonomy')
+        res = response.css('#cb-nav-bar a')
         for r in res:
             category_link =r.css('a').attrib['href']
             yield response.follow(category_link, callback=self.article_links)
@@ -592,13 +593,13 @@ class techstorySpider(scrapy.Spider):
                     "News_links": None
                 }
 
-class techstorySpider(scrapy.Spider):
+class tomsguideSpider(scrapy.Spider):
     name = 'tomsguide'
     allowed_domains = ['tomsguide.com']
     start_urls = ['https://www.tomsguide.com/']
 
     def parse(self, response):
-        res = response.css('li.menu-level-1, li.sub-menu-item')
+        res = response.css('.menu-level-1 a')
         for r in res:
             category_link =r.css('a').attrib['href']
             yield response.follow(category_link, callback=self.article_links)
@@ -621,7 +622,7 @@ class thewrapSpider(scrapy.Spider):
     start_urls = ['https://www.thewrap.com/']
 
     def parse(self, response):
-        res = response.css('li.menu-item-type-taxonomy')
+        res = response.css('#primary-menu > .menu-item a')
         for r in res:
             category_link =r.css('a').attrib['href']
             yield response.follow(category_link, callback=self.article_links)
@@ -644,7 +645,7 @@ class digitaljournalSpider(scrapy.Spider):
     start_urls = ['https://www.digitaljournal.com/']
 
     def parse(self, response):
-        res = response.css('li.menu-item-type-taxonomy')
+        res = response.css('#menu-main-menu-1 a')
         for r in res:
             category_link =r.css('a').attrib['href']
             yield response.follow(category_link, callback=self.article_links)
@@ -667,7 +668,7 @@ class wallstSpider(scrapy.Spider):
     start_urls = ['https://247wallst.com/']
 
     def parse(self, response):
-        res = response.css('.navbar-link')
+        res = response.css('#wallst-nav-menu > .navbar-start .is-mega~ .is-mega+ .is-mega .navbar-link , #wallst-nav-menu > .navbar-start .is-mega:nth-child(1) .navbar-link')
         for r in res:
             category_link =r.attrib['href']
             yield response.follow(category_link, callback=self.article_links)
@@ -690,7 +691,7 @@ class charlotteobserverSpider(scrapy.Spider):
     start_urls = ['https://www.charlotteobserver.com/']
 
     def parse(self, response):
-        res = response.css('.caps')
+        res = response.css('#flag .caps')
         for r in res:
             category_link =r.css('a').attrib['href']
             yield response.follow(category_link, callback=self.article_links)
