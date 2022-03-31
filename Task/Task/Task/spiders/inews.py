@@ -1,5 +1,103 @@
 import scrapy
 
+
+class NewsSpider(scrapy.Spider):
+    name = 'news'
+    allowed_domains = ['www.treasuryandrisk.com']
+    start_urls = ['https://www.treasuryandrisk.com/']
+
+    def parse(self, response):
+        topic_links = response.css("#topics a")
+        for link in topic_links:
+            categories_links = "https://www.treasuryandrisk.com" + link.attrib['href']
+            yield response.follow(categories_links, callback=self.news_links)
+
+    def news_links(self, response):
+        result = response.css(".cr2 .brief")
+        for r in result:
+            yield {
+                "News_links": "https://www.treasuryandrisk.com/" + r.css('a')[1].attrib['href'],
+                # "Title":r.css('a::text')[1].get().strip(),
+
+            }
+
+
+class PenSpider(scrapy.Spider):
+    name = 'pen'
+    allowed_domains = ['www.penews.com']
+    start_urls = ['https://www.penews.com/news-topics?filter_by_topic']
+
+    def parse(self, response):
+        result = response.css('.PENTheme--topic--dWcMgVWf a')
+        for r in result:
+            '''yield{
+                "Cat":'https://www.penews.com'+r.attrib['href']
+            }'''
+            category_link = 'https://www.penews.com' + r.attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+    def article_links(self, response):
+        data = response.css('a.PENTheme--headline-link--3tkfvFGB')
+        for link in data:
+            try:
+                yield {
+                    "News_links": link.attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": 'Na'
+                }
+
+
+class LegalSpider(scrapy.Spider):
+    name = 'legal'
+    allowed_domains = ['www.legalitprofessionals.com']
+    start_urls = ['https://www.legalitprofessionals.com/legal-it-news/']
+
+    def parse(self, response):
+        result = response.css(".items-leading .gradient")
+        for r in result:
+            try:
+                yield {
+                    "News_links": "https://www.legalitprofessionals.com" + r.css(".readmore-link").attrib['href'],
+                    # "Title":r.css('h2::text').get().strip(),
+                    # "Country":r.i.css("div.mbNewsFlagHolder::text").extract(),
+                }
+            except:
+                yield {
+                    "News links": "Na",
+                    "Title": 'Na',
+                }
+
+        next_page = 'https://www.legalitprofessionals.com' + response.css(".pagination-next .pagenav").attrib["href"]
+        if next_page is not None:
+            yield response.follow(next_page, callback=self.parse)
+
+
+class NewsSpider_consultancy(scrapy.Spider):
+    name = 'consult'
+    allowed_domains = ['www.consultancy.uk']
+    start_urls = ['https://www.consultancy.uk/news/']
+
+    def parse(self, response):
+        result = response.css('.index1')
+        for r in result:
+            try:
+                yield {
+                    "News_links": 'https://www.consultancy.uk' + r.css('a').attrib['href']
+
+                }
+            except:
+                yield {
+                    "News_links": 'Na'
+
+                }
+
+        next_page = 'https://www.consultancy.uk' + response.css('.active+ li .a-paging').attrib['href']
+        if next_page:
+            yield response.follow(next_page, callback=self.parse)
+
+
 class bangkokpostSpider(scrapy.Spider):
     name = 'bangkokpost'
     allowed_domains = ['bangkokpost.com']
@@ -1539,6 +1637,513 @@ class diginomicaSpider(scrapy.Spider):
             try:
                 yield {
                     "News_links":'https://diginomica.com'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+#22.03.2022
+class channelwebSpider(scrapy.Spider):
+    name = 'channelweb'
+    allowed_domains = ['channelweb.co.uk']
+    start_urls = ['https://www.channelweb.co.uk/']
+
+    def parse(self, response):
+        res = response.css('.active:nth-child(4) .nav-link , .arrowfixed+ .active .nav-link , .active:nth-child(1) .nav-link, .sub-part-nav a')
+        for r in res:
+            category_link ='https://www.channelweb.co.uk'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.row div div div div div:nth-child(2) a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.channelweb.co.uk'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class altfiSpider(scrapy.Spider):
+    name = 'altfi'
+    allowed_domains = ['altfi.com']
+    start_urls = ['https://www.altfi.com/']
+
+    def parse(self, response):
+        res = response.css('.dropdown-item')
+        for r in range(0,6):
+            category_link =res[r].css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('div.pane')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class thetradenewsSpider(scrapy.Spider):
+    name = 'thetradenews'
+    allowed_domains = ['thetradenews.com']
+    start_urls = ['https://www.thetradenews.com/']
+
+    def parse(self, response):
+        res = response.css('.menu-item-55312 a , .menu-item-55313 a , .menu-item-55316 a , .menu-item-55314 a , .menu-item-55311 a , .menu-item-55308 a , .menu-item-55310 a , .menu-item-55248 a , .menu-item-55309 a , .menu-item-55246')
+        for r in res:
+            category_link =r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.wpp-list h4 a , .list-item')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class industryleadersmagazineSpider(scrapy.Spider):
+    name = 'industryleadersmagazine'
+    allowed_domains = ['industryleadersmagazine.com']
+    start_urls = ['https://www.industryleadersmagazine.com/']
+
+    def parse(self, response):
+        res = response.css('.menu-item-8248 a , .menu-item-8240 a , .menu-item-309 a')
+        for r in range(0,26):
+            category_link =res[r].css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('#ajax-posts .readmore')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class sdtimesSpider(scrapy.Spider):
+    name = 'sdtimes'
+    allowed_domains = ['sdtimes.com']
+    start_urls = ['https://sdtimes.com/']
+
+    def parse(self, response):
+        res = response.css('#menu-topic-navigation-1 a')
+        for r in res:
+            category_link ='https://sdtimes.com'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.col-md-9')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class dqindiaSpider(scrapy.Spider):
+    name = 'dqindia'
+    allowed_domains = ['dqindia.com']
+    start_urls = ['https://www.dqindia.com/']
+
+    def parse(self, response):
+        res = response.css('.mega-menu-item-69467 .mega-menu-link , .mega-menu-item-621 .mega-menu-link , .mega-menu-item-615 .mega-menu-link , .mega-menu-item-614 .mega-menu-link , .mega-menu-item-609 .mega-menu-link , .mega-menu-item-594 .mega-menu-link , .mega-menu-item-605 .mega-menu-link')
+        for r in res:
+            category_link =r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.more-link a , .post-right')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class investorschronicleSpider(scrapy.Spider):
+    name = 'investorschronicle'
+    allowed_domains = ['investorschronicle.co.uk']
+    start_urls = ['https://www.investorschronicle.co.uk/']
+
+    def parse(self, response):
+        res = response.css('.ic__footer--menu-vertical:nth-child(3) a , .ic__footer--menu-vertical:nth-child(2) a , .ic__footer--menu-vertical:nth-child(1) a')
+        for r in res:
+            category_link ='https://www.investorschronicle.co.uk'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.specialist__card__article--link')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+#24.03.2022
+class sharesmagazineSpider(scrapy.Spider):
+    name = 'sharesmagazine'
+    allowed_domains = ['sharesmagazine.co.uk']
+    start_urls = ['https://www.sharesmagazine.co.uk/']
+
+    def parse(self, response):
+        res = response.css('.span_5_of_12 .secondaryNavLink')
+        for r in res:
+            category_link =r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('#maincontent .brdr-under-sh5, td~ td+ td a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class channelfuturesSpider(scrapy.Spider):
+    name = 'channelfutures'
+    allowed_domains = ['channelfutures.com']
+    start_urls = ['https://www.channelfutures.com/']
+
+    def parse(self, response):
+        res = response.css('#menu-item-208766 a , #menu-item-140809 a , #menu-item-123588 a , #menu-item-123563 a , .active+ .has-dropdown a')
+        for r in res:
+            category_link =r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.cat-list-container')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class fierceelectronicsSpider(scrapy.Spider):
+    name = 'fierceelectronics'
+    allowed_domains = ['fierceelectronics.com']
+    start_urls = ['https://www.fierceelectronics.com/']
+
+    def parse(self, response):
+        res = response.css('.header-link-group.col .nav-link')
+        for r in range(0,5):
+            category_link ='https://www.fierceelectronics.com'+res[r].css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.element-title a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+#dont work article links
+class legalitprofessionalsSpider(scrapy.Spider):
+    name = 'legalitprofessionals'
+    allowed_domains = ['legalitprofessionals.com']
+    start_urls = ['https://www.legalitprofessionals.com/']
+
+    def parse(self, response):
+        res = response.css('.item7 a , .item39 a , .item155 a')
+        for r in res:
+            category_link ='https://www.legalitprofessionals.com'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.readmore-link, .readmore a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.legalitprofessionals.com'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class treasuryandriskSpider(scrapy.Spider):
+    name = 'treasuryandrisk'
+    allowed_domains = ['treasuryandrisk.com']
+    start_urls = ['https://www.treasuryandrisk.com/']
+
+    def parse(self, response):
+        res = response.css('#li-dropdown-careers a , #li-dropdown-technology a , #li-dropdown-global-markets a , #li-dropdown-operational-risk a , #li-dropdown-financial-risk a , #li-dropdown-corporate-finance a , #li-dropdown-working-capital a , #li-dropdown-cash-management a')
+        for r in res:
+            category_link ='https://www.treasuryandrisk.com'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.article-title a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.treasuryandrisk.com'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class indiatimesSpider(scrapy.Spider):
+    name = 'indiatimes'
+    allowed_domains = ['indiatimes.com']
+    start_urls = ['https://www.indiatimes.com/']
+
+    def parse(self, response):
+        res = response.css('li.dropdown,.menu-icon')
+        for r in res:
+            category_link ='https://www.indiatimes.com'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.mt-10 , .card-title')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.indiatimes.com'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class openprSpider(scrapy.Spider):
+    name = 'openpr'
+    allowed_domains = ['openpr.com']
+    start_urls = ['https://www.openpr.com/news/categories']
+
+    def parse(self, response):
+        res = response.css('.category-title a')
+        for r in res:
+            category_link ='https://www.openpr.com'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('div.pm-box').css('h2')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.openpr.com'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+#28.03.2022
+class apnewsSpider(scrapy.Spider):
+    name = 'apnews'
+    allowed_domains = ['apnews.com']
+    start_urls = ['https://apnews.com/']
+
+    def parse(self, response):
+        res = response.css('.header-navigation-item:nth-child(11) .topic-link , .header-navigation-item:nth-child(10) .topic-link , .header-navigation-item:nth-child(9) .topic-link , .header-navigation-item:nth-child(8) .topic-link , .header-navigation-item:nth-child(7) .topic-link , .header-navigation-item:nth-child(6) .topic-link , .header-navigation-item:nth-child(5) .topic-link , .header-navigation-item:nth-child(4) .topic-link , .header-navigation-item:nth-child(3) .topic-link , .header-navigation-item:nth-child(2) .topic-link , .header-navigation-item:nth-child(1) .topic-link')
+        for r in res:
+            category_link ='https://apnews.com'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.storyHeadlines-0-2-101 , .CardHeadline')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://apnews.com'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class businesswireSpider(scrapy.Spider):
+    name = 'businesswire'
+    allowed_domains = ['businesswire.com']
+    start_urls = ['https://www.businesswire.com/portal/site/home/']
+
+    def parse(self, response):
+        res = response.css('.bw-has-submenu:nth-child(3) li a')
+        for r in res:
+            category_link ='https://www.businesswire.com'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('#headlines li')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.businesswire.com'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class menafnSpider(scrapy.Spider):
+    name = 'menafn'
+    allowed_domains = ['menafn.com']
+    start_urls = ['https://menafn.com/']
+
+    def parse(self, response):
+        res = response.css('.has-child:nth-child(2) > .dropdown-inner li:nth-child(1) > a , .has-child:nth-child(2) li+ .has-child a')
+        for r in range(0,8):
+            category_link ='https://menafn.com'+res[r].css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.entry-title a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class hindustantimesSpider(scrapy.Spider):
+    name = 'hindustantimes'
+    allowed_domains = ['hindustantimes.com']
+    start_urls = ['https://www.hindustantimes.com/']
+
+    def parse(self, response):
+        res = response.css('.leftFixedNav li:nth-child(10) a , .leftFixedNav li:nth-child(9) a , .leftFixedNav li:nth-child(8) a , .leftFixedNav li:nth-child(7) a , .leftFixedNav li:nth-child(6) a , .leftFixedNav li:nth-child(5) a , .leftFixedNav li:nth-child(4) a , .leftFixedNav li:nth-child(3) a , .active+ li a , .active a')
+        for r in range(0,10):
+            category_link ='https://www.hindustantimes.com'+res[r].css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.hdg3 a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.hindustantimes.com'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class republicworldSpider(scrapy.Spider):
+    name = 'republicworld'
+    allowed_domains = ['republicworld.com']
+    start_urls = ['https://www.republicworld.com/']
+
+    def parse(self, response):
+        res = response.css('div:nth-child(7) .ham-sub-title a , div:nth-child(6) .ham-sub-title a , #quick-links div:nth-child(5) .ham-sub-title a , div:nth-child(4) .ham-sub-title a , #quick-links div:nth-child(3) .ham-sub-title a , .ham-menu div:nth-child(2) .ham-sub-title a , .ham-menu div:nth-child(1) .ham-sub-title a')
+        for r in res:
+            category_link =r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.hover-effect')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class thehinduSpider(scrapy.Spider):
+    name = 'thehindu'
+    allowed_domains = ['thehindu.com']
+    start_urls = ['https://www.thehindu.com/']
+
+    def parse(self, response):
+        res = response.css('.main-menu #main-menu a')
+        for r in res:
+            category_link =r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.story1-3x100-heading , h3 a , .story-card-news h2 a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class business_standardSpider(scrapy.Spider):
+    name = 'business-standard'
+    allowed_domains = ['business-standard.com']
+    start_urls = ['https://www.business-standard.com/']
+
+    def parse(self, response):
+        res=response.css('#horiz-menu a')
+        for r in res:
+            category_link ='https://www.business-standard.com'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('#nifty-tab3 a , .listing-txt h2 a,.aticle-list h2,.aticle-txt h2 a , .top-section h2 , .webexclu1 , .webexclu0,.size16 span , #bs-new-top-story-listing-ajax-block a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.business-standard.com'+link.css('a').attrib['href']
                 }
             except:
                 yield {
