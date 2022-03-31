@@ -2149,3 +2149,76 @@ class business_standardSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
+
+#31.03.2022
+class benzingaSpider(scrapy.Spider):
+    name = 'benzinga'
+    allowed_domains = ['benzinga.com']
+    start_urls = ['https://www.benzinga.com/']
+
+    def parse(self, response):
+        res=response.css('li:nth-child(2) .fNjuVS a , li:nth-child(4) .bAvjQq div:nth-child(1) .menu-items a , li:nth-child(1) .fNjuVS a , li:nth-child(3) .fNjuVS a , li:nth-child(5) .initial , li:nth-child(4) .initial , li:nth-child(3) .initial , li:nth-child(2) .initial , .sub-group-wrapper > .menu-items .fNjuVS:nth-child(1) a , li:nth-child(1) .initial')
+        for r in res:
+            category_link ='https://www.benzinga.com'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('div.bz3-post-card, a.newsfeed-card,a.bz3-featured-article-link, .read-more a')
+        for link in data:
+            try:
+                yield {
+                    "News_links": link.attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class indianexpressSpider(scrapy.Spider):
+    name = 'indianexpress'
+    allowed_domains = ['indianexpress.com']
+    start_urls = ['https://indianexpress.com/']
+
+    def parse(self, response):
+        res=response.css('#navbar li:nth-child(12) a , #navbar li:nth-child(10) a , #navbar li:nth-child(9) a , #navbar li:nth-child(8) a , #navbar li:nth-child(7) a , #navbar li:nth-child(6) a , #navbar li:nth-child(5) a , #navbar li:nth-child(4) a , .active-el+ li a , .active-el a , #navbar li:nth-child(1) a')
+        for r in res:
+            category_link ='https://indianexpress.com'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('#IE_RHS_Best_of_Express , #IE_RHS_Latest_News , .second-story a , .title a')
+        for link in data:
+            try:
+                yield {
+                    "News_links": link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class businessinsiderSpider(scrapy.Spider):
+    name = 'businessinsider'
+    allowed_domains = ['businessinsider.com']
+    start_urls = ['https://www.businessinsider.com/']
+
+    def parse(self, response):
+        res=response.css('.subnav-link')
+        for r in res:
+            category_link ='https://www.businessinsider.com'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.tout-title-link')
+        for link in data:
+            try:
+                yield {
+                    "News_links": 'https://www.businessinsider.com'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
