@@ -3003,3 +3003,141 @@ class arnnetSpider(scrapy.Spider):
                 }
 #redirecting 301
 
+#27.04.2022
+class siliconindiaSpider(scrapy.Spider):
+    name = 'siliconindia'
+    allowed_domains = ['siliconindia.com']
+    start_urls = ['https://www.siliconindia.com/']
+
+    def parse(self, response):
+        res=response.css('.orange-border')
+        for r in res:
+            category_link =r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.indi-col a , .small-post a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class crnSpider(scrapy.Spider):
+    name = 'crn'
+    allowed_domains = ['crn.com.au']
+    start_urls = ['https://www.crn.com.au/']
+
+    def parse(self, response):
+        res=response.css('#site-logo , #sticky-nav .has-dropdown:nth-child(1) a')
+        for r in res:
+            category_link ='https://www.crn.com.au'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.article-list-content,#most-read-container a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.crn.com.au'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class siliconindiaSpider(scrapy.Spider):
+    name = 'emarketer'
+    allowed_domains = ['emarketer.com']
+    start_urls = ['https://www.emarketer.com/']
+
+    def parse(self, response):
+        res=response.css('.sc-htpNat')
+        for r in res:
+            try:
+                yield {
+                    "News_links": r.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class electronicsweeklySpider(scrapy.Spider):
+    name = 'electronicsweekly'
+    allowed_domains = ['electronicsweekly.com']
+    start_urls = ['https://www.electronicsweekly.com/']
+
+    def parse(self, response):
+        res=response.css('#menu-item-445149 a , #menu-item-445141 a , #menu-item-445193 a , .menu-item-object-custom+ .menu-item-object-category a , .current_page_item+ .menu-item-object-custom a')
+        for r in res:
+            category_link =r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.post-title a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+
+class financialstandardSpider(scrapy.Spider):
+    name = 'financialstandard'
+    allowed_domains = ['financialstandard.com.au']
+    start_urls = ['https://www.financialstandard.com.au/']
+
+    def parse(self, response):
+        res=response.css('#site-logo , #sticky-nav .has-dropdown:nth-child(1) a')
+        for r in res:
+            category_link ='https://www.financialstandard.com.au'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.news_heading td , .featured_news_module_news_headline')
+        for link in data:
+            try:
+                yield {
+                    "News_links":link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
+#work in shell but not in All
+
+class wealthmanagementSpider(scrapy.Spider):
+    name = 'wealthmanagement'
+    allowed_domains = ['wealthmanagement.com']
+    start_urls = ['https://www.wealthmanagement.com/']
+
+    def parse(self, response):
+        res=response.css('.hamburger-menu-nav__item:nth-child(9) a , .hamburger-menu-nav__item:nth-child(8) a , .hamburger-menu-nav__item:nth-child(7) a , .hamburger-menu-nav__item:nth-child(6) a , .hamburger-menu-nav__item:nth-child(5) a , .hamburger-menu-nav__item:nth-child(4) a , .hamburger-menu-nav__item:nth-child(3) a , .hamburger-menu-nav__item:nth-child(2) a , .hamburger-menu-nav__item:nth-child(1) a')
+        for r in res:
+            category_link ='https://www.wealthmanagement.com'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.title a')
+        for link in data:
+            try:
+                yield {
+                    "News_links":'https://www.wealthmanagement.com'+link.css('a').attrib['href']
+                }
+            except:
+                yield {
+                    "News_links": None
+                }
