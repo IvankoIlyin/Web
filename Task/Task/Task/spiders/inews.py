@@ -4609,3 +4609,44 @@ class govSpider(scrapy.Spider):
                     yield {
                         "News_links": None
                     }
+
+class zacksSpider(scrapy.Spider):
+    name = 'zacks'
+    allowed_domains = ['zacks.com']
+    start_urls = ['https://www.zacks.com/']
+
+    def parse(self, response):
+        res=response.css('.selected a , #earnings-dd , #stocks-dd')
+        for r in res:
+                category_link =r.css('a').attrib['href']
+                if '/' == str(category_link)[0]:
+                    s = str(category_link).split('//')
+                    l = s[1]
+                    yield response.follow(l, callback=self.article_links)
+                if '/' not in str(category_link)[0]:
+                    yield response.follow(category_link, callback=self.article_links)
+
+
+    def article_links(self, response):
+        data = response.css('.analytics_tracking')
+        for link in data:
+            if 'https' not in link.css('a').attrib['href']:
+                try:
+                    yield {
+                        "News_links":'https://www.zacks.com'+link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+            if 'https' in link.css('a').attrib['href']:
+                try:
+                    yield {
+                        "News_links":link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+# crawld 404
