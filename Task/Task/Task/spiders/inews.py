@@ -4555,3 +4555,57 @@ class politicoSpider(scrapy.Spider):
                 yield {
                     "News_links": None
                 }
+
+class govSpider(scrapy.Spider):
+    name = 'gov'
+    allowed_domains = ['gov.uk']
+    start_urls = ['https://www.gov.uk/']
+
+    def parse(self, response):
+        res=response.css('.gem-c-layout-super-navigation-header__navigation-second-item-link')
+        res2=response.css('.gem-c-image-card__title-link')
+        for r in res:
+            category_link ='https://www.gov.uk'+r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.parseSecondary)
+
+        for r in res2:
+
+            if 'https' not in str(r):
+                category_link ='https://www.gov.uk'+r.css('a').attrib['href']
+                yield response.follow(category_link, callback=self.article_links)
+
+            if 'https'  in str(r):
+                category_link = r.css('a').attrib['href']
+                yield response.follow(category_link, callback=self.article_links)
+
+    def parseSecondary(self, response):
+        res=response.css('ul.browse__list').css('li')
+        for r in res:
+            category_link = 'https://www.gov.uk' + r.css('a').attrib['href']
+            yield response.follow(category_link, callback=self.article_links)
+
+
+
+
+    def article_links(self, response):
+        data = response.css('.govuk-link, .govspeak .govuk-link, .nhsuk-card__link, .govuk-\!-font-size-24 a')
+        for link in data:
+            if 'https' not in str(link):
+                try:
+                    yield {
+                        "News_links":'https://www.gov.uk' + link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+            if 'https'  in str(link):
+                try:
+                    yield {
+                        "News_links":  link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
