@@ -1,0 +1,4 @@
+requests[security]==2.25.1
+bs4==0.0.1
+Scrapy==2.5.1
+lxml==4.7.1

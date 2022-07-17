@@ -7,6 +7,12 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+import logging
+
+custom_scrapy_logs = logging.ERROR
+logging.getLogger('scrapy').setLevel(custom_scrapy_logs)
+
+
 BOT_NAME = 'Task'
 
 SPIDER_MODULES = ['Task.spiders']
@@ -17,10 +23,10 @@ NEWSPIDER_MODULE = 'Task.spiders'
 #USER_AGENT = 'Task (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 16
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
