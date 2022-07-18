@@ -7296,6 +7296,435 @@ class newsdeltaSpider(scrapy.Spider):
                         "News_links": None
                     }
 
+
+
+
+#18.07.2022
+class diabetesSpider(scrapy.Spider):
+    name = 'diabetes'
+    allowed_domains = ['diabetes.org']
+    start_urls = ['https://diabetes.org/newsroom-all']
+
+    def parse(self, response):
+       # res=response.css('.nav__secondary a')
+       # for r in res:
+         #       category_link =r.css('a').attrib['href']
+        #        yield response.follow(category_link, callback=self.article_links)
+       yield response.follow('https://diabetes.org/newsroom-all', callback=self.article_links)
+
+
+
+
+
+    def article_links(self, response):
+        data = response.css('.view--newsroom-title')
+        for link in data:
+            if 'https://' in str(link):
+                try:
+                    yield {
+                        "News_links":link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+            if 'https://' not in str(link):
+                try:
+                    yield {
+                        "News_links":'https://diabetes.org'+link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+class ucalgarySpider(scrapy.Spider):
+    name = 'ucalgary'
+    allowed_domains = ['ucalgary.ca']
+    start_urls = ['https://www.ucalgary.ca/ucalgary-news']
+
+    def parse(self, response):
+        res=response.css('.image+ .text .red-back')
+        for r in res:
+                category_link =r.css('a').attrib['href']
+                yield response.follow(category_link, callback=self.article_links)
+
+        yield response.follow('https://www.ucalgary.ca/ucalgary-news', callback=self.article_links)
+
+
+
+
+
+    def article_links(self, response):
+        data = response.css('.image+ .text .one-col :nth-child(2), .read-more')
+        for link in data:
+            if 'https://' in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+            if 'https://' not in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":'https://www.ucalgary.ca'+link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+class blognationalgeographicSpider(scrapy.Spider):
+    name = 'blognationalgeographic'
+    allowed_domains = ['blog.nationalgeographic.org']
+    start_urls = ['https://blog.nationalgeographic.org/']
+
+    def parse(self, response):
+        res=response.css('.ng-text-uppercase')
+        for r in range(0,5):
+                category_link =res[r].css('a').attrib['href']
+                yield response.follow(category_link, callback=self.article_links)
+
+        yield response.follow('https://blog.nationalgeographic.org/', callback=self.article_links)
+
+
+
+
+
+    def article_links(self, response):
+        data = response.css('.ng-padding-medium-bottom a')
+        for link in data:
+            if 'https://' in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+            if 'https://' not in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":'https://blog.nationalgeographic.org'+link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+class granicusSpider(scrapy.Spider):
+    name = 'granicus'
+    allowed_domains = ['granicus.com']
+    start_urls = ['https://granicus.com/news-press/']
+
+    def parse(self, response):
+       # res=response.css('.nav__secondary a')
+       # for r in res:
+         #       category_link =r.css('a').attrib['href']
+        #        yield response.follow(category_link, callback=self.article_links)
+       yield response.follow('https://granicus.com/news-press/', callback=self.article_links)
+
+
+
+
+
+    def article_links(self, response):
+        data = response.css('.cover-link')
+        for link in data:
+                try:
+                    yield {
+                        "News_links":link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+class iataSpider(scrapy.Spider):
+    name = 'iata'
+    allowed_domains = ['iata.org']
+    start_urls = ['https://www.iata.org/en/pressroom/searchresults/?ContentType=85#searchForm']
+
+    def parse(self, response):
+       # res=response.css('.nav__secondary a')
+       # for r in res:
+         #       category_link =r.css('a').attrib['href']
+        #        yield response.follow(category_link, callback=self.article_links)
+       yield response.follow('https://www.iata.org/en/pressroom/searchresults/?ContentType=85#searchForm', callback=self.article_links)
+
+
+
+
+
+    def article_links(self, response):
+        data = response.css('.result-listing-item')
+        for link in data:
+            if 'https://' in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+            if 'https://' not in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":'https://www.iata.org'+link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+class worldwildlifeSpider(scrapy.Spider):
+    name = 'worldwildlife'
+    allowed_domains = ['worldwildlife.org']
+    start_urls = ['https://www.worldwildlife.org/stories']
+
+    def parse(self, response):
+       # res=response.css('.nav__secondary a')
+       # for r in res:
+         #       category_link =r.css('a').attrib['href']
+        #        yield response.follow(category_link, callback=self.article_links)
+       yield response.follow('https://www.worldwildlife.org/stories', callback=self.article_links)
+
+
+
+
+
+    def article_links(self, response):
+        data = response.css('.first-featured , #content .gutter-horiz-in')
+        for link in data:
+            if 'https://' in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+            if 'https://' not in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":'https://www.worldwildlife.org'+link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+class parentsSpider(scrapy.Spider):
+    name = 'parents'
+    allowed_domains = ['parents.com']
+    start_urls = ['https://www.parents.com/news/']
+
+    def parse(self, response):
+       # res=response.css('.nav__secondary a')
+       # for r in res:
+         #       category_link =r.css('a').attrib['href']
+        #        yield response.follow(category_link, callback=self.article_links)
+       yield response.follow('https://www.parents.com/news/', callback=self.article_links)
+
+
+
+
+
+    def article_links(self, response):
+        data = response.css('a.mntl-card-list-items')
+        for link in data:
+            if 'https://' in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+            if 'https://' not in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":'https://www.parents.com'+link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+class dpreviewSpider(scrapy.Spider):
+    name = 'dpreview'
+    allowed_domains = ['dpreview.com']
+    start_urls = ['https://www.dpreview.com/features']
+
+    def parse(self, response):
+        res=response.css('.articlesCount a')
+        for r in res:
+                    category_link =r.css('a').attrib['href']
+                    yield response.follow(category_link, callback=self.article_links)
+
+        yield response.follow('https://www.dpreview.com/features', callback=self.article_links)
+
+
+
+
+
+    def article_links(self, response):
+        data = response.css('#mainContent .title a')
+        for link in data:
+            if 'https://' in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+            if 'https://' not in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":'https://www.dpreview.com'+link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+class blSpider(scrapy.Spider):
+    name = 'bl'
+    allowed_domains = ['bl.uk']
+    start_urls = ['https://www.bl.uk/news/']
+
+    def parse(self, response):
+       # res=response.css('.nav__secondary a')
+       # for r in res:
+         #       category_link =r.css('a').attrib['href']
+        #        yield response.follow(category_link, callback=self.article_links)
+       yield response.follow('https://www.bl.uk/news/', callback=self.article_links)
+
+
+
+
+
+    def article_links(self, response):
+        data = response.css('.pnl-title')
+        for link in data:
+            if 'https://' in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+            if 'https://' not in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":'https://www.bl.uk'+link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+class unwomenSpider(scrapy.Spider):
+    name = 'unwomen'
+    allowed_domains = ['unwomen.org']
+    start_urls = ['https://www.unwomen.org/en/news-and-events/stories']
+
+    def parse(self, response):
+        res=response.css('.facet-item a')
+        for r in res:
+                    category_link ='https://www.unwomen.org'+r.css('a').attrib['href']
+                    yield response.follow(category_link, callback=self.article_links)
+
+        yield response.follow('https://www.unwomen.org/en/news-and-events/stories', callback=self.article_links)
+
+
+
+
+
+    def article_links(self, response):
+        data = response.css('.search-item-title')
+        for link in data:
+            if 'https://' in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+            if 'https://' not in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":'https://www.unwomen.org'+link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+class unwomenSpider(scrapy.Spider):
+    name = 'unwomen'
+    allowed_domains = ['unwomen.org']
+    start_urls = ['https://www.unwomen.org/en/news-and-events/stories']
+
+    def parse(self, response):
+        res=response.css('.facet-item a')
+        for r in res:
+                    category_link ='https://www.unwomen.org'+r.css('a').attrib['href']
+                    yield response.follow(category_link, callback=self.article_links)
+
+        yield response.follow('https://www.unwomen.org/en/news-and-events/stories', callback=self.article_links)
+
+
+
+
+
+    def article_links(self, response):
+        data = response.css('.search-item-title')
+        for link in data:
+            if 'https://' in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+            if 'https://' not in str(link.css('a').attrib['href']):
+                try:
+                    yield {
+                        "News_links":'https://www.unwomen.org'+link.css('a').attrib['href']
+                    }
+                except:
+                    yield {
+                        "News_links": None
+                    }
+
+
+
 #a thing for running a script without a command in the console, I won’t use it either
 process = CrawlerProcess(settings={
                 'FEED_URI': f'Newlink_1.json',
@@ -7303,5 +7732,5 @@ process = CrawlerProcess(settings={
                 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36'
             })
 
-process.crawl(newsdeltaSpider)
+process.crawl(unwomenSpider)
 process.start()
