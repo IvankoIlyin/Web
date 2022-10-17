@@ -1128,6 +1128,7 @@ class onepmSpider(scrapy.Spider):
         if str(response.status) == "200":
             if response.css("body"):
                 data = response.css('a.article-card')
+
                 for link in data:
                     try:
                         if any(n in str(link.css("a").attrib["href"]) for n in self.not_allowed_keyword):
@@ -1161,5 +1162,5 @@ process = CrawlerProcess(settings={
                 'USER_AGENT': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36'
             })
 
-process.crawl(onepmSpider)
+process.crawl(foolSpider)
 process.start()
