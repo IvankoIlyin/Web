@@ -1,0 +1,505 @@
+"base_url","clean_rss","clean_url","flag","gn_mode","topic","type","country"
+https://www.aaj.tv/business,AajSpider,aaj.tv,1,2,news,article,Pakistan
+"https://www.aa.com.tr/en/energy,https://www.aa.com.tr/en/economy,https://www.aa.com.tr/en/turkiye",AaSpider,aa.com.tr,1,2,news,article,Turkey
+https://www.aa.com.tr/tr/bilim-teknoloji,AaTrSpider,aa.com.tr,1,2,news,article,Turkey
+https://www.abc.es/espana/#vca=menu&vmc=abc-es&vso=portadilla.espana&vli=espana,abcEspanaSpider,abc.es,1,2,news,article,Spain
+"https://abcnews.go.com/,https://abcnews.go.com/Video,https://abcnews.go.com/Live",AbcnewsArticleSpider,go.com,1,9,news,article,India
+"https://www.abcrnews.com/,https://www.abcrnews.com/category/health/,https://www.abcrnews.com/category/business/,https://www.abcrnews.com/category/education/,https://www.abcrnews.com/category/sports/",AbcrnewsArticleSpider,abcrnews.com,1,9,news,article,India
+"http://news.abplive.com/,https://news.abplive.com/news,https://news.abplive.com/trending,https://news.abplive.com/news/business/news/personal-finance,https://news.abplive.com/health,https://news.abplive.com/education,https://news.abplive.com/sports,https://news.abplive.com/science,https://news.abplive.com/auto,https://news.abplive.com/lifestyle",AbpliveSpider,abplive.com,1,9,news,article,India
+https://www.acm.nl/en/publications/search-publications?,AcmPdfSpider,acm.nl,1,2,news,pdf,Netherlands
+"http://www.agricultureauthority.go.ke/index.php/en/resource-center/legal-documents/category/22-acts,http://www.agricultureauthority.go.ke/index.php/en/resource-center/legal-documents/category/38-anti-corruption-policies,http://www.agricultureauthority.go.ke/index.php/en/resource-center/legal-documents/category/24-regulations",AgricultureauthorityPdfSpider,agricultureauthority.go.ke,1,2,news,pdf,Kenya
+https://ahvalnews.com/news,AhvalnewsSpider,ahvalnews.com,1,2,news,article,Turkey
+https://ai.gov.ae/news/,AiSpider,ai.gov.ae,1,2,news,article,United Arab Emirates
+"https://www.al-ayyam.ps/ar_category.php?id=3b70y15216Y3b70&c_type=1,https://www.al-ayyam.ps/ar_category.php?id=14e56y85590Y14e56&c_type=1,https://www.al-ayyam.ps/ar_category.php?id=13455y78933Y13455&c_type=1,https://www.al-ayyam.ps/ar_category.php?id=c89ay51354Yc89a&c_type=1,https://www.al-ayyam.ps/ar_category.php?id=1db8y7608Y1db8&c_type=1",alayyamSpider,al-ayyam.ps,1,2,news,article,Palestine
+"https://www.albawaba.com/news,https://www.albawaba.com/business/",AlbawabaSpider,albawaba.com,1,2,news,article,Saudi Arabia
+"https://alborsaanews.com/category/%d8%a8%d9%86%d9%88%d9%83,https://alborsaanews.com/category/%d8%a7%d9%82%d8%aa%d8%b5%d8%a7%d8%af-%d9%85%d8%b5%d8%b1,https://alborsaanews.com/category/%d8%a7%d8%aa%d8%b5%d8%a7%d9%84%d8%a7%d8%aa-%d9%88%d8%aa%d9%83%d9%86%d9%88%d9%84%d9%88%d8%ac%d9%8a%d8%a7",AlborsaanewsSpider,alborsaanews.com,1,2,news,article,Egypt
+"https://www.aleqt.com/sections/%D8%A7%D9%84%D8%BA%D8%A7%D8%B2,https://www.aleqt.com/sections/%D9%85%D8%AD%D9%84%D9%8A%D8%A9-1,https://www.aleqt.com/sections/%D9%85%D8%AD%D9%84%D9%8A%D8%A9-1,https://www.aleqt.com/sections/%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%AC%D8%AF%D8%AF%D8%A9,https://www.aleqt.com/sections/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9,https://www.aleqt.com/sections/%D8%A7%D9%84%D9%86%D9%81%D8%B7,https://www.aleqt.com/sections/%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC%D9%8A%D8%A9,https://www.aleqt.com/sections/%D8%AE%D9%84%D9%8A%D8%AC%D9%8A%D8%A9,https://www.aleqt.com/sections/%D8%AE%D9%84%D9%8A%D8%AC%D9%8A%D8%A9",AleqtSpider,aleqt.com,1,2,news,article,"Bahrain,Kuwait,Oman,Qatar,Saudi Arabia,United Arab Emirates"
+"https://alforatnews.iq/news/economic,https://alforatnews.iq/news/iraq",alforatnewsNewsSpider,alforatnews.iq,1,2,news,article,Iraq
+"https://www.alhaya.ps/ar/Category/38/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF,https://www.alhaya.ps/ar/Category/97/%D8%B4%D8%A4%D9%88%D9%86-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D8%A9",alhayaCategory38Spider,alhaya.ps,1,2,news,article,Palestine
+https://www.alittihad.ae/category/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA,AlittihadSpider,alittihad.ae,1,2,news,article,United Arab Emirates
+https://www.aljazeera.com/asia/,AljazeeraSpider,aljazeera.com,1,9,news,article,India
+https://www.al-jazirah.com/,aljazirahSpider,al-jazirah.com,1,2,news,article,Saudi Arabia
+"https://almadapaper.net/newscat.php?cat=5,https://almadapaper.net/newscat.php?cat=4",almadapaperSpider,almadapaper.net,1,2,news,article,Iraq
+https://www.al-madina.com/,almadinaSpider,al-madina.com,1,2,news,article,Saudi Arabia
+https://almeezan.qa/RulingsByDate.aspx,Almeezan2Spider,almeezan.qa,1,2,news,reg_article,Qatar
+https://www.alriyadh.com/,alriyadhSpider,alriyadh.com,1,2,news,article,Saudi Arabia
+https://www.alsharqiya.com/en/news/category/economics,alsharqiyaSpider,alsharqiya.com,1,2,news,article,Iraq
+"http://aninews.in/,https://aninews.in/latest-news/,https://www.aninews.in/topic/trending/,https://aninews.in/category/business/corporate/,https://aninews.in/category/health/,https://aninews.in/category/sports/,https://aninews.in/category/environment/,https://aninews.in/category/science/,https://aninews.in/category/tech/,https://aninews.in/category/lifestyle/,https://aninews.in/category/national/politics/,https://aninews.in/category/entertainment/,https://aninews.in/category/national/,https://aninews.in/category/world/",AniSpider,aninews.in,1,9,news,article,India
+https://ansm.sante.fr/actualites/?,AnsmSanteArticleSpider,ansm.sante.fr,1,2,news,pdf,France
+"https://www.arabianbusiness.com/markets,https://www.arabianbusiness.com/industries/banking-finance,https://www.arabianbusiness.com/industries/energy,https://www.arabianbusiness.com/industries/healthcare,https://www.arabianbusiness.com/industries/technology,https://www.arabianbusiness.com/politics-economics,https://www.arabianbusiness.com/startup,https://www.arabianbusiness.com/",ArabianBusinessSpider,arabianbusiness.com,1,2,news,article,"Bahrain,Egypt,Kuwait,Oman,Qatar,Saudi Arabia,Turkey,United Arab Emirates"
+"https://www.arabnews.com/,https://www.arabnews.com/tags/ride-hailing-0,https://www.arabnews.com/tags/fintech",ArabNewsSpider,arabnews.com,1,2,news,article,United Arab Emirates
+https://www.arcom.fr/nos-ressources/espace-juridique/textes-juridiques,ArcomPdf2Spider,arcom.fr,1,2,news,pdf,France
+https://www.arcom.fr/nos-ressources/espace-juridique/decisions,ArcomPdfSpider,arcom.fr,1,2,news,pdf,France
+https://www.argaam.com/en,argaamSpider,argaam.com,1,2,news,article,Saudi Arabia
+"https://arynews.tv/category/sci-techno/,https://arynews.tv/category/business/",AryNewsSpider,arynews.tv,1,2,news,article,Pakistan
+https://www.ase.com.jo/en/circulars,AseSpider,ase.com.jo,1,2,news,article,Jordan
+"http://www.asianage.com/,https://www.asianage.com/most-popular,https://www.asianage.com/business,https://www.asianage.com/sports,https://www.asianage.com/science,https://www.asianage.com/technology,https://www.asianage.com/life,https://www.asianage.com/entertainment,https://www.asianage.com/india,https://www.asianage.com/world",AsianageSpider,asianage.com,1,9,news,article,India
+"http://newsable.asianetnews.com/,https://newsable.asianetnews.com/latest-news,https://newsable.asianetnews.com/business,https://newsable.asianetnews.com/career,https://newsable.asianetnews.com/sports,https://newsable.asianetnews.com/technology,https://newsable.asianetnews.com/auto,https://newsable.asianetnews.com/lifestyle,https://newsable.asianetnews.com/entertainment,https://newsable.asianetnews.com/india,https://newsable.asianetnews.com/world",AsianetnewsSpider,asianetnews.com,1,9,news,article,India
+"https://www2.assemblee-nationale.fr/documents/liste/(type)/ta,https://www2.assemblee-nationale.fr/documents/liste/(type)/projets-loi",AssembleeNationalePdfSpider,assemblee-nationale.fr,1,2,news,pdf,France
+"https://autoriteitpersoonsgegevens.nl/nl/over-privacy/wetten,https://autoriteitpersoonsgegevens.nl/nl/publicaties/boetes-en-sancties",Autoriteitpersoonsgegevens2PdfSpider,autoriteitpersoonsgegevens.nl,1,2,news,pdf,Netherlands
+https://autoriteitpersoonsgegevens.nl/nl/publicaties/wob-besluiten,AutoriteitpersoonsgegevensPdfSpider,autoriteitpersoonsgegevens.nl,1,2,news,pdf,Netherlands
+https://www.autorite-transports.fr/avis-et-decisions/,AutoriteTransportsPdfSpider,autorite-transports.fr,1,2,news,pdf,France
+"https://www.awene.com/health,https://www.awene.com/aburi,https://www.awene.com/iraq,https://www.awene.com/kurdistan",aweneSpider,awene.com,1,2,news,article,Iraq
+https://baghdad.eregulations.org/Laws?page=1&l=en,BaghdadEregulationsSpider,baghdad.eregulations.org,1,2,news,reg_article,Iraq
+http://bahrainmirror.com/en/category/206.html,BahrainmirrorSpider,bahrainmirror.com,1,2,news,article,"Bahrain, Kuwait, Oman, Palestine, Qatar, Saudi Arabia, United Arab Emirates"
+https://balochistan.gov.pk/acts-rules-and-regulation,BalochistanSpider,balochistan.gov.pk,1,2,news,pdf,Pakistan
+https://www.bal.com/news/,balSpider,bal.com,1,2,news,article,"Bahrain,Kuwait,Oman,Saudi Arabia,Turkey,United Arab Emirates"
+https://www.bbc.com/news/topics/cmj34zmw77wt,bbcBrazilSpider,bbc.com,1,2,news,article,Brazil
+https://www.bbc.co.uk/newsround,BbcKidsSpider,bbc.co.uk,1,9,news,article,India
+https://www.bbc.co.uk/search?q=nigeria&page=1,bbcNigeriaSpider,bbc.co.uk,1,2,news,article,Nigeria
+https://bitetech.ghost.io/tag/news/,bitetechghostSpider,bitetech.ghost.io,1,2,news,article,Iraq
+https://www.bmbf.de/bmbf/de/service/gesetze/gesetze_node.html,Bmbf1PdfSpider,bmbf.de,1,2,news,pdf,Germany
+https://www.bmbf.de/bmbf/de/service/fortbildungsordnungen/fortbildungsordnungen_node.html,Bmbf2PdfSpider,bmbf.de,1,2,news,pdf,Germany
+https://www.bmel.de/SiteGlobals/Forms/Suche/DE/Gesetzestexte/Gesetzestexte_Formular.html,BmelPdfSpider,bmel.de,1,2,news,pdf,Germany
+https://www.bmi.bund.de/SiteGlobals/Forms/suche/gesetzgebungsverfahren-formular.html,BmiBundPdfSpider,bmi.bund.de,1,2,news,pdf,Germany
+https://www.bmuv.de/en/ministry/acts-ordinances,BmuvPdfSpider,bmuv.de,1,2,news,pdf,Germany
+https://www.bmwk.de/Navigation/DE/Service/Gesetze-und-Verordnungen/gesetze-und-verordnungen.html,BmwkPdfSpider,bmwk.de,1,2,news,pdf,Germany
+https://www.bnnbloomberg.ca/bloomberg-news-wire,BnnBloombergSpider,bnnbloomberg.ca,1,2,news,article,"Algeria,Bahrain,Egypt,Germany,Iraq,Italy,Jordan,Kuwait,Morocco,Oman,Pakistan,Palestine,Qatar,Saudi Arabia,Turkey,United Arab Emirates"
+https://www.bank-of-algeria.dz/html/legist022.htm,BOASpider,bank-of-algeria.dz,1,2,news,pdf,Algeria
+"https://boe.es/rss/canal_per.php?l=p&c=139,https://boe.es/rss/canal_leg.php?l=l&c=122,https://boe.es/rss/canal_leg.php?l=l&c=120,https://boe.es/rss/canal_leg.php?l=l&c=118,https://boe.es/rss/canal_leg.php?l=l&c=138,https://boe.es/rss/canal_leg.php?l=l&c=115,https://boe.es/rss/canal_leg.php?l=l&c=108,https://boe.es/rss/canal_leg.php?l=l&c=106,https://boe.es/rss/canal_leg.php?l=l&c=104,https://boe.es/rss/canal_leg.php?l=l&c=135,https://boe.es/rss/canal_leg.php?l=l&c=143,https://boe.es/rss/canal_leg.php?l=l&c=137,https://boe.es/rss/canal_leg.php?l=l&c=133,https://boe.es/rss/canal_leg.php?l=l&c=131,https://boe.es/rss/canal_leg.php?l=l&c=125,https://boe.es/rss/canal_leg.php?l=l&c=121,https://boe.es/rss/canal_leg.php?l=l&c=119,https://boe.es/rss/canal_leg.php?l=l&c=117,https://boe.es/rss/canal_leg.php?l=l&c=102,https://boe.es/rss/canal_leg.php?l=l&c=113,https://boe.es/rss/canal_leg.php?l=l&c=111,https://boe.es/rss/canal_leg.php?l=l&c=101,https://boe.es/rss/canal_leg.php?l=l&c=116,https://boe.es/rss/canal_leg.php?l=l&c=110,https://boe.es/rss/canal_leg.php?l=l&c=109,https://boe.es/rss/canal_leg.php?l=l&c=124,https://boe.es/rss/canal_leg.php?l=l&c=126,https://boe.es/rss/canal_leg.php?l=l&c=130,https://boe.es/rss/canal_leg.php?l=l&c=142,https://boe.es/rss/canal_leg.php?l=l&c=138,https://boe.es/rss/canal_leg.php?l=l&c=112,https://boe.es/rss/canal_leg.php?l=l&c=132,https://boe.es/rss/canal_leg.php?l=l&c=129,https://boe.es/rss/canal_leg.php?l=l&c=105,https://boe.es/rss/canal_leg.php?l=l&c=114",BoeRssSpider,boe.es,1,2,news,pdf,Spain
+"https://www.bostonglobe.com/,https://www.bostonglobe.com/business/?p1=BGHeader_MainNav,https://www.bostonglobe.com/business/healthcare/?p1=BGHeader_MainNav,https://www.bostonglobe.com/sports/?p1=BGHeader_MainNav,https://www.bostonglobe.com/lifestyle/?p1=BGHeader_MainNav",BostonGlobeSpider,bostonglobe.com,1,9,news,article,India
+"http://www.bqprime.com/,https://www.bqprime.com/the-latest?src=menu,https://www.bqprime.com/trending?src=menu",BqprimeSpider,bqprime.com,1,9,news,article,India
+https://brazilian.report/articles/,brazilianReportSpider,brazilian.report,1,2,news,article,Brazil
+https://www.brazzil.com/,brazzilSpider,brazzil.com,1,2,news,article,Brazil
+"https://www.brecorder.com/markets,https://www.brecorder.com/business-finance",BreCorderSpider,brecorder.com,1,2,news,article,Pakistan
+https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/Technische-Richtlinien/technische-richtlinien_node.html,BsiBundPdfSpider,bsi.bund.de,1,2,news,pdf,Germany
+https://www.btk.gov.tr/haberler,btkSpider,btk.gov.tr,1,2,news,article,Turkey
+https://www.bundesbank.de/en/bundesbank/organisation/gtc-and-legal-basis,BundesbankPdfSpider,bundesbank.de,1,2,news,pdf,Germany
+https://www.bundesfinanzministerium.de/Web/DE/Service/Gesetze_Gesetzesvorhaben/Gesetze_Gesetzgebungsvorhaben.html,BundesfinanzministeriumPdfSpider,bundesfinanzministerium.de,1,2,news,pdf,Germany
+https://www.bundeskartellamt.de/SiteGlobals/Forms/Suche/Entscheidungssuche_Formular.html?nn=3589950&cl2Categories_Format=Entscheidungen&cl2Categories_Arbeitsbereich=Fusionskontrolle&docId=3590288,BundeskartellamtPdfSpider,bundeskartellamt.de,1,2,news,pdf,Germany
+https://www.bundesnetzagentur.de/DE/Beschlusskammern/BDB/start.html,Bundesnetzagentur1PdfSpider,bundesnetzagentur.de,1,2,news,pdf,Germany
+https://www.bundesnetzagentur.de/DE/Beschlusskammern/EIS/2_RegVfg/EIS_RegVfg.html,Bundesnetzagentur2PdfSpider,bundesnetzagentur.de,1,2,news,pdf,Germany
+"https://www.business-standard.com/,https://www.business-standard.com/latest-news,https://www.business-standard.com/current-affairs,https://www.business-standard.com/markets,https://www.business-standard.com/education,https://www.business-standard.com/sports,https://www.business-standard.com/technology,https://www.business-standard.com/politics",BusinessStandardSpider,business-standard.com,1,9,news,article,India
+https://www.businesstodayegypt.com/Section/News/1/1,businesstodayegyptSpider,businesstodayegypt.com,1,2,news,article,Egypt
+"https://www.businesstoday.in/,https://www.businesstoday.in/latest,https://www.businesstoday.in/trending,https://www.businesstoday.in/industry,https://www.businesstoday.in/entrepreneurship,https://www.businesstoday.in/tech-today,https://www.businesstoday.in/auto,https://www.businesstoday.in/latest/politics",businesstodaySpider,businesstoday.in,1,9,news,article,India
+https://www.cabinet.gov.pk/Download,CabinetSpider,cabinet.gov.pk,1,2,news,pdf,Pakistan
+"https://www.ca.go.ke/about-us/statutes-regulations/sector-policy,https://www.ca.go.ke/about-us/statutes-regulations/sector-legislation,https://www.ca.go.ke/about-us/statutes-regulations/sector-regulations,https://www.ca.go.ke/about-us/statutes-regulations/sector-guidelines,https://www.ca.go.ke/about-us/statutes-regulations/rulings,https://www.ca.go.ke/about-us/statutes-regulations/determination",CaPdfSpider,ca.go.ke,1,2,news,pdf,Kenya
+https://www.capitalfm.co.ke/news/,capitalfmSpider,capitalfm.co.ke,1,2,news,article,Kenya
+https://carc.gov.jo/en/news,carcArticleSpider,carc.gov.jo,1,2,news,article,Jordan
+"https://carc.gov.jo/en/rules/19,https://carc.gov.jo/en/rules/20,https://carc.gov.jo/en/rules/21",CarcSpider,carc.gov.jo,1,2,news,pdf,Jordan
+https://www.caterermiddleeast.com/delivery,CatererMiddleeastSpider,caterermiddleeast.com,1,2,news,article,"Algeria,Bahrain,Egypt,Iraq,Jordan,Kuwait,Morocco,Oman,Palestine,Qatar,Saudi Arabia,United Arab Emirates"
+"https://www.cbc.ca/,https://www.cbc.ca/news/world,https://www.cbc.ca/kidsnews/",CbccaSpider,cbc.ca,1,9,news,article,India
+https://www.cbe.org.eg/en/BankingSupervision/Pages/Circulars.aspx,CbePaymentArticleSpider,cbe.org.eg,1,2,news,article,Egypt
+https://www.cbe.org.eg/en/PaymentSystems/Pages/Regulations.aspx,CbePaymentRegSpider,cbe.org.eg,1,2,news,reg_article,Egypt
+https://cbi.iq/news/section/67,CbiRegSpider,cbi.iq,1,2,news,pdf,Iraq
+"https://cbi.iq/page/80,https://cbi.iq/page/81,https://cbi.iq/page/99,https://cbi.iq/page/79",CbiSpider,cbi.iq,1,2,news,pdf,Iraq
+"https://www.cbn.gov.ng/documents/mpc.asp,https://www.cbn.gov.ng/Documents/BODcirculars.asp",cbnArticleSpider,cbn.gov.ng,1,2,news,article,Nigeria
+"https://www.cbn.gov.ng/documents/bsdcirculars.asp,https://www.cbn.gov.ng/documents/Monetarycreditguide.asp,https://www.cbn.gov.ng/Documents/PaymentsSystemGuidelines.asp",CbnSpider,cbn.gov.ng,1,2,news,pdf,Nigeria
+"https://www.ccd.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%86%D8%B8%D9%85%D8%A9,https://www.ccd.gov.jo/Ar/List/%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA_%D9%88%D8%A8%D9%84%D8%A7%D8%BA%D8%A7%D8%AA,https://www.ccd.gov.jo/Ar/List/%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%AA%D9%81%D8%B3%D9%8A%D8%B1%D9%8A%D8%A9_%D9%88%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%87%D8%A7%D8%AF_%D8%A7%D9%84%D9%82%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9,https://www.ccd.gov.jo/Ar/List/%D8%A7%D9%84%D9%82%D9%88%D8%A7%D9%86%D9%8A%D9%86",CcdGovSpider,ccd.gov.jo,1,2,news,pdf,Jordan
+"https://www.centralbank.ae/en/regulations/Other%20Notices,https://www.centralbank.ae/en/laws-and-regulations/regulations/other-licensed-institutions,https://www.centralbank.ae/en/laws-and-regulations/regulations/banking,https://www.centralbank.ae/en/laws-and-regulations/legislation",CentralBankOtherNoticeSpider,centralbank.ae,1,2,news,pdf,UAE
+"https://www.centralbank.go.ke/policy-procedures/legislation-and-guidelines,https://www.centralbank.go.ke/policy-procedures/licensing-procedures",CentralbankPdfSpider,centralbank.go.ke,1,2,news,pdf,Kenya
+"https://www.charlesrussellspeechlys.com/en/news-and-insights/insights/?Category=Offices%253eDubai&PageNo=1&PageSize=12&SortBy=Date%20DESC,https://www.charlesrussellspeechlys.com/en/news-and-insights/insights/?Category=Offices%253eDoha(Qatar)&PageNo=1&PageSize=12&SortBy=Date%20DESC,https://www.charlesrussellspeechlys.com/en/news-and-insights/insights/?Category=Offices%253eManama(Bahrain)&PageNo=1&PageSize=12&SortBy=Date%20DESC",CharlesRussellSpeechlysSpider,charlesrussellspeechlys.com,1,2,news,reg_article,United Arab Emirates
+https://www.citc.gov.sa/en/mediacenter/pressreleases/Pages/default.aspx,CitcSpider,citc.gov.sa,1,2,news,article,Saudi Arabia
+https://www.citizen.digital/news,citizenDigital,citizen.digital,1,2,news,article,Kenya
+https://www.clydeco.com/en/insights,ClydecoSpider,clydeco.com,1,2,news,reg_article,"Algeria, Bahrain, Egypt, Jordan, Morocco, Oman, Palestine, Qatar, Saudi Arabia, United Arab Emirates"
+"https://cma.org.sa/en/Market/News/Pages/default.aspx,https://cma.org.sa/en/MediaCenter/PR/Pages/default.aspx",cmaMarketNewsPagesSpider,cma.org.sa,1,2,news,article,Saudi Arabia
+"https://www.cma.or.ke/index.php/regulatory-frame-work/acts,https://www.cma.or.ke/index.php/regulatory-frame-work/regulations,https://www.cma.or.ke/index.php/regulatory-frame-work/guidelines",CmaPdfSpider,cma.or.ke,1,2,news,pdf,Kenya
+https://www.cnbc.com/pharmaceuticals/,CNBCSpider,cnbc.com,1,2,news,article,United Arab Emirates
+"https://www.cnbctv18.com,https://www.cnbctv18.com/latest-news,https://www.cnbctv18.com/economy/,https://www.cnbctv18.com/education/,https://www.cnbctv18.com/sports/,https://www.cnbctv18.com/technology/,https://www.cnbctv18.com/auto/,https://www.cnbctv18.com/travel/,https://www.cnbctv18.com/politics/,https://www.cnbctv18.com/entertainment/,https://www.cnbctv18.com/india/,https://www.cnbctv18.com/world/",CnbcTv18Spider,cnbctv18.com,1,9,news,article,India
+https://www.cnmv.es/Portal/legislacion/legislacion/reciente.aspx,CnmvPdfSpider,cnmv.es,1,2,news,pdf,Spain
+https://edition.cnn.com/cnn10,Cnn10Spider,cnn.com,1,9,news,article,India
+https://www.commerce.gov.pk/about-us/downloads,Commerce2Spider,commerce.gov.pk,1,2,news,pdf,Pakistan
+https://www.commerce.gov.dz/fr/avis,CommerceSpider,commerce.gov.dz,1,2,news,article,Algeria
+https://www.consultancy-me.com/country/palestine,ConsultancySpider,consultancy-me.com,1,2,news,article,Palestine
+https://www.coursupreme.dz/%D9%85%D9%86-%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AD%D9%83%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D9%84%D9%8A%D8%A7,CoursupremeSpider,coursupreme.dz,1,2,news,reg_article,Algeria
+https://www.cst.gov.sa/en/Decisionsoffers/Decisions/Pages/default.aspx?List=A280F9BD-B608-4DA8-8C38-3955A46A2358,CstRegSpider,cst.gov.sa,1,2,news,reg_article,Saudi Arabia
+https://www.culture.gouv.fr/Espace-documentation?search=&SearchButton=&types%5B%5D=Bulletin+officiel#content,CulturePdfSpider,culture.gouv.fr,1,2,news,pdf,France
+https://dailynewsegypt.com/category/politics/,DailynewsegyptSpider,dailynewsegypt.com,1,2,news,article,Egypt
+"https://dailypost.ng/hot-news/,https://dailypost.ng/politics/,https://dailypost.ng/metro/",dailypostNGSpider,dailypost.ng,1,2,news,article,Nigeria
+"https://dailytimesng.com/section/politics/,https://dailytimesng.com/section/business/,https://dailytimesng.com/section/tech/,https://dailytimesng.com/section/health/",dailytimesngSpider,dailytimesng.com,1,2,news,article,Nigeria
+"https://www.dawn.com/business,https://www.dawn.com/pakistan,https://www.dawn.com/tech",DawnSpider,dawn.com,1,2,news,article,Pakistan
+"https://www.dcdt.gov.za/documents/legislations/acts.html,https://www.dcdt.gov.za/documents/legislations/policies.html,https://www.dcdt.gov.za/documents/legislations/bills.html",DcdtPdfSpider,dcdt.co.za,1,2,news,pdf,South Africa
+"https://www.dcdt.gov.za/media-room/speeches/deputy-minister-s-speeches.html,https://www.dcdt.gov.za/media-room/speeches/minister-s-speech.html",dcdtSpider,dcdt.gov.za,1,2,news,article,South Africa
+"https://www.deccanchronicle.com/,https://www.deccanchronicle.com/most-popular,https://www.deccanchronicle.com/just-in,https://www.deccanchronicle.com/business,https://www.deccanchronicle.com/education,https://www.deccanchronicle.com/sports,https://www.deccanchronicle.com/science,https://www.deccanchronicle.com/technology,https://www.deccanchronicle.com/lifestyle,https://www.deccanchronicle.com/entertainment,https://www.deccanchronicle.com/nation,https://www.deccanchronicle.com/world",DeccanchronicleSpider,deccanchronicle.com,1,9,news,article,India
+"https://www2.deloitte.com/iq/en/industries/energy-resources-industrials.html?icid=top_energy-resources-industrials,https://www2.deloitte.com/xe/en/pages/public-sector/topics/mena-swf.html?icid=top_mena-swf,https://www2.deloitte.com/xe/en/pages/consumer-business/topics/consumer-products.html?icid=nav2_consumer-products,https://www2.deloitte.com/xe/en/pages/consumer-business/topics/transportation-hospitality-services.html?icid=nav2_transportation-hospitality-services,https://www2.deloitte.com/xe/en/pages/energy-and-resources/topics/power-and-utilities.html?icid=nav2_power-and-utilities",DeloitteSpider,deloitte.com,1,2,news,reg_article,"Turkey,Kuwait,Oman,Bahrain"
+"https://www.dffe.gov.za/legislation/guidelines,https://www.dffe.gov.za/legislation/gazetted_notices,https://www.dffe.gov.za/bills,https://www.dffe.gov.za/legislation/actsregulations",Dffe2Spider,dffe.gov.za,1,2,news,pdf,South Africa
+https://www.dffe.gov.za/legislation/publicnotices,DffePdfSpider,dffe.gov.za,1,2,news,pdf,South Africa
+"https://www.dffe.gov.za/media/speeches,https://www.dffe.gov.za/mediarelease",dffeSpider,dffe.gov.za,1,2,news,article,South Africa
+https://www.dfsa.ae/alerts,dfsaAlertsSpider,dfsa.ae,1,2,news,article,United Arab Emirates
+https://www.dha.com.tr/kurumsal/,DhaSpider,dha.com.tr,1,2,news,article,Turkey
+https://www.dhcc.ae/,DhccSpider,dhcc.ae,1,2,news,article,United Arab Emirates
+https://www.dhet.gov.za/SitePages/MediaRelease.aspx,dhetMediaReleaseSpider,dhet.gov.za,1,2,news,article,South Africa
+https://www.dhet.gov.za/SitePages/MidSpeeches.aspx,dhetMidSpeechesSpider,dhet.gov.za,1,2,news,article,South Africa
+https://www.difc.ae/newsroom/news/,difcSpider,difc.ae,1,2,news,article,United Arab Emirates
+https://www.diplomatie.ma/index.php/en/royal-activities,DiplomatieSpider,diplomatie.ma,1,2,news,article,Morocco
+http://www.dirco.gov.za/docs/index.html,dircoSpider,dirco.gov.za,1,2,news,article,South Africa
+https://dlp.dubai.gov.ae/en/Pages/LegislationSearch.aspx,DlpDubaiLegislationSpider,dlp.dubai.gov.ae,1,2,news,pdf,UAE
+https://www.dmcc.ae/free-zone/support/compliance-and-regulations,DmccSpider,dmcc.ae,1,2,news,pdf,UAE
+https://www.dm.gov.ae/media-center/spotlight/,DmGovSpider,dm.gov.ae,1,2,news,article,United Arab Emirates
+https://www.dmr.gov.za/news-room,dmrSpider,dmr.gov.za,1,2,news,article,South Africa
+"https://www.dnaindia.com,https://www.dnaindia.com/headlines",dnaindiaSpider,dnaindia.com,1,9,news,article,India
+"https://dohanews.co/category/science-technology/sustainability/,https://dohanews.co/category/science-technology/technology/",DohanewsSpider,dohanews.co,1,2,news,article,Qatar
+https://dpe.gov.za/news-resources,dpeSpider,dpe.gov.za,1,2,news,article,South Africa
+https://www.dpma.de/english/our_office/law/index.html,DpmaPdfSpider,dpma.de,1,2,news,pdf,Germany
+http://www.dsbd.gov.za/media-releases,dsbdArticleSpider,dsbd.gov.za,1,2,news,article,South Africa
+http://www.dsbd.gov.za/publications,dsbdPublicationsSpider,dsbd.gov.za,1,2,news,article,South Africa
+"http://www.dsbd.gov.za/gazetted-notices,http://www.dsbd.gov.za/acts-and-regulations",DsbdSpider,dsbd.gov.za,1,2,news,pdf,South Africa
+https://www.dubaichamber.com/whats-happening/news,dubaichamberWhatsHappeningNewsSpider,dubaichamber.com,1,2,news,article,United Arab Emirates
+"https://www.duvarenglish.com/science-tech,https://www.duvarenglish.com/economy",DuvarenglishSpider,duvarenglish.com,1,2,news,article,Turkey
+"https://www.economist.com/,https://www.economist.com/business,https://www.economist.com/science-and-technology,https://www.economist.com/international",economistSpider,economist.com,1,9,news,article,India
+"https://edition.cnn.com/world/india,https://edition.cnn.com/business,https://edition.cnn.com/sport,https://edition.cnn.com/specials/space-science,https://edition.cnn.com/business/tech,https://edition.cnn.com/style,https://edition.cnn.com/politics,https://edition.cnn.com/entertainment,https://edition.cnn.com/world",EditionSpider,cnn.com,1,9,news,article,India
+"https://www.education.gov.za/Newsroom/MediaReleases.aspx,https://www.education.gov.za/Resources/Legislation/CallforComments.aspx",educationArticleSpider,education.gov.za,1,2,news,article,South Africa
+"https://www.education.gov.za/Resources/Legislation/Regulations.aspx,https://www.education.gov.za/Resources/Legislation/GovernmentNotices.aspx,https://www.education.gov.za/Resources/Legislation/Acts.aspx",EducationSpider,education.gov.za,1,2,news,pdf,South Africa
+"https://efe.com/,https://efe.com/en/latest-news/",EfeSpider,efe.com,1,9,news,article,India
+https://egyptianstreets.com/category/business-technology/,EgyptianstreetsSpider,egyptianstreets.com,1,2,news,article,Egypt
+https://www.eipico.com.eg/NWS.aspx?name=Eipico2_news,eipicoSpider,eipico.com.eg,1,2,news,article,Egypt
+https://ekonomi.haber7.com/,EkonomiHaberSpider,haber7.com,1,2,news,article,Turkey
+https://www.elmundo.es/espana.html,ElmundoSpider,elmundo.es,1,2,news,article,Spain
+https://elpais.com/espana/,elpaisSpider,elpais.com,1,2,news,article,Spain
+"https://www.emaratalyoum.com/,https://www.emaratalyoum.com/business",EmaratalyoumSpider,emaratalyoum.com,1,2,news,article,United Arab Emirates
+https://emrc.gov.jo/Pages/viewpage?pageID=8,EmrcSpider,emrc.gov.jo,1,2,news,pdf,Jordan
+https://www.enec.gov.ae/news/latest-news/,enecSpider,enec.gov.ae,1,2,news,article,United Arab Emirates
+https://energy.go.ke/?page_id=292#tab-5ea8dbad91fc540861c,EnergyPdfSpider,energy.go.ke,1,2,news,pdf,Kenya
+"https://english.ahram.org.eg/Category/3/16/Business/Energy.aspx,https://english.ahram.org.eg/Category/3/14/Business/Markets--Companies.aspx,https://english.ahram.org.eg/Category/3/1239/Business/Tech.aspx,https://english.ahram.org.eg/Category/3/12/Business/Economy.aspx",EnglishAhramSpider,ahram.org.eg,1,2,news,article,Egypt
+"https://english.alarabiya.net/business/markets,https://english.alarabiya.net/business",englishAlarabiyaBusinessMarketsSpider,english.alarabiya.net,1,2,news,article,United Arab Emirates
+https://enterprise.press/blog/,enterpriseSpider,enterprise.press,1,2,news,article,Egypt
+"https://entrackr.com,https://entrackr.com/category/news/",EntrackrArticleSpider,entrackr.com,1,9,news,article,India
+https://entrepreneuralarabiya.com/category/%D8%A3%D8%B9%D9%85%D8%A7%D9%84/%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9/,EntrepreneuralarabiyaSpider,entrepreneuralarabiya.com,1,2,news,article,"Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, United Arab Emirates"
+"https://www.entrepreneur.com/topic/ride-sharing,https://www.entrepreneur.com/latest",EntrepreneurSpider,entrepreneur.com,1,2,news,article,United Arab Emirates
+"https://www.espncricinfo.com,https://www.espncricinfo.com/cricket-news",espncricinfoCSpider,espncricinfo.com,1,9,news,article,India
+"https://www.etvbharat.com/english/national/international,https://www.etvbharat.com/english/national/bharat,https://www.etvbharat.com/english/national/entertainment,https://www.etvbharat.com/english/national/sukhibhava,https://www.etvbharat.com/english/national/science-and-technology,https://www.etvbharat.com/english/national/business,https://www.etvbharat.com/english/national",EtvbharatArticleSpider,etvbharat.com,1,9,news,article,India
+https://www.euromoney.com/middle-east,EuromoneySpider,euromoney.com,1,2,news,article,United Arab Emirates
+https://www.fahr.gov.ae/Portal/en/media-center/fahr-news-updates.aspx,fahrSpider,fahr.gov.ae,1,2,news,article,United Arab Emirates
+https://www.fbr.gov.pk/pr,fbrSpider,fbr.gov.pk,1,2,news,article,Pakistan
+https://fca.gov.ae/EN/News/Pages/default.aspx,fcaSpider,fca.gov.ae,1,2,news,article,United Arab Emirates
+https://www.fia.gov.pk/press-pub#,fiaPkSpider,fia.gov.pk,1,2,news,article,Pakistan
+https://www.fia.gov.pk/laws,FiaSpider,fia.gov.pk,1,2,news,pdf,Pakistan
+http://ficc.org.iq/?cat=20,FiccOrgSpider,ficc.org.iq,1,2,news,reg_article,Iraq
+"https://www.fic.gov.za/samlit/Pages/default.aspx,https://www.fic.gov.za/media/Pages/General%20Notices.aspx,https://www.fic.gov.za/media/Pages/mediareleases.aspx",ficSpider,fic.gov.za,1,2,news,pdf,South Africa
+"https://www.financialafrik.com/category/finance/banques/,https://www.financialafrik.com/category/finance/banques/banques-assurances/,https://www.financialafrik.com/category/finance/bourses-et-marches/,https://www.financialafrik.com/category/secteurs/fintech-telecom/",FinancialafrikSpider,financialafrik.com,1,2,news,article,"Algeria, Egypt, Morocco"
+"https://www.financialexpress.com/india-news/,https://www.financialexpress.com/entertainment/,https://www.financialexpress.com/print/politics/,https://www.financialexpress.com/auto/,https://www.financialexpress.com/life/technology/,https://www.financialexpress.com/sports/,https://www.financialexpress.com/education-2/,https://www.financialexpress.com/healthcare/,https://www.financialexpress.com/industry/,https://www.financialexpress.com",FinancialexpressArticleSpider,financialexpress.com,1,9,news,article,India
+https://www.fintech-galaxy.com/media-center/news,fintechgalaxySpider,fintech-galaxy.com,1,2,news,article,United Arab Emirates
+"https://fintechnews.ae/bahrain/,https://fintechnews.ae/fintechegypt/,https://fintechnews.ae/kuwait/,https://fintechnews.ae/qatar/,https://fintechnews.ae/turkey/",Fintechnews2Spider,fintechnews.ae,1,2,news,article,"Bahrain,Egypt,Kuwait,Qatar,Turkey"
+https://fintechnews.africa/fintech-egypt/,fintechnewsSpider,fintechnews.africa,1,2,news,article,Egypt
+"https://www.firs.gov.ng/tax-circulars-regulations-and-public-notices,https://www.firs.gov.ng/tax-laws",FirsSpider,firs.gov.ng,1,2,news,pdf,Nigeria
+"https://www.firstpost.com,https://www.firstpost.com/category/sports,https://www.firstpost.com/tech/science,https://www.firstpost.com/tech/auto,https://www.firstpost.com/category/health,https://www.firstpost.com/category/politics,https://www.firstpost.com/category/entertainment,https://www.firstpost.com/category/india,https://www.firstpost.com/category/world",firstpostSpider,firstpost.com,1,9,news,article,India
+https://fiveonelabs.org/events,fiveonelabsSpider,fiveonelabs.org,1,2,news,article,Iraq
+https://www1.folha.uol.com.br/internacional/en/brazil/,folhaSpider,olha.uol.com.br,1,2,news,article,Brazil
+https://www.foxnews.com/category/world/world-regions/brazil,FoxNewsSpider,foxnews.com,1,2,news,article,Brazil
+"https://fra.gov.eg/%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA-%D8%B3%D8%AC%D9%84%D8%A7%D8%AA-%D8%B3%D9%88%D9%82-%D8%B1%D8%A3%D8%B3-%D8%A7%D9%84%D9%85%D8%A7%D9%84/,https://fra.gov.eg/%D8%AA%D8%B4%D8%B1%D9%8A%D8%B9%D8%A7%D8%AA-%D8%B9%D8%A7%D9%85%D8%A9-%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9/",FraCapitalSpider,fra.gov.eg,1,2,news,pdf,Egypt
+"https://www.freepressjournal.in/,https://www.freepressjournal.in/viral,https://www.freepressjournal.in/business,https://www.freepressjournal.in/education,https://www.freepressjournal.in/sports,https://www.freepressjournal.in/science,https://www.freepressjournal.in/tech,https://www.freepressjournal.in/featured-news,https://www.freepressjournal.in/entertainment,https://www.freepressjournal.in/india",FreePressJournalSpider,freepressjournal.in,1,9,news,article,India
+"https://frontline.thehindu.com/,https://frontline.thehindu.com/economy/,https://frontline.thehindu.com/the-nation/public-health/,https://frontline.thehindu.com/other/sport/,https://frontline.thehindu.com/environment/,https://frontline.thehindu.com/science-and-technology/,https://frontline.thehindu.com/other/travel/,https://frontline.thehindu.com/politics/,https://frontline.thehindu.com/arts-and-culture/cinema/,https://frontline.thehindu.com/the-nation/,https://frontline.thehindu.com/world-affairs/",FrontlineSpider,thehindu.com,1,9,news,article,India
+http://fsd-mena.org/news/,fsdmenaSpider,fsd-mena.org,1,2,news,article,"Egypt,Iraq,Jordan,Palestine"
+"https://www.ft.com/,https://www.ft.com/entrepreneurship,https://www.ft.com/technology,https://www.ft.com/life-arts",FtNdSpider,ft.com,1,9,news,article,India
+"https://www.ft.com/world/europe,https://www.ft.com/world/mideast,https://www.ft.com/cryptocurrencies,https://www.ft.com/companies/energy,https://www.ft.com/companies/financials",FtSpider,ft.com,1,2,news,article,"Germany,Italy"
+"https://gds.gov.iq/pm,https://gds.gov.iq/ca,https://gds.gov.iq/blogposts/",gdsPMSpider,gds.gov.iq,1,2,news,article,Iraq
+http://www.gesetze-im-internet.de/aktuDienst.html,GesetzeImInternetPdfSpider,gesetze-im-internet.de,1,2,news,pdf,Germany
+https://www.gfmag.com/topics/middle-east/,gfmagSpider,gfmag.com,1,2,news,article,United Arab Emirates
+"https://www.government.nl/documents?keyword=&start-date=&end-date=&issue=All+topics&element=All+ministries&type=Regulation,https://www.government.nl/documents?keyword=&start-date=&end-date=&issue=All+topics&element=All+ministries&type=Directive",Government2PdfSpider,government.nl,1,2,news,pdf,Netherlands
+https://www.government.nl/documents?keyword=&start-date=&end-date=&issue=All+topics&element=All+ministries&type=Decree,GovernmentPdfSpider,government.nl,1,2,news,pdf,Netherlands
+https://gpssa.gov.ae/ar/Pages/News.aspx#/,gpssaSpider,gpssa.gov.ae,1,2,news,article,"United Arab Emirates,Bahrain,Kuwait,Oman,Qatar,Saudi Arabia"
+"https://gulfbusiness.com/section/industry/,https://gulfbusiness.com/section/news/",GulfbusinessSpider,gulfbusiness.com,1,2,news,article,"Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, United Arab Emirates"
+https://www.gulf-insider.com/category/gcc-countries/,GulfinsiderSpider,gulf-insider.com,1,2,news,article,"Bahrain, Kuwait, Oman, Qatar, Saudi Arabia, Turkey, United Arab Emirates"
+"https://gulfnews.com/world/gulf/kuwait,https://gulfnews.com/world/gulf/bahrain",Gulfnews2Spider,gulfnews.com,1,2,news,article,"Kuwait,Bahrain"
+"https://gulfnews.com/business/markets,https://gulfnews.com/technology,https://gulfnews.com/business,https://gulfnews.com/uae/transport,https://gulfnews.com/uae/government",GulfNewsSpider,gulfnews.com,1,2,news,article,United Arab Emirates
+"https://www.gulf-times.com/stories/c/178/0/Qatar,https://www.gulf-times.com/stories/c/191/0/Business",GulftimesSpider,gulf-times.com,1,2,news,article,Qatar
+https://www.gulftoday.ae/news/world-news,GulftodaySpider,gulftoday.ae,1,9,news,article,India
+https://hawlati.co/economy?page=1,hawlatiSpider,hawlati.co,1,2,news,article,Iraq
+https://www.health.gov.za/public-comments-on-regulations,Health2Spider,health.gov.za,1,2,news,pdf,South Africa
+https://healthalert.gov.bh/en/category/latest-decisions,HealthAlertSpider,healthalert.gov.bh,1,2,news,article,Bahrain
+https://www.healthcareitnews.com/emea,HealthcareitnewsSpider,healthcareitnews.com,1,2,news,article,"Algeria, Bahrain, Egypt, Germany, Iraq, Italy, Jordan, Kuwait, Morocco, Oman, Pakistan, Palestine, Qatar, Saudi Arabia, Turkey, United Arab Emirates"
+https://www.health.go.ke/resources/guidelines-and-manuals,HealthPdfSpider,health.go.ke,1,2,news,pdf,Kenya
+https://www.health.gov.za/press-statement,healthPressStatementSpider,health.gov.za,1,2,news,article,South Africa
+https://www.health.gov.za/speeches,healthSpeechesSpider,health.gov.za,1,2,news,article,South Africa
+"https://www.health.gov.za/general-notices,https://www.health.gov.za/policies-and-guidelines",HealthSpider,health.gov.za,1,2,news,pdf,South Africa
+"https://www.hindustantimes.com/,https://www.hindustantimes.com/latest-news,https://www.hindustantimes.com/trending,https://www.hindustantimes.com/business,https://www.hindustantimes.com/education,https://www.hindustantimes.com/sports,https://www.hindustantimes.com/science,https://www.hindustantimes.com/technology,https://www.hindustantimes.com/car-bike,https://www.hindustantimes.com/lifestyle,https://www.hindustantimes.com/elections,https://www.hindustantimes.com/entertainment,https://www.hindustantimes.com/india-news,https://www.hindustantimes.com/world-news",HindustanTimesSpider,hindustantimes.com,1,9,news,article,India
+https://hrsd.gov.sa/ar/decisions,HrsdSpider,hrsd.gov.sa,1,2,news,pdf,Saudi Arabia
+"https://tech.hindustantimes.com/,https://tech.hindustantimes.com/latest-news,https://tech.hindustantimes.com/tech/news",HttechSpider,hindustantimes.com,1,9,news,article,India
+https://www.huffingtonpost.es/noticias/,huffingtonpostSpider,huffingtonpost.es,1,2,news,article,Spain
+"https://www.huffpost.com/,https://www.huffpost.com/impact/business,https://www.huffpost.com/section/health,https://www.huffpost.com/impact/green,https://www.huffpost.com/life/,https://www.huffpost.com/news/politics,https://www.huffpost.com/entertainment/,https://www.huffpost.com/news/world-news",huffpostSpider,huffpost.com,1,9,news,article,India
+https://hukoomi.gov.qa/en/laws,HukoomiSpider,hukoomi.gov.qa,1,2,news,pdf,Qatar
+"https://hwnews.in/,https://hwnews.in/category/news/business-finance/,https://hwnews.in/category/news/national/,https://hwnews.in/category/news/international/",hwnewsInSpider,hwnews.in,1,9,news,article,India
+https://www.iam.ma/groupe-maroc-telecom/communication-financiere/information-reglementee/communiques-de-presse.aspx,IamMaSpider,iam.ma,1,2,news,article,Morocco
+"https://ina.iq/eng/economy/,https://ina.iq/eng/politics",inaEconomySpider,ina.iq,1,2,news,article,Iraq
+"https://www.independent.co.uk/news/world,https://www.independent.co.uk/news/health,https://www.independent.co.uk/sport,https://www.independent.co.uk/climate-change,https://www.independent.co.uk/news/science,https://www.independent.co.uk/space,https://www.independent.co.uk/life-style,https://www.independent.co.uk/news/world,https://www.independent.co.uk/asia",IndependentArticleSpider,independent.co.uk,1,9,news,article,India
+"https://independent.ng/category/news/,https://independent.ng/category/politics/,https://independent.ng/category/business/",independentNGSpider,independent.ng,1,2,news,article,Nigeria
+"https://indianexpress.com/,https://indianexpress.com/latest-news/,https://indianexpress.com/section/trending/,https://indianexpress.com/section/business/,https://indianexpress.com/section/lifestyle/health/,https://indianexpress.com/section/education/,https://indianexpress.com/section/sports/,https://indianexpress.com/section/technology/science/,https://indianexpress.com/section/technology/,https://indianexpress.com/section/lifestyle/,https://indianexpress.com/section/political-pulse/,https://indianexpress.com/section/entertainment/,https://indianexpress.com/section/india/,https://indianexpress.com/section/world/",IndianExpressSpider,indianexpress.com,1,9,news,article,India
+"https://www.india.com/,https://www.india.com/latest-news/,https://www.india.com/viral/,https://www.india.com/business/,https://www.india.com/health/,https://www.india.com/education/,https://www.india.com/sports/,https://www.india.com/technology/,https://www.india.com/car-and-bike/,https://www.india.com/lifestyle/,https://www.india.com/entertainment/,https://www.india.com/news/world/",IndiaSpider,india.com,1,9,news,article,India
+"https://www.indiatoday.in/,https://www.indiatoday.in/trending-news,https://www.indiatoday.in/business,https://www.indiatoday.in/health,https://www.indiatoday.in/education-today,https://www.indiatoday.in/sports,https://www.indiatoday.in/environment,https://www.indiatoday.in/science,https://www.indiatoday.in/technology,https://www.indiatoday.in/auto,https://www.indiatoday.in/lifestyle,https://www.indiatoday.in/showbuzz,https://www.indiatoday.in/india,https://www.indiatoday.in/world",IndiaTodaySpider,indiatoday.in,1,9,news,article,India
+"https://www.indiatvnews.com/,https://www.indiatvnews.com/latest-news,https://www.indiatvnews.com/trending,https://www.indiatvnews.com/topic/breaking-news,https://www.indiatvnews.com/business,https://www.indiatvnews.com/health,https://www.indiatvnews.com/education,https://www.indiatvnews.com/sports,https://www.indiatvnews.com/science,https://www.indiatvnews.com/technology,https://www.indiatvnews.com/auto,https://www.indiatvnews.com/lifestyle,https://www.indiatvnews.com/politics,https://www.indiatvnews.com/entertainment,https://www.indiatvnews.com/india,https://www.indiatvnews.com/world",IndiaTVSpider,indiatvnews.com,1,9,news,article,India
+https://www.industrialization.go.ke/index.php/policies,IndustrializationPdfSpider,industrialization.go.ke,1,2,news,pdf,Kenya
+https://www.insidescience.org,insidescienceSpider,insidescience.org,1,9,news,article,India
+https://www.interior.go.ke/resources/#tab-c0f285bd9bc2108331b,InteriorPdfSpider,interior.go.ke,1,2,news,pdf,Kenya
+"https://www.interior.gov.bh/en/media-center/news/npra,https://www.interior.gov.bh/en/media-center/news/police-media-center",InteriorSpider,interior.gov.bh,1,2,news,article,Bahrain
+https://iraqbritainbusiness.org/news-list,IraqbritainbusinessSpider,iraqbritainbusiness.org,1,2,news,article,Iraq
+https://www.ita.gov.om/itaportal/MediaCenter/News.aspx,itaSpider,ita.gov.om,1,2,news,article,Oman
+https://itida.gov.eg/English/MediaCenter/News/Pages/default.aspx,itidaSpider,itida.gov.eg,1,2,news,article,Egypt
+http://www.jfda.jo/Pages/viewpage.aspx?pageID=203,JfdaJoSpider,jfda.jo,1,2,news,article,Jordan
+https://jma.gov.jo/en/regulations-and-laws/jmc-regulations,JmaSpider,jma.gov.jo,1,2,news,pdf,Jordan
+https://www.jordannews.jo/Category/5/Business,JordannewsSpider,jordannews.jo,1,2,news,article,Jordan
+https://www.jordantimes.com/news/business,JordantimesSpider,jordantimes.com,1,2,news,article,Jordan
+https://www.jsc.gov.jo/NewsGroup/en/board_decisions,Jsc2Spider,jsc.gov.jo,1,2,news,pdf,Jordan
+https://www.jsc.gov.jo/NewsGroup/en/circulars#,JscArticleSpider,jsc.gov.jo,1,2,news,article,Jordan
+"https://www.jsc.gov.jo/Links2/en/laws,https://www.jsc.gov.jo/Links2/en/Regulations,https://www.jsc.gov.jo/Links2/en/regulatory_decisions,https://www.jsc.gov.jo/Links2/en/islamic_sukuk_regulating_legislations,https://www.jsc.gov.jo/Links2/en/instructions,https://www.jsc.gov.jo/NewsGroup/en/board_decisions",JscSpider,jsc.gov.jo,1,2,news,pdf,Jordan
+https://www.jse.co.za/news?field_article_type_value=market,jseArticleSpider,jse.co.za,1,2,news,article,South Africa
+"https://www.jse.co.za/regulation/markets-regulation/market-regulation,https://www.jse.co.za/regulation/companies-issuer-regulation",JseSpider,jse.co.za,1,2,news,pdf,South Africa
+https://www.justice.gov.za/legislation/acts/acts_full.html,Justice2Spider,justice.gov.za,1,2,news,pdf,South Africa
+"https://justice.gov.ng/category/aviation-news,https://justice.gov.ng/category/justice-bulletin,https://justice.gov.ng/category/law-reports",justiceArticleSpider,justice.gov.ng,1,2,news,article,Nigeria
+https://justice.gov.ng/category/executive-order,JusticePdfSpider,justice.gov.ng,1,2,news,pdf,Nigeria
+https://www.justice.gov.za/legislation/notices/notice_list.html,JusticeSpider,justice.gov.za,1,2,news,pdf,South Africa
+https://www.kbc.co.ke/category/1/news,kbcSpider,kbc.co.ke,1,2,news,article,Kenya
+"https://www.khaleejtimes.com/business/telecom,https://www.khaleejtimes.com/business/markets,https://www.khaleejtimes.com/uae",KhaleejtimesSpider,khaleejtimes.com,1,2,news,article,United Arab Emirates
+https://kids.nationalgeographic.com,KidsnatgeoSpider,nationalgeographic.com,1,9,news,article,India
+"https://knnindia.co.in/home,https://knnindia.co.in/news/latestarticles,https://knnindia.co.in/news/topnews",KnnindiaSpider,knnindia.co.in,1,9,news,article,India
+https://home.kpmg/bh/en/home/insights.html,KpmgBahrainSpider,home.kpmg,1,2,news,reg_article,Bahrain
+https://home.kpmg/eg/en/home/insights0.html,KpmgEgyptSpider,home.kpmg,1,2,news,reg_article,Egypt
+https://home.kpmg/de/en/home/insights.html,KpmgGermanySpider,home.kpmg,1,2,news,reg_article,Germany
+https://home.kpmg/it/it/home/insights.html,KpmgItalySpider,home.kpmg,1,2,news,reg_article,Italy
+https://home.kpmg/jo/en/home/insights.html,KpmgJordanSpider,home.kpmg,1,2,news,reg_article,Jordan
+https://home.kpmg/kw/en/home/insights.html,KpmgKuwaitSpider,home.kpmg,1,2,news,reg_article,Kuwait
+https://home.kpmg/om/en/home/insights.html,KpmgOmanSpider,home.kpmg,1,2,news,reg_article,Oman
+https://home.kpmg/pk/en/home/insights.html,KpmgPakistanSpider,home.kpmg,1,2,news,reg_article,Pakistan
+https://home.kpmg/qa/en/home/insights.html,KpmgQatarSpider,home.kpmg,1,2,news,reg_article,Qatar
+https://home.kpmg/sa/en/home/insights.html,KpmgSaudiSpider,home.kpmg,1,2,news,reg_article,Saudi Arabia
+https://home.kpmg/tr/en/home/insights.html,KpmgTurkeySpider,home.kpmg,1,2,news,reg_article,Turkey
+https://home.kpmg/ae/en/home/insights.html,KpmgUaeSpider,home.kpmg,1,2,news,reg_article,UAE
+https://www.kuna.net.kw/GeoCategories.aspx?id=201&language=en&new=1,KunaSpider,kuna.net.kw,1,2,news,article,Kuwait
+"https://kurdsatenglish.com/Category.aspx?MapID=2,https://kurdsatenglish.com/Category.aspx?MapID=7,https://kurdsatenglish.com/Category.aspx?MapID=1",kurdsatenglishCategoryIraqSpider,kurdsatenglish.com,1,2,news,article,Iraq
+"https://www.kuwaittimes.com,https://www.kuwaittimes.com/category/kuwait/coronavirus-in-kuwait/,https://www.kuwaittimes.com/category/kuwait/crime/,https://www.kuwaittimes.com/category/kuwait/other-news/,https://www.kuwaittimes.com/category/kuwait/politics/",KuwaittimesSpider,kuwaittimes.com,1,2,news,article,Kuwait
+https://labour.gov.ng/press-release,labourNGSpider,labour.gov.ng,1,2,news,article,Nigeria
+https://labour.gov.ng/resources,LabourPdfSpider,labour.gov.ng,1,2,news,pdf,Nigeria
+"https://www.labour.gov.za/media-desk/speeches,https://www.labour.gov.za/Media-Desk/Media-Statements/Pages/media-statements.aspx,https://www.labour.gov.za/media-desk/media-alerts/Pages/Media-Alerts.aspx",labourSpider,labour.gov.za,1,2,news,article,South Africa
+https://laboursp.go.ke/downloads,LabourspPdfSpider,laboursp.go.ke,1,2,news,pdf,Kenya
+"https://www.latestly.com,https://www.latestly.com/headlines/,https://www.latestly.com/social-viral/,https://www.latestly.com/business/,https://www.latestly.com/sports/,https://www.latestly.com/technology/,https://www.latestly.com/auto/,https://www.latestly.com/lifestyle/,https://www.latestly.com/entertainment/,https://www.latestly.com/india/,https://www.latestly.com/world/",LatestlySpider,latestly.com,1,9,news,article,India
+https://www.maf.gov.om/MediaCenter/News,MafSpider,maf.gov.om,1,2,news,article,Oman
+https://magnitt.com/news/,magnittSpider,magnitt.com,1,2,news,article,"Algeria,Bahrain,Egypt,Iraq,Jordan,Kuwait,Morocco,Oman,Pakistan,Palestine,Qatar,Saudi Arabia,Turkey,United Arab Emirates"
+https://www.maqamlaw.com/articles-and-news,MaqamLawSpider,maqamlaw.com,1,2,news,reg_article,Palestine
+"http://marocgazette.com/search-category-10,http://marocgazette.com/search-category-11,http://marocgazette.com/search-category-4,http://marocgazette.com/search-category-8,http://marocgazette.com/search-category-3,http://marocgazette.com/search-category-7,http://marocgazette.com/search-category-6",marocgazetteTECHNOLOGYSpider,marocgazette.com,1,2,news,article,Morocco
+"https://mashable.com/,https://mashable.com/science",mashableSpider,mashable.com,1,9,news,article,India
+https://www.mcinet.gov.ma/en/news,McinetSpider,mcinet.gov.ma,1,2,news,article,Morocco
+"https://www.mcit.gov.qa/en/legislations-and-policies/laws/all,https://www.mcit.gov.qa/en/legislations-and-policies/policies/all",McitqaSpider,mcit.gov.qa,1,2,news,pdf,Qatar
+https://mcit.gov.eg/en/TeleCommunications/Regulations/Rules_and_Regulations,McitRulesAndRegulationsSpider,mcit.gov.eg,1,2,news,pdf,Egypt
+https://mcit.gov.eg/en/Media_Center/Latest_News/News,mcitSpider,mcit.gov.eg,1,2,news,article,Egypt
+https://www.mealc.org/blog,MealcSpider,mealc.org,1,2,news,reg_article,"Algeria, Bahrain, Egypt, Jordan, Morocco, Oman, Palestine, Qatar, Saudi Arabia, United Arab Emirates"
+https://www.media.gov.sa/en/news,mediaGovSaNewsSpider,media.gov.sa,1,2,news,article,Saudi Arabia
+https://medicalxpress.com/,MedicalxpressArticleSpider,medicalxpress.com,1,9,news,article,India
+https://www.menabytes.com/,menabytesSpider,menabytes.com,1,2,news,article,Saudi Arabia
+https://en.mercopress.com/brazil,mercopressSpider,mercopress.com,1,2,news,article,Brazil
+https://www.mewa.gov.sa/ar/MediaCenter/News/Pages/Home.aspx,mewaMediaCenterNewsPagesHomeSpider,mewa.gov.sa,1,2,news,article,Saudi Arabia
+"https://www.mid-day.com/,https://www.mid-day.com/news/world-news/articles,https://www.mid-day.com/lifestyle/health-and-fitness/,https://www.mid-day.com/sports/,https://www.mid-day.com/lifestyle/,https://www.mid-day.com/entertainment/,https://www.mid-day.com/news/india-news/,https://www.mid-day.com/news/world-news/",midDaySpider,mid-day.com,1,9,news,article,India
+https://miepeec.gov.ma/mtip-espace-travail/ministere-emploi-legislation-et-reglementations/?lang=en,Miepeec2Spider,miepeec.gov.ma,1,2,news,pdf,Morocco
+https://miepeec.gov.ma/ministere-emploi-actualites/?lang=en,MiepeecSpider,miepeec.gov.ma,1,2,news,article,Morocco
+"https://mintgenie.livemint.com,https://mintgenie.livemint.com/latest-news,https://mintgenie.livemint.com/trending-news",MintgenieSpider,livemint.com,1,9,news,article,India
+"https://www.livemint.com,https://www.livemint.com/latest-news,https://www.livemint.com/mostpopular,https://www.livemint.com/industry,https://www.livemint.com/companies/start-ups,https://lifestyle.livemint.com/health,https://www.livemint.com/education,https://www.livemint.com/sports,https://www.livemint.com/science,https://www.livemint.com/technology,https://lifestyle.livemint.com/how-to-lounge/movies-tv,https://www.livemint.com/politics,https://www.livemint.com/news/india,https://www.livemint.com/news/world",MintSpider,livemint.com,1,9,news,article,India
+"https://www.mitma.es/transporte_terrestre/normativa-vigente-en-materia-de-transporte-terrestre/normativa_transporte_por_carretera,https://www.mitma.es/transporte_terrestre/normativa-vigente-en-materia-de-transporte-terrestre/normativa_transporte_por_ferrocarril,https://www.mitma.es/transporte_terrestre/normativa-vigente-en-materia-de-transporte-terrestre/normativa_carretera_y_ferrocarril",MitmaArticleSpider,mitma.es,1,2,news,pdf,Spain
+"https://www.mjusticia.gob.es/en/areas-tematicas/actividad-legislativa/normativa/normas-aprobadas-actual-legislatura/ordenes-ministeriales,https://www.mjusticia.gob.es/en/areas-tematicas/actividad-legislativa/normativa/normas-aprobadas-actual-legislatura/reales-decretos,https://www.mjusticia.gob.es/en/areas-tematicas/actividad-legislativa/normativa/normas-aprobadas-actual-legislatura/disposiciones-legales",MjusticiaPdfSpider,mjusticia.gob.es,1,2,news,pdf,Spain
+https://www.mlsd.gov.bh/media/news,MlsdSpider,mlsd.gov.bh,1,2,news,article,Bahrain
+"https://www.mocc.gov.pk/Detail/ZDJmNDFmYzItY2RhNy00N2VmLWI4N2EtYjg5NjJjMjE3NDg1,https://www.mocc.gov.pk/Detail/MDUzMDI1OGItYWYzZC00NzQ0LTlhZWItZjYzY2RkOTkyZGVh",MoccSpider,mocc.gov.pk,1,2,news,pdf,Pakistan
+https://mod.gov.pk/Detail/ZGRlZTMwMzktZDg5Yy00OWFjLTkyNTYtZWU5ZDI0ZjExY2Uw,Mod1Spider,mod.gov.pk,1,2,news,pdf,Pakistan
+https://mod.gov.ae/category/news/,ModAeSpider,mod.gov.ae,1,2,news,article,United Arab Emirates
+https://www.mod.gov.eg/ModWebSite/News.aspx,ModEgSpider,mod.gov.eg,1,2,news,article,Egypt
+https://mod.gov.pk/Detail/OGVlOTIxZGEtYTllNy00ODI0LWFiMjUtZGM3M2RhYWZlZWZj,ModPkSpider,mod.gov.pk,1,2,news,article,Pakistan
+https://www.mod.gov.eg/ModWebSite/News.aspx,modSpider,mod.gov.eg,1,2,news,article,Egypt
+https://www.moec.gov.ae/en/news,moecSpider,moec.gov.ae,1,2,news,article,United Arab Emirates
+https://moen.gov.iq/%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%85%D9%8A/%D8%A2%D8%AE%D8%B1-%D8%A7%D9%84%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1,moenSpider,moen.gov.iq,1,2,news,article,Iraq
+https://www.mofa.gov.bh/Default.aspx?tabid=65&language=en-US,MofaBhSpider,mofa.gov.bh,1,2,news,article,Bahrain
+https://www.mofaic.gov.ae/en/MediaHub/news,mofaicSpider,mofaic.gov.ae,1,2,news,article,United Arab Emirates
+https://mofa.gov.iq/news-archives,mofaIQSpider,mofa.gov.iq,1,2,news,article,Iraq
+https://www.mofa.gov.qa/en/all-mofa-news,mofaSpider,mofa.gov.qa,1,2,news,article,Qatar
+"https://www.mof.gov.ae/layouts/15/feed.aspx?xsl=1&web=%2Fen&page=40f1af03-bd05-454f-9259-4ff3f108cee7&wp=0313e0b2-b86a-45fc-bddb-01f61c37a72d&pageurl=%2Fen%2FPages%2FRSSOpenData%2E.aspx,https://www.mof.gov.ae/_layouts/15/feed.aspx?xsl=1&web=/en&page=02985a97-061a-4409-8151-b80baa725e4b&wp=1832b039-0164-4b7b-8e56-17f51d36d9f6&pageurl=/en/Pages/RSSViewer.aspx",MofSpider,mof.gov.ae,1,2,news,article,United Arab Emirates
+https://mohap.gov.ae/en/media-center#news,MohapSpider,mohap.gov.ae,1,2,news,article,United Arab Emirates
+https://www.moh.gov.bh/News,MohBhSpider,moh.gov.bh,1,2,news,article,Bahrain
+"https://mohe.gov.jo/EN/List/Laws,https://mohe.gov.jo/EN/List/Regulations",MoheSpider,mohe.gov.jo,1,2,news,pdf,Jordan
+https://www.mohre.gov.ae/en/media-center/news.aspx,mohreSpider,mohre.gov.ae,1,2,news,article,United Arab Emirates
+"https://www.moh.gov.sa/Ministry/MediaCenter/News/Pages/default.aspx,https://www.moh.gov.sa/Ministry/MediaCenter/Ads/Pages/default.aspx",MohSaSpider,moh.gov.sa,1,2,news,article,Saudi Arabia
+https://www.moh.gov.bh/Ministry/HealthLaw,MohSpider,moh.gov.bh,1,2,news,pdf,Bahrain
+http://www.moib.gov.pk/Pages/15/Media-laws-Rules,MoibSpider,moib.gov.pk,1,2,news,pdf,Pakistan
+https://www.moin.gov.jo/ar/category/%D8%A7%D9%84%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1,MoinGovArticleSpider,moin.gov.jo,1,2,news,article,Jordan
+https://www.moin.gov.jo/ar/investment-regulations-2,MoinGovSpider,moin.gov.jo,1,2,news,pdf,Jordan
+https://www.moi.gov.om/ar-om/news/1,MoiOmSpider,moi.gov.om,1,2,news,article,Oman
+"https://www.moitt.gov.pk/Detail/Y2VjM2U3YzMtM2I0YS00Nzc2LThmZTAtMzNhMGY2OTZjZmI3,https://www.moitt.gov.pk/Detail/Mzg0M2I4NzctMjE1ZS00ZGM0LTkyNmItMDViODFhZjE4Njhk,https://www.moitt.gov.pk/Detail/MTBmMGQ3NDItOWM2Mi00N2M0LWE1ZGUtMjRlNWJlOGYwZGU0",MoittSpider,moitt.gov.pk,1,2,news,pdf,Pakistan
+https://moj.gov.iq/news,moj2Spider,moj.gov.iq,1,2,news,article,Iraq
+https://moj.gov.iq/iraqmagen,MojSpider,moj.gov.iq,1,2,news,pdf,Iraq
+https://www.momp.gov.eg/Ar/NewsAll.aspx?Type=News,mompSpider,momp.gov.eg,1,2,news,article,Egypt
+"https://www.moneycontrol.com/,https://www.moneycontrol.com/news/trends/",MoneyControlSpider,moneycontrol.com,1,9,news,article,India
+https://portail.tax.gov.ma/wps/portal/DGI/Documentation-fiscale/Arretes,MoroccoGeneralTaxSpider,portail.tax.gov.ma,1,2,news,pdf,Morocco
+https://portail.tax.gov.ma/wps/portal/DGI/Documentation-fiscale/Taxes-locales,MoroccoLocalTaxesSpider,portail.tax.gov.ma,1,2,news,pdf,Morocco
+https://portail.tax.gov.ma/wps/portal/DGI/Documentation-fiscale/Notes-circulaires,MoroccoNotesCirculairesSpider,portail.tax.gov.ma,1,2,news,article,Morocco
+https://portail.tax.gov.ma/wps/portal/DGI/Documentation-fiscale/Taxe-sur-les-contrats-d_assurances,MoroccoTicSpider,portail.tax.gov.ma,1,2,news,pdf,Morocco
+https://www.moss.gov.eg/ar-eg/Pages/news.aspx,mossSpider,moss.gov.eg,1,2,news,article,Egypt
+http://www.mot.gov.ps/category/news/,motSpider,mot.gov.ps,1,2,news,article,Palestine
+"https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=1914&PID=6516&LID=240,https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=1914&PID=4730&LID=240",MtcitCybercrimeSpider,ita.gov.om,1,2,news,pdf,Oman
+https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=2187&PID=389176,MtcitFinalSpider,ita.gov.om,1,2,news,pdf,Oman
+"https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=2187&PID=389157,https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=2811&PID=388815,https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=2811&PID=388853,https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=2811&PID=388834,https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=2811&PID=388872,https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=2733&PID=388720",MtcitFrameworksSpider,mtcit.gov.om,1,2,news,pdf,Oman
+"https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=2187&PID=389214,https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=2187&PID=389138,https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=2187&PID=389195",MtcitICTGovernanceSpider,mtcit.gov.om,1,2,news,pdf,Oman
+https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=2733&PID=388777,MtcitLandTransportAgreementsSpider,mtcit.gov.om,1,2,news,pdf,Oman
+"https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=2733&PID=388758,https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=2733&PID=388739",MtcitLandTransportRegulationsSpider,mtcit.gov.om,1,2,news,pdf,Oman
+https://www.mtcit.gov.om/ITAPortal/MediaCenter/News.aspx,MtcitSpider,mtcit.gov.om,1,2,news,article,Oman
+"https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=1914&PID=389518,https://mtcit.gov.om/ITAPortal_AR/Pages/Page.aspx?NID=1914&PID=389100",MtcitTelecosSpider,mtcit.gov.om,1,2,news,pdf,Oman
+https://mtt.gov.bh/news-center,MttSpider,mtt.gov.bh,1,2,news,article,Bahrain
+"https://mwi.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%86%D8%B8%D9%85%D8%A9,https://mwi.gov.jo/Ar/List/%D8%A7%D9%84%D9%82%D9%88%D8%A7%D9%86%D9%8A%D9%86",MwiPdfSpider,mwi.gov.jo,1,2,news,pdf,Jordan
+"https://www.mykhel.com/,https://www.mykhel.com/cricket/,https://www.mykhel.com/football/",MykhelSpider,mykhel.com,1,9,news,article,India
+"https://www.nafdac.gov.ng/resources/guidelines,https://www.nafdac.gov.ng/resources/nafdac-regulations",NafdacSpider,nafdac.gov.ng,1,2,news,pdf,Nigeria
+https://na.gov.pk/en/bills.php?type=1,NaPkBillsSpider,na.gov.pk,1,2,news,pdf,Pakistan
+https://na.gov.pk/en/bills.php?status=majlis,NaPkMAJLISSpider,na.gov.pk,1,2,news,pdf,Pakistan
+https://na.gov.pk/en/bills.php?status=pass,NaPkPassBillsSpider,na.gov.pk,1,2,news,pdf,Pakistan
+https://na.gov.pk/en/acts-tenure.php,NaPkSpider,na.gov.pk,1,2,news,pdf,Pakistan
+https://nation.africa/kenya,nationAfricaSpider,nation.africa,1,2,news,article,Kenya
+"https://www.nbcnews.com/,https://www.nbcnews.com/latest-stories/,https://www.nbcnews.com/business,https://www.nbcnews.com/health,https://www.nbcnews.com/science,https://www.nbcnews.com/tech-media",NbcNewsSpider,nbcnews.com,1,9,news,article,India
+https://www.ncc.gov.ng/media-centre/public-notices,nccArticleSpider,ncc.gov.ng,1,2,news,article,Nigeria
+https://www.ncc.gov.sa/en/MediaCenter/News/Pages/default.aspx,nccMediaCenterNewsPagesSpider,ncc.gov.sa,1,2,news,article,Saudi Arabia
+"https://www.ncc.gov.ng/licensing-regulation/legal/determinations,https://www.ncc.gov.ng/licensing-regulation/legal/guidelines,https://www.ncc.gov.ng/licensing-regulation/legal/regulations",NccSpider,ncc.gov.ng,1,2,news,pdf,Nigeria
+https://ncdc.gov.ng/news/press,ncdcArticleSpider,ncdc.gov.ng,1,2,news,article,Nigeria
+https://ncdc.gov.ng/diseases/guidelines,NcdcSpider,ncdc.gov.ng,1,2,news,pdf,Nigeria
+https://www.ncema.gov.ae/en/media-center/news.aspx#page=1,ncemaSpider,ncema.gov.ae,1,2,news,article,United Arab Emirates
+https://ncm.gov.sa/Ar/MediaCenter/News/Pages/default.aspx,ncmSpider,ncm.gov.sa,1,2,news,article,Saudi Arabia
+https://www.ncr.org.za/index.php/latest-news,ncrArticleSpider,ncr.org.za,1,2,news,article,South Africa
+https://www.ncr.org.za/index.php/publications/circulars,ncrCircularsArticlesSpider,ncr.org.za,1,2,news,article,South Africa
+"https://www.ncr.org.za/index.php/act/download-the-act,https://www.ncr.org.za/index.php/publications/guidelines",NcrSpider,ncr.gov.za,1,2,news,pdf,South Africa
+"https://www.ndtv.com/,https://www.ndtv.com/latest,https://www.ndtv.com/trends,https://www.ndtv.com/trends/most-popular-news,https://www.ndtv.com/business#pfrom=home-business_header-globalnav,https://doctor.ndtv.com/#pfrom=ndtv-globalnav,https://www.ndtv.com/education,https://www.ndtv.com/science,https://www.carandbike.com/#pfrom=swirlster-globalnav,https://swirlster.ndtv.com/#pfrom=ndtv-globalnav,https://www.ndtv.com/india,https://www.ndtv.com/world-news",NDTVSpider,ndtv.com,1,9,news,article,India
+"https://nerc.gov.ng/index.php/media-library/public-notices,https://nerc.gov.ng/index.php/media-library/press-releases",nercArticleSpider,nerc.gov.ng,1,2,news,article,Nigeria
+"https://nerc.gov.ng/index.php/library/documents/NERC-Orders,https://nerc.gov.ng/index.php/library/documents/NERC-Decisions-and-Rulings,https://nerc.gov.ng/index.php/library/documents/Codes-Standards-and-Manuals,https://nerc.gov.ng/index.php/library/documents/Regulations",NercSpider,nerc.gov.ng,1,2,news,pdf,Nigeria
+https://www.nesrea.gov.ng/publications-downloads/laws-regulations,NesreaSpider,nesrea.gov.ng,1,2,news,pdf,Nigeria
+"https://www.news18.com,https://www.news18.com/news/,https://www.news18.com/buzz/,https://www.news18.com/business/,https://www.news18.com/lifestyle/health-and-fitness/,https://www.news18.com/education-career/,https://www.news18.com/sports/,https://www.news18.com/tech/,https://www.news18.com/auto/,https://www.news18.com/lifestyle/,https://www.news18.com/politics/,https://www.news18.com/entertainment/,https://www.news18.com/india/,https://www.news18.com/world/",News18Spider,news18.com,1,9,news,article,India
+"https://news24online.com/,https://news24online.com/category/world/,https://news24online.com/category/trending/,https://news24online.com/category/business/,https://news24online.com/category/education/,https://news24online.com/category/sports/,https://news24online.com/category/auto/,https://news24online.com/category/lifestyle/,https://news24online.com/category/entertainment/,https://news24online.com/category/india/,https://news24online.com/category/world/",News24Spider,news24online.com,1,9,news,article,India
+"http://newsabah.com/newspaper/category/iraq-news,http://newsabah.com/newspaper/category/economy",NewsabahSpider,newsabah.com,1,2,news,article,Iraq
+"https://newsforkids.net/,https://newsforkids.net/category/all_news/sports/,https://newsforkids.net/category/all_news/science/environment/,https://newsforkids.net/category/all_news/science/technology/",newsforkidsSpider,newsforkids.net,1,9,news,article,India
+"https://www.news9live.com/,https://www.news9live.com/latest-news,https://www.news9live.com/trending-news,https://www.news9live.com/business,https://www.news9live.com/health,https://www.news9live.com/education-career,https://www.news9live.com/sports,https://www.news9live.com/science,https://www.news9live.com/auto,https://www.news9live.com/entertainment,https://www.news9live.com/india,https://www.news9live.com/world",newsNINEliveSpider,news9live.com,1,9,news,article,India
+"https://www.newsweek.com/,https://www.newsweek.com/health,https://www.newsweek.com/tech-science,https://www.newsweek.com/world",NewsWeekSpider,newsweek.com,1,9,news,article,India
+"https://ngxgroup.com/exchange/raise-capital/ngx-rules/interpretative-guidance,https://ngxgroup.com/exchange/raise-capital/ngx-rules/circulars-to-trading-license-holder-firms,https://ngxgroup.com/exchange/raise-capital/notices-to-issuers",ngxgroupArticleSpider,ngxgroup.com,1,2,news,article,Nigeria
+https://ninanews.com/Website/News/List?key=4,ninanewsNews4Spider,ninanews.com,1,2,news,article,Iraq
+https://nitda.gov.ng/regulations,NitdaSpider,nitda.gov.ng,1,2,news,pdf,Nigeria
+https://www.nmdpra.gov.ng/press-release,nmdpraArticleSpider,nmdpra.gov.ng,1,2,news,article,Nigeria
+"https://www.nmdpra.gov.ng/proposed-regulations,https://www.nmdpra.gov.ng/downstream-guidelines,https://www.nmdpra.gov.ng/midstream-guidelines,https://www.nmdpra.gov.ng/general-guidelines",NmdpraSpider,nmdpra.gov.ng,1,2,news,pdf,Nigeria
+https://nnra.gov.ng/nnra/resources?category=nnra_regulations,NnraPdfSpider,nnra.gov.ng,1,2,news,pdf,Nigeria
+https://nnra.gov.ng/nnra/news,nnraSpider,nnra.gov.ng,1,2,news,article,Nigeria
+"https://www.nse.co.ke/rules/,https://www.nse.co.ke/guidelines",NsePdfSpider,nse.co.ke,1,2,news,pdf,Kenya
+https://nsia.com.ng/press-release,NsiaArticleSpider,nsia.com.ng,1,2,news,article,Nigeria
+https://ntvkenya.co.ke/news/,ntvkenyaSpider,ntvkenya.co.ke,1,2,news,article,Kenya
+https://www.nuprc.gov.ng/news-updates,nuprcArticleSpider,nuprc.gov.ng,1,2,news,article,Nigeria
+https://www.nuprc.gov.ng/nuprc-guidelines/#upstream,NuprcSpider,nuprc.gov.ng,1,2,news,pdf,Nigeria
+https://www.nvwa.nl/documenten?trefwoord=&startdatum=&einddatum=&onderwerp=Alle+onderwerpen&type=Besluit,NvwaPdfSpider,nvwa.nl,1,2,news,pdf,Netherlands
+"https://www.nytimes.com/,https://www.nytimes.com/section/business,https://www.nytimes.com/section/health,https://www.nytimes.com/section/sports,https://www.nytimes.com/section/science,https://www.nytimes.com/section/technology,https://www.nytimes.com/section/style,https://www.nytimes.com/section/politics,https://www.nytimes.com/section/world",NYtimesSpider,nytimes.com,1,9,news,article,India
+https://www.okaz.com.sa/,OkazSpider,okaz.com.sa,1,2,news,article,Saudi Arabia
+"https://www.omanobserver.om/morearticles/business/banking,https://www.omanobserver.om/morearticles/business/economy,https://www.omanobserver.om/morearticles/business/markets",omanobserverBankingSpider,omanobserver.om,1,2,news,article,Oman
+https://www.omanobserver.om/scitech,omanobserverScitechSpider,omanobserver.om,1,2,news,article,Oman
+"https://www.outlookindia.com,https://www.outlookindia.com/international,https://www.outlookindia.com/national,https://www.outlookindia.com/art-entertainment,https://www.outlookindia.com/sports,https://startup.outlookindia.com/,https://www.outlookindia.com/business",OutlookindiaArticleSpider,outlookindia.com,1,9,news,article,India
+"https://oxfordbusinessgroup.com/search-results?sector=all&country=54046&keywords=,https://oxfordbusinessgroup.com/search-results?sector=52390&country=54052&keywords=,https://oxfordbusinessgroup.com/search-results?sector=52392&country=54052&keywords=,https://oxfordbusinessgroup.com/search-results?sector=52394&country=54057&keywords=",OxfordBusinessGroupSpider,oxfordbusinessgroup.com,1,2,news,reg_article,Turkey
+http://www.palestinecabinet.gov.ps/portal/Decree/IndexEn?page=1,PalestinecabinetSpider,palestinecabinet.gov.ps,1,2,news,pdf,Palestine
+"https://www.palpress.net/?View=News&dep=6,https://www.palpress.net/?View=News&dep=1",palpressSpider,palpress.net,1,2,news,article,Palestine
+"http://www.parliament.go.ke/legislative-proposals,http://www.parliament.go.ke/the-national-assembly/resources/statutory-documents,http://www.parliament.go.ke/the-senate/house-business/bills,http://www.parliament.go.ke/the-senate/resources/statutory-documents",ParliamentPdfSpider,parliament.go.ke,1,2,news,pdf,Kenya
+https://www.parliament.gov.za/mandates?sorts[date]=-1,ParliamentSpecialSpider,parliament.gov.za,1,2,news,pdf,South Africa
+https://www.parliament.gov.za/press-release,parliamentSpider,parliament.gov.za,1,2,news,article,South Africa
+"https://www.pbs.org/newshour/,https://www.pbs.org/newshour/latest,https://www.pbs.org/newshour/tag/kids",PbsnewshourSpider,pbs.org,1,9,news,article,India
+https://www.pbs.gov.pk/press-releases,pbsSpider,pbs.gov.pk,1,2,news,article,Pakistan
+"https://www.pc.gov.pk/web/act,https://www.pc.gov.pk/web/ordinance,https://www.pc.gov.pk/web/rules",PcSpider,pc.gov.pk,1,2,news,pdf,Pakistan
+http://www.pecdar.ps/en/category/55/1/In-The-News,pecdarSpider,pecdar.ps,1,2,news,article,Palestine
+https://pemra.gov.pk/newsall.php,PemraPkSpider,pemra.gov.pk,1,2,news,article,Pakistan
+https://www.petroleum.gov.eg/ar-eg/media-center/news/news-pages/Pages/default.aspx,petroleumSpider,petroleum.gov.eg,1,2,news,article,Egypt
+"https://pharmaboardroom.com/legal-regulatory/,https://pharmaboardroom.com/middle-east-africa/",pharmaboardroomLegalRegulatorySpider,pharmaboardroom.com,1,2,news,article,"Algeria,Bahrain,Egypt,Iraq,Jordan,Kuwait,Morocco,Oman,Palestine,Qatar,United Arab Emirates"
+"https://phys.org/space-news/,https://phys.org/earth-news/,https://phys.org/nanotech-news/,https://phys.org/physics-news/,https://phys.org/chemistry-news/,https://phys.org/biology-news/,https://phys.org/science-news/",PhysSpider,phys.org,1,9,news,article,India
+"https://www.pinkvilla.com,https://www.pinkvilla.com/latest,https://www.pinkvilla.com/trending,https://www.pinkvilla.com/tech,https://www.pinkvilla.com/lifestyle,https://www.pinkvilla.com/entertainment",PinkvillaSpider,pinkvilla.com,1,9,news,article,India
+"https://www.pma.ps/ar/Legislation//%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%D8%BA%D8%B3%D9%84%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%A7%D9%84%D9%88%D8%AA%D9%85%D9%88%D9%8A%D9%84%D8%A7%D9%84%D8%A5%D8%B1%D9%87%D8%A7%D8%A8//AMLInstructions(arEG),https://www.pma.ps/ar/Legislation//%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%D8%BA%D8%B3%D9%84%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%A7%D9%84%D9%88%D8%AA%D9%85%D9%88%D9%8A%D9%84%D8%A7%D9%84%D8%A5%D8%B1%D9%87%D8%A7%D8%A8//AMLPMAInstructions(arEG),https://www.pma.ps/ar/Legislation//%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%D8%BA%D8%B3%D9%84%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%A7%D9%84%D9%88%D8%AA%D9%85%D9%88%D9%8A%D9%84%D8%A7%D9%84%D8%A5%D8%B1%D9%87%D8%A7%D8%A8//AMLDecisions(arEG)",PmaAntiMoneySpider,pma.ps,1,2,news,pdf,Palestine
+https://www.pma.ps/ar/Legislation//Circulars,PmaCircularsSpider,pma.ps,1,2,news,pdf,Palestine
+https://www.pma.ps/ar/Legislation//Laws,PmaLawSpider,pma.ps,1,2,news,pdf,Palestine
+https://www.pma.ps/ar/Legislation//%D9%85%D9%83%D8%A7%D9%81%D8%AD%D8%A9%D8%BA%D8%B3%D9%84%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%A7%D9%84%D9%88%D8%AA%D9%85%D9%88%D9%8A%D9%84%D8%A7%D9%84%D8%A5%D8%B1%D9%87%D8%A7%D8%A8//AMLLaws(arEG),PmaLegislationSpider,pma.ps,1,2,news,pdf,Palestine
+https://www.pma.ps/ar/Legislation//Regulations,PmaRegulationsSpider,pma.ps,1,2,news,pdf,Palestine
+"https://www.politico.com/,https://www.politico.com/politics",PoliticoSpider,politico.com,1,9,news,article,India
+https://www.power.gov.ng/news-media/press-releases,powerSpider,power.gov.ng,1,2,news,article,Nigeria
+"https://www.premiumtimesng.com/category/business/business-news,https://www.premiumtimesng.com/category/news/headlines",premiumtimesngSpider,premiumtimesng.com,1,2,news,article,Nigeria
+"https://propakistani.pk/category/business/,https://propakistani.pk/category/tech-and-telecom/",ProPakistaniSpider,propakistani.pk,1,2,news,article,Pakistan
+http://updated.psqca.com.pk/about-us/rules,PsqcaSpider,updated.psqca.com.pk,1,2,news,pdf,Pakistan
+"https://www.pta.gov.pk/en/laws-&-policies/act,https://www.pta.gov.pk/en/laws-&-policies/policies,https://www.pta.gov.pk/en/laws-&-policies/rules,https://www.pta.gov.pk/en/laws-&-policies/regulations,https://www.pta.gov.pk/en/laws-&-policies/regulatory-framework-170222,https://www.pta.gov.pk/en/laws-&-policies/guidelines",PtaSpider,pta.gov.pk,1,2,news,pdf,Pakistan
+"https://www.ptinews.com/news/international/,https://www.ptinews.com/news/national/,https://www.ptinews.com/news/entertainment/,https://www.ptinews.com/news/health-and-lifestyle/,https://www.ptinews.com/news/sports/,https://www.ptinews.com/news/business/,https://www.ptinews.com",PtinewsArticleSpider,ptinews.com,1,9,news,article,India
+"https://ptv.com.pk/ptvNews/ur/%D9%82%D9%88%D9%85%DB%8C,https://ptv.com.pk/ptvNews/ur/%D9%B9%D8%A7%D9%BE%20%D8%B3%D9%B9%D9%88%D8%B1%DB%8C",ptvNewsSpider,ptv.com.pk,1,2,news,article,Pakistan
+https://www.publicworks.gov.za/press-release.html,publicworksSpider,publicworks.gov.za,1,2,news,article,South Africa
+https://www.qatarchamber.com/circulars,qatarchamberSpider,qatarchamber.com,1,2,news,article,Qatar
+https://www.qatarchronicle.com/category/gulf-business/economy/,qatarchronicleSpider,qatarchronicle.com,1,2,news,article,Qatar
+https://www.qfcra.com/qfc-regulatory-authority-rules-for-business-sectors,Qfcra2Spider,qfcra.com,1,2,news,pdf,Qatar
+https://www.qfcra.com/aml-law-and-legislation,QfcraSpider,qfcra.com,1,2,news,pdf,Qatar
+https://www.qfma.org.qa/English/RulesRegulations/Pages/Legal_decisions.aspx,QfmaOrgSpider,qfma.org.qa,1,2,news,pdf,Qatar
+"https://www.republicworld.com/,https://www.republicworld.com/entertainment-news/whats-viral,https://www.republicworld.com/education,https://www.republicworld.com/sports-news,https://www.republicworld.com/science,https://www.republicworld.com/technology-news,https://www.republicworld.com/india-news/politics,https://www.republicworld.com/india-news,https://www.republicworld.com/entertainment-news,https://www.republicworld.com/world-news",RepublicWorldSpider,republicworld.com,1,9,news,article,India
+"https://www.reuters.com/markets/asia/,https://www.reuters.com/business/healthcare-pharmaceuticals/,https://www.reuters.com/world/africa/,https://www.reuters.com/business/energy/,https://www.reuters.com/business/finance/",ReutersSpider,reuters.com,1,2,news,article,"Algeria,Bahrain,Egypt,Iraq,Jordan,Kuwait,Morocco,Oman,Pakistan,Palestine,Qatar,Saudi Arabia,Turkey,United Arab Emirates"
+https://riad-riad.com/category/publications/,RiadRiadPublicationsSpider,riad-riad.com,1,2,news,reg_article,Egypt
+"https://www.riotimesonline.com/brazil-news/category/brazil/,https://www.riotimesonline.com/brazil-news/category/mercosur/,https://www.riotimesonline.com/brazil-news/category/technology/",riotimesonlineSpider,riotimesonline.com,1,2,news,article,Brazil
+https://www.rta.ae/wps/portal/rta/ae/home/open-data/agencies-legislation,RtaLegislationSpider,rta.ae,1,2,news,pdf,UAE
+https://www.rta.ae/wps/portal/rta/ae/home/open-data/public-transport-legislations,RtaLTransportSpider,rta.ae,1,2,news,pdf,UAE
+https://www.rta.ae/wps/portal/rta/ae/home/open-data/traffic-road-legislations,RtaRoadsSpider,rta.ae,1,2,news,pdf,UAE
+https://sabq.org/,SabqSpider,sabq.org,1,2,news,article,Saudi Arabia
+https://www.sahpra.org.za/press-releases,sahpraArticleSpider,sahpra.org.za,1,2,news,article,South Africa
+"https://www.sahpra.org.za/government-gazette,https://www.sahpra.org.za/guidelines",SahpraSpider,sahpra.org.za,1,2,news,pdf,South Africa
+"https://www.saps.gov.za/resource_centre/bills/bills.php,https://www.saps.gov.za/resource_centre/acts/acts.php,https://www.saps.gov.za/resource_centre/notices/notices.php",SapsSpider,saps.gov.za,1,2,news,pdf,South Africa
+"https://www.sars.gov.za/legal-counsel/secondary-legislation/public-notices,https://www.sars.gov.za/legal-counsel/secondary-legislation/other-notices,https://www.sars.gov.za/legal-counsel/secondary-legislation/vat-notices,https://www.sars.gov.za/legal-counsel/secondary-legislation/regulations,https://www.sars.gov.za/legal-counsel/tax-administration/regulations",SarsSpider,sars.org.za,1,2,news,pdf,South Africa
+"https://saudigazette.com.sa/,https://saudigazette.com.sa/Business,https://saudigazette.com.sa/Saudi-Arabia,https://saudigazette.com.sa/Technology",SaudigazetteSpider,saudigazette.com.sa,1,2,news,article,Saudi Arabia
+https://www.sbp.org.pk/l_frame/index2.asp,SbpPakSpider,sbp.org.pk,1,2,news,pdf,Pakistan
+http://www.sce.gov.bh/en/Overview?cms=iQRpheuphYtJ6pyXUGiNqj0IIkIp0ipd,SceGovCirculairesSpider,sce.gov.bh,1,2,news,pdf,Bahrain
+"https://science.thewire.in/category/health/,https://science.thewire.in/category/education/,https://science.thewire.in/category/environment/,https://science.thewire.in/",ScienceThewireArticleSpider,thewire.in,1,9,news,article,In
+"https://scroll.in/,https://scroll.in/latest/,https://scroll.in/trending,https://scroll.in/category/77/business-and-economy,https://scroll.in/category/83/science-and-technology,https://scroll.in/pulse/,https://scroll.in/category/76/politics,https://scroll.in/category/105/india,https://scroll.in/category/3554/world",ScrollinSpider,scroll.in,1,9,news,article,India
+https://www.sea.gov.bh/news-media/,SeaSpider,sea.gov.bh,1,2,news,article,Bahrain
+https://sedd.ae/web/sedd/news,SeddSpider,sedd.ae,1,2,news,article,United Arab Emirates
+https://www.senado.es/web/actividadparlamentaria/actualidad/leyes/aprobadas/index.html,Senado3PdfSpider,senado.es,1,2,news,pdf,Spain
+"https://www.senado.es/web/conocersenado/normas/legislacionsenado/detalle/index.html?id=DETALLE_OTRAS_NORMAS_2020,https://www.senado.es/web/conocersenado/normas/legislacionsenado/detalle/index.html?id=DETALLE_OTRAS_NORMAS_2010",SenadoPdfSpider,senado.es,1,2,news,pdf,Spain
+http://www.senat.fr/dossiers-legislatifs/lois-promulguees.html#chrono,SenatPdfSpider,senat.fr,1,2,news,pdf,France
+"https://www.sfda.gov.sa/en/circulars?tags=All,https://www.sfda.gov.sa/ar/circulars?tags=All",SfdaCircularSpider,sfda.gov.sa,1,2,news,article,Saudi Arabia
+"https://www.sfda.gov.sa/en/regulations?keys=&regulation_type=All&date%5Bmin%5D=&date%5Bmax%5D=&tags=All,https://www.sfda.gov.sa/ar/regulations?tags=All",SfdaRegulationSpider,sfda.gov.sa,1,2,news,pdf,Saudi Arabia
+https://sfda.gov.sa/en/news,sfdaSpider,sfda.gov.sa,1,2,news,article,Saudi Arabia
+https://www.sgbv.dz/?page=actualite&lang=eng,sgbvSpider,sgbv.dz,1,2,news,article,Algeria
+"https://www.sgbv.dz/?page=rubrique&lang=fr&mod=199,https://www.sgbv.dz/?page=rubrique&lang=fr&mod=200,https://www.sgbv.dz/?page=rubrique&lang=fr&mod=20,https://www.sgbv.dz/?page=rubrique&lang=fr&mod=202,https://www.sgbv.dz/?page=rubrique&lang=fr&mod=201,https://www.sgbv.dz/?page=rubrique&lang=fr&mod=197,https://www.sgbv.dz/?page=rubrique&lang=fr&mod=198,https://www.sgbv.dz/?page=rubrique&lang=fr&mod=203",SgbvTitresSpider,sgbv.dz,1,2,news,pdf,Algeria
+http://sindhlaws.gov.pk/DepartmentCode.aspx?pg=RULE,SindhlawsSpider,sindhlaws.gov.pk,1,2,news,pdf,Pakistan
+https://www.sozcu.com.tr/finans/,SozcuSpider,sozcu.com.tr,1,2,news,article,Turkey
+https://www.standardmedia.co.ke/ktnnews/category/1/news,StandardMediaSpider,standardmedia.co.ke,1,2,news,article,Kenya
+https://startuppakistan.com.pk/category/startups/,StartuppakistanSpider,startuppakistan.com.pk,1,2,news,article,Pakistan
+https://www.stza.gov.pk/press-releases,StzaArticleSpider,stza.gov.pk,1,2,news,article,Pakistan
+https://www.stza.gov.pk/policies,StzaSpider,stza.gov.pk,1,2,news,pdf,Pakistan
+https://www.tabukpharmaceuticals.com/en/media-and-news,tabukpharmaceuticalsSpider,tabukpharmaceuticals.com,1,2,news,article,Saudi Arabia
+https://www.tamimi.com/judgments/,TamimiJudgmentsSpider,tamimi.com,1,2,news,reg_article,"Jordan,Iraq,Bahrain,Egypt,Kuwait,Morocco,Oman,Qatar,Saudi Arabia,United Arab Emirates"
+https://www.tamimi.com/our-knowledge/law-update/,TamimiLawSpider,tamimi.com,1,2,news,reg_article,"Jordan,Iraq,Bahrain,Egypt,Kuwait,Morocco,Oman,Qatar,Saudi Arabia,United Arab Emirates"
+https://www.tamimi.com/our-knowledge/publications/,TamimiPublicationsSpider,tamimi.com,1,2,news,reg_article,Jordan
+https://www.tccb.gov.tr/haberler/,tccbSpider,tccb.gov.tr,1,2,news,article,Turkey
+https://tdap.gov.pk/press-rea,tdapSpider,tdap.gov.pk,1,2,news,article,Pakistan
+https://tdra.gov.ae/en/media/press-release,TdraSpider,tdra.gov.ae,1,2,news,article,United Arab Emirates
+https://techcrunch.com,TechCrunchSpider,techcrunch.com,1,9,news,article,India
+"https://www.techjuice.pk/category/startups/,https://www.techjuice.pk/category/technology/",TechjuiceSpider,techjuice.pk,1,2,news,article,Pakistan
+https://techxplore.com/,techxploreSpider,mewa.gov.sa,1,2,news,article,Saudi Arabia
+https://tejarah.gov.om/rules,TejarahSpider,tejarah.gov.om,1,2,news,pdf,Bahrain
+https://www.telcotitans.com/geographic/africa-and-middle-east,TelcotitansSpider,telcotitans.com,1,2,news,article,United Arab Emirates
+https://www.telecomreview.com/,telecomreviewSpider,telecomreview.com,1,2,news,article,United Arab Emirates
+"https://www.telegraphindia.com/business,https://www.telegraphindia.com/health,https://www.telegraphindia.com/edugraph,https://www.telegraphindia.com/sports,https://www.telegraphindia.com/science-tech,https://www.telegraphindia.com/culture/style,https://www.telegraphindia.com/world,https://www.telegraphindia.com/india,https://www.telegraphindia.com/entertainment,https://www.telegraphindia.com",TelegraphindiaArticleSpider,telegraphindia.com,1,9,news,article,India
+http://www.textes.justice.gouv.fr/bulletin-officiel-10085/,TextesJusticePdfSpider,textes.justice.gouv.fr,1,2,news,pdf,France
+https://www.thebanker.com/World/Middle-East,ThebankerSpider,thebanker.com,1,2,news,article,United Arab Emirates
+"https://www.thecable.ng/category/thenation,https://www.thecable.ng/category/business,https://www.thecable.ng/category/radar",thecableSpider,thecable.ng,1,2,news,article,Nigeria
+https://theconversation.com/global/topics/ride-sharing-19788,TheconversationSpider,theconversation.com,1,2,news,article,United Arab Emirates
+"http://www.thedtic.gov.za/legislation/legislation-and-business-regulation/national-liquor-authority/national-liquor-act,http://www.thedtic.gov.za/legislation/legislation-and-business-regulation/bills-and-acts",ThedticPdfSpider,thedtic.gov.za,1,2,news,pdf,South Africa
+"http://www.thedtic.gov.za/category/the-dti-archives/media-room/speeches,http://www.thedtic.gov.za/category/the-dti-archives/media-room/media-statements",thedticSpider,thedtic.gov.za,1,2,news,article,South Africa
+"https://thefintechtimes.com/category/exclusive-content/fintech-ecosystems/,https://thefintechtimes.com/category/news/ai/,https://thefintechtimes.com/category/news/banks/,https://thefintechtimes.com/category/news/blockchain/,https://thefintechtimes.com/category/news/cloud-services/,https://thefintechtimes.com/category/news/cryptocurrency/,https://thefintechtimes.com/category/news/cybersecurity/,https://thefintechtimes.com/category/news/fintech/,https://thefintechtimes.com/category/news/paytech/,https://thefintechtimes.com/category/news/regtech/,https://thefintechtimes.com/category/world-region-country/middle-east-africa/",ThefintechtimesSpider,thefintechtimes.com,1,2,news,article,"Algeria, Bahrain, Egypt, Iraq, Jordan, Kuwait, Morocco, Oman, Palestine, Qatar, Saudi Arabia, Turkey, United Arab Emirates"
+https://www.theguardian.com/world/brazil,TheGuardianSpider,theguardian.com,1,2,news,article,Brazil
+"https://www.thehansindia.com/,https://www.thehansindia.com/latest-news",ThehansindiaspiderSpider,thehansindia.com,1,9,news,article,India
+"https://www.thehindu.com/,https://www.thehindu.com/latest-news/,https://www.thehindu.com/business/,https://www.thehindu.com/children/,https://www.thehindu.com/sport/,https://www.thehindu.com/sci-tech/science/,https://www.thehindu.com/sci-tech/technology/,https://www.thehindu.com/life-and-style/,https://www.thehindu.com/entertainment/,https://www.thehindu.com/news/national/,https://www.thehindu.com/news/international/",TheHinduSpider,thehindu.com,1,9,news,article,India
+"https://theprint.in/,https://theprint.in/category/health/,https://theprint.in/category/india/education/,https://theprint.in/category/sport/,https://theprint.in/category/science/,https://theprint.in/category/tech/,https://theprint.in/category/politics/,https://theprint.in/category/entertainment/,https://theprint.in/category/india",theprintSpider,theprint.in,1,9,news,article,India
+https://www.the-star.co.ke/news/,theStarSpider,the-star.co.ke,1,2,news,article,Kenya
+"https://thestartupscene.me/BehindTheStartup,https://thestartupscene.me/MenaEcosystems,https://thestartupscene.me/OPPORTUNITIES,https://thestartupscene.me/INVESTMENTS",thestartupsceneSpider,thestartupscene.me,1,2,news,article,"Iraq,Kuwait,Pakistan,Qatar,Saudi Arabia,United Arab Emirates"
+"https://www.thestatesman.com/,https://www.thestatesman.com/business,https://www.thestatesman.com/education,https://www.thestatesman.com/technology,https://www.thestatesman.com/lifestyle,https://www.thestatesman.com/entertainment,https://www.thestatesman.com/india,https://www.thestatesman.com/world?src=menu",thestatesmanSpider,thestatesman.com,1,9,news,article,India
+"https://theuaenews.com/category/latest-technology-news-tech-news-the-uae-news/,https://theuaenews.com/category/latest-uae-news-breaking-news-the-uae-news/,https://theuaenews.com/category/latest-technology-news-tech-news-the-uae-news/",TheuaenewsSpider,theuaenews.com,1,2,news,article,United Arab Emirates
+"https://thewire.in,https://thewire.in/category/politics/all,https://thewire.in/category/world/all",ThewireArticleSpider,thewire.in,1,9,news,article,India
+https://thewire.in/editors-pick,ThewireinSpider,thewire.in,1,9,news,article,India
+https://tiec.gov.eg/English/MediaCenter/PressReleases/Pages/default.aspx,tiecSpider,tiec.gov.eg,1,2,news,article,Egypt
+https://www.timeforkids.com/g34/?age=child,timeforkidsSpider,timeforkids.com,1,9,news,article,India
+"https://www.timesnownews.com/,https://www.timesnownews.com/latest-news,https://www.timesnownews.com/viral,https://www.timesnownews.com/business-economy,https://www.timesnownews.com/education,https://www.timesnownews.com/sports,https://www.timesnownews.com/technology-science,https://www.timesnownews.com/auto,https://www.timesnownews.com/lifestyle,https://www.timesnownews.com/entertainment-news,https://www.timesnownews.com/india",TimesNowNewsSpider,timesnownews.com,1,9,news,article,India
+"https://timesofoman.com/category/technology,https://timesofoman.com/category/business,https://timesofoman.com/category/oman",TimesofomanSpider,timesofoman.com,1,2,news,article,Oman
+"https://www.tobaccocontrollaws.org/legislation/iraq/laws,https://www.tobaccocontrollaws.org/legislation/bahrain/laws,https://www.tobaccocontrollaws.org/legislation/italy/laws,https://www.tobaccocontrollaws.org/legislation/germany/laws,https://www.tobaccocontrollaws.org/legislation/egypt/laws,https://www.tobaccocontrollaws.org/legislation/jordan/laws,https://www.tobaccocontrollaws.org/legislation/kuwait/laws,https://www.tobaccocontrollaws.org/legislation/morocco/laws,https://www.tobaccocontrollaws.org/legislation/oman/laws,https://www.tobaccocontrollaws.org/legislation/palestine/laws,https://www.tobaccocontrollaws.org/legislation/pakistan/laws,https://www.tobaccocontrollaws.org/legislation/qatar/laws,https://www.tobaccocontrollaws.org/legislation/saudi-arabia/laws,https://www.tobaccocontrollaws.org/legislation/turkey/laws,https://www.tobaccocontrollaws.org/legislation/united-arab-emirates/laws,https://www.tobaccocontrollaws.org/legislation/algeria/laws",TobaccoControllaws2Spider,tobaccocontrollaws.org,1,2,news,reg_article,"United Arab Emirates,Turkey,Saudi Arabia,Qatar,Pakistan,Palestine,Oman,Morocco,Kuwait,Jordan,Egypt,Germany,Italy,Bahrain,Iraq,Algeria"
+"https://www.tobaccocontrollaws.org/litigation/advancedsearch/?country=Turkey,https://www.tobaccocontrollaws.org/litigation/advancedsearch/?country=Pakistan,https://www.tobaccocontrollaws.org/litigation/advancedsearch/?country=Italy,https://www.tobaccocontrollaws.org/litigation/advancedsearch/?country=Germany",TobaccoControllawsSpider,tobaccocontrollaws.org,1,2,news,reg_article,"Turkey,Pakistan,Italy,Germany"
+"https://www.tra.gov.eg/en/regulations/laws-and-legislations/,https://www.tra.gov.eg/en/regulations/consumer-rights-protection-rules-and-conditions/",TraLawSpider,tra.gov.eg,1,2,news,pdf,Egypt
+https://www.transcontinentaltimes.com/category/science/,TranscontinentaltimesScienceSpider,transcontinentaltimes.com,1,9,news,article,India
+https://www.transport.gov.za/legislation,TransporPDFtSpider,transport.gov.za,1,2,news,pdf,South Africa
+https://transportation.gov.ng/ova_doc/merchant-shippers-act-ballast-water-mgt,TransportationSpider,transportation.gov.ng,1,2,news,pdf,Nigeria
+https://www.transport.gov.za/newsroom,transportSpider,transport.gov.za,1,2,news,article,South Africa
+"https://www.tra.gov.eg/en/media-center/press-releases/,https://www.tra.gov.eg/en/media-center/news/",trapressreleasesSpider,tra.gov.eg,1,2,news,article,Egypt
+https://www.trc.gov.jo/Pages/viewpage?pageID=188,trcSpider,trc.gov.jo,1,2,news,pdf,Jordan
+"https://www.treasury.go.ke/regulations,https://www.treasury.go.ke/agreements,https://www.treasury.go.ke/legal-and-gazette-notices",TreasuryPdfSpider,treasury.go.ke,1,2,news,pdf,Kenya
+https://www.treasury.gov.za/legislation/GovernmentNotices/Default.aspx,TreasurySpider,treasury.org.za,1,2,news,pdf,South Africa
+"https://www.tribuneindia.com/,https://www.tribuneindia.com/latest-news,https://www.tribuneindia.com/news/trending",tribuneindiaSpider,tribuneindia.com,1,9,news,article,India
+https://www.twinkl.co.in/newsroom,TwinklSpider,twinkl.co.in,1,9,news,article,India
+https://www.uab.gov.tr/uab-mevzuat,UabTurkeySpider,uab.gov.tr,1,2,news,pdf,Turkey
+https://uaecabinet.ae/en/news,uaecabinetSpider,uaecabinet.ae,1,2,news,article,United Arab Emirates
+https://www.uqn.gov.sa/?page_id=10883,UqnCatArchiveSpider,uqn.gov.sa,1,2,news,pdf,Saudi Arabia
+"https://www.uqn.gov.sa/?cat=37,https://www.uqn.gov.sa/?cat=44",UqnCatSpider,uqn.gov.sa,1,2,news,pdf,Saudi Arabia
+"https://www.vanguardngr.com/category/politics/,https://www.vanguardngr.com/category/business/",vanguardngrPoliticsSpider,vanguardngr.com,1,2,news,article,Nigeria
+"https://www.washingtonpost.com/,https://www.washingtonpost.com/world/,https://www.washingtonpost.com/business/,https://www.washingtonpost.com/climate-environment/,https://www.washingtonpost.com/business/technology/?itid=nb_technology,https://www.washingtonpost.com/wellbeing/,https://www.washingtonpost.com/politics/?itid=nb_politics",washingtonpostSpider,washingtonpost.com,1,9,news,article,India
+https://www.water.go.ke/policies-regulations,WaterPdfSpider,water.go.ke,1,2,news,pdf,Kenya
+"https://www.wsj.com/,https://www.wsj.com/news/latest-headlines?mod=wsjheader,https://www.wsj.com/news/business?mod=nav_top_section,https://www.wsj.com/news/life-work/health-wellness?mod=nav_top_subsection,https://www.wsj.com/news/technology?mod=nav_top_section,https://www.wsj.com/news/types/style?mod=nav_top_subsection",WSJSpider,wsj.com,1,9,news,article,India
+https://youngzine.org/,youngzineSpider,youngzine.org,1,9,news,article,India
+"https://yourstory.com/category/ys-startup,https://yourstory.com/",YourstoryArticleSpider,yourstory.com,1,9,news,article,India
+"https://zagrosnews.net/ar/news?Category=32,https://zagrosnews.net/ar/news?Category=4",zagrosnewsSpider,zagrosnews.net,1,2,news,article,Iraq
+"https://www.zawya.com/en/business/banking-and-insurance,https://www.zawya.com/en/business/fintech,https://www.zawya.com/en/smes/finance,https://www.zawya.com/en/press-release,https://www.zawya.com/en/smes/technology,https://www.zawya.com/en/primarykeyword/FINTECH,https://www.zawya.com/en/business/energy",ZawyaSpider,zawya.com,1,2,news,article,"Algeria,Bahrain,Egypt,Iraq,Jordan,Kuwait,Morocco,Oman,Pakistan,Qatar,Saudi Arabia,Turkey,United Arab Emirates"
+"https://www.zeebiz.com/education,https://www.zeebiz.com/trending/sports,https://www.zeebiz.com/technology,https://www.zeebiz.com/automobile,https://www.zeebiz.com/india/politics,https://www.zeebiz.com/trending/entertainment,https://www.zeebiz.com",ZeebizArticleSpider,zeebiz.com,1,9,news,article,India
+"https://zeenews.india.com,https://zeenews.india.com/latest-news,https://zeenews.india.com/viral,https://zeenews.india.com/business,https://zeenews.india.com/sports,https://zeenews.india.com/technology,https://zeenews.india.com/auto,https://zeenews.india.com/lifestyle,https://zeenews.india.com/entertainment,https://zeenews.india.com/india,https://zeenews.india.com/world",ZeenewsrSpider,zeenews.india.com,1,9,news,article,India

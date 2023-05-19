@@ -1,0 +1,548 @@
+{
+  "AaSpider": {
+    "scope_selector": ".konu-alt-yazi a, h3 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "AbpliveSpider": {
+    "scope_selector": ".other_news a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "alhayaCategory38Spider": {
+    "headers": {
+      "X-Crawlera-Region": "PS"
+    },
+    "scope_selector": ".cat-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "AniSpider": {
+    "scope_selector": ".read-more",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "AsianageSpider": {
+    "scope_selector": ".noPadding div div :nth-child(2) a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "AsianetnewsSpider": {
+    "scope_selector": ".mobrightcol a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "bbcBrazilSpider": {
+    "scope_selector": ".e1f5wbog1",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".ssrcss-u1ho06-StyledListItem-PageButtonListItem a::attr(href)"
+  },
+  "bbcNigeriaSpider": {
+    "scope_selector": ".e1f5wbog1",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".ssrcss-p733us-PageButtonContainer-StyledNumberedPageButton a::attr(href)"
+  },
+  "BostonGlobeSpider": {
+    "scope_selector": ".margin_bottom a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "brazilianReportSpider": {
+    "initial_proxy": true,
+    "categories_links": "#menu-bx-main-menu-1 .menu-item-object-category a::attr(href)",
+    "scope_selector": ".news-card a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "brazzilSpider": {
+    "categories_links": ".menu-item-39417-0 a , .menu-item-38690-0 a , .menu-item-38689-0  a::attr(href)",
+    "scope_selector": ".article-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "BusinessStandardSpider": {
+    "scope_selector": ".cardlist  a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "ClydecoSpider": {
+    "categories_links": ".featuredInsight__cta a::attr(href)",
+    "scope_selector": ".card__cta",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination__link a::attr(href)"
+  },
+  "Cnn10Spider": {
+    "not_allowed_keyword": [
+      "/cnn10-newsletter",
+      "/www.youtube.com/"
+    ],
+    "scope_selector": ".cd__headline a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "CoursupremeSpider": {
+    "scope_selector": ".views-field.views-field-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination a::attr(href)"
+  },
+  "DailynewsegyptSpider": {
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination-number a::attr(href)"
+  },
+  "DeccanchronicleSpider": {
+    "scope_selector": ".mt-2 .mt-2 a:nth-child(2)",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page-item a::attr(href)"
+  },
+  "dffeSpider": {
+    "scope_selector": ".views-field-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "DhaSpider": {
+    "scope_selector": ".cat-list-card__item a, .category-card ",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "dsbdArticleSpider": {
+    "scope_selector": ".views-field-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "EditionSpider": {
+    "scope_selector": ".container__link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "elpaisSpider": {
+    "categories_links": "#csw ._df a::attr(href)",
+    "scope_selector": ".c_t a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "EntrackrArticleSpider": {
+    "scope_selector": ".elementor-page-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".elementor-pagination a::attr(href)"
+  },
+  "EntrepreneurSpider": {
+    "scope_selector": ".pb-2 .block",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": "#content .justify-end a::attr(href)"
+  },
+  "FrontlineSpider": {
+    "scope_selector": ".content .title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "GulftimesSpider": {
+    "scope_selector": ".article-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "IndependentArticleSpider": {
+    "scope_selector": ".jnaeMw .title",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "IndianExpressSpider": {
+    "scope_selector": ".title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page-numbers a::attr(href)"
+  },
+  "jseArticleSpider": {
+    "scope_selector": ".card__link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "kbcSpider": {
+    "scope_selector": ".title .btn-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "AcmPdfSpider": {
+    "scope_selector": ".search-result-item a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".m-pager__item a::attr(href)"
+  },
+
+  "AnsmSanteArticleSpider": {
+    "categories_links": ".news-item::attr(href)",
+    "scope_selector": ".col-md-offset-1.col-md-9",
+    "extractors": {
+      "title":".media-body::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    },
+    "categories_pagination": ".pagination a::attr(href)"
+  },
+  "ArcomPdf2Spider": {
+    "categories_links": ".views-field-view-node a::attr(href)",
+    "scope_selector": ".paragraph",
+    "extractors": {
+      "title":".field--name-field-document-name h3::text",
+      "excerpt": "na",
+      "pdf_url": ".field--file-link a::attr(href)"
+    },
+    "categories_pagination": ".page-item a::attr(href)"
+  },
+  "ArcomPdfSpider": {
+    "categories_links": ".views-field-view-node a::attr(href)",
+    "scope_selector": ".paragraph",
+    "extractors": {
+      "title":".field--name-field-document-name h3::text",
+      "excerpt": "na",
+      "pdf_url": ".field--file-link a::attr(href)"
+    },
+    "categories_pagination": ".page-item a::attr(href)"
+  },
+  "Autoriteitpersoonsgegevens2PdfSpider": {
+    "categories_links": "#main-content li a::attr(href)",
+    "scope_selector": ".external",
+    "extractors": {
+      "title":".linktitle::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    }
+  },
+   "AutoriteTransportsPdfSpider": {
+    "scope_selector": ".list-articles article",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    },
+     "categories_pagination": ".facetwp-pager a:nth-child(6) ::attr(href)"
+  },
+   "BalochistanSpider": {
+     "categories_links": ".acts-rule-list a::attr(href)",
+    "scope_selector": "tbody tr",
+    "extractors": {
+      "title":"td::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    }
+  },
+  "BmelPdfSpider": {
+    "initial_proxy": true,
+     "categories_links": ".c-searchteaser__more a::attr(href)",
+    "scope_selector": ".c-linklist__li",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    },
+     "categories_pagination": ".c-pagination__link::attr(href)"
+  },
+  "BmiBundPdfSpider": {
+    "initial_proxy": true,
+     "categories_links": ".c-search-teaser__link::attr(href)",
+    "scope_selector": ".c-content-linklist__li",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    },
+     "categories_pagination": ".advancedSearch li  a::attr(href)"
+  },
+  "BmuvPdfSpider": {
+     "categories_links": ".rf-c-articles-list__body a::attr(href)",
+    "scope_selector": ".rf-c-ce-download-list li",
+    "extractors": {
+      "title":"span::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    },
+     "categories_pagination": ".rf-c-articles-list+ .rf-c-menu-pagination a::attr(href)"
+  },
+  "BundesfinanzministeriumPdfSpider": {
+     "categories_links": ".bmf-resultlist-teaser-link::attr(href)",
+    "scope_selector": ".bmf-akkordeon-panelText",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    },
+     "categories_pagination": ".bmf-navIndex-entry a::attr(href)"
+  },
+  "BundeskartellamtPdfSpider": {
+    "initial_proxy": true,
+     "categories_links": "td a::attr(href)",
+    "scope_selector": "#wrapperContent",
+    "extractors": {
+      "title":".isFirstInSlot+ p::text",
+      "excerpt": "na",
+      "pdf_url": ".downloadLink a::attr(href)"
+    },
+     "categories_pagination": "#searchResultIndexLast a::attr(href)"
+  },
+  "CbnSpider": {
+    "scope_selector": ".dbasetable td:nth-child(2)",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "na",
+      "pdf_url": " a::attr(href)"
+    },
+     "pagination": "#ContentTextinner br~ a::attr(href)"
+  },
+  "CcdGovSpider": {
+    "scope_selector": ".border.py-3",
+    "extractors": {
+      "title":".col-8.text-black.text-right font::text",
+      "excerpt": "na",
+      "pdf_url": ".col-8.text-right.text-black a:nth-child(2)::attr(href)"
+    }
+  },
+   "CentralBankOtherNoticeSpider": {
+    "scope_selector": ".card-body",
+    "extractors": {
+      "title":".card-title::text",
+      "excerpt": "na",
+      "pdf_url": ".d-flex.justify-content-between a::attr(href)"
+    }
+  },
+  "CmaPdfSpider": {
+    "scope_selector": ".pd-float a",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    },
+     "pagination": ".pagination-list li a::attr(href)"
+  },
+  "CnmvPdfSpider": {
+    "scope_selector": ".P_como_li a",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    }
+  },
+  "CulturePdfSpider": {
+     "categories_links": ".doc-item-link::attr(href)",
+    "scope_selector": ".file-link a",
+    "extractors": {
+      "title":"a span::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    },
+     "categories_pagination": ".pagination-mc a::attr(href)"
+  },
+  "DpmaPdfSpider": {
+    "scope_selector": ".textbereich > ul a",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    }
+  },
+  "EducationSpider": {
+    "scope_selector": ".TitleCell a",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    }
+  },
+  "dsbdPublicationsSpider": {
+    "scope_selector": ".views-col",
+    "extractors": {
+      "title":".views-field-title span::text",
+      "excerpt": ".views-field.views-field-body p::text ",
+      "pdf_url": "a::attr(href)"
+    }
+  },
+  "EnergyPdfSpider": {
+     "initial_proxy": true,
+    "scope_selector": ".in a",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    }
+  },
+  "FiaSpider": {
+     "initial_proxy": true,
+    "scope_selector": ".how-to-complain a",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    }
+  },
+  "ficSpider": {
+    "scope_selector": ".cc-pdf-imagecol+ td",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": ".cc-pdf-description::text",
+      "pdf_url": "a::attr(href)"
+    },
+    "pagination": ".cc-paging a::attr(href)"
+  },
+  "Government2PdfSpider": {
+    "categories_links": ".publication::attr(href)",
+    "scope_selector": ".article.content",
+    "extractors": {
+      "title":"h1.download::text",
+      "excerpt": ".intro p::text",
+      "pdf_url": ".download-chunk::attr(href)"
+    },
+    "pagination": "..paging__unit--next a::attr(href)"
+  },
+  "GovernmentPdfSpider": {
+    "categories_links": ".publication::attr(href)",
+    "scope_selector": ".article.content",
+    "extractors": {
+      "title":"h1.download::text",
+      "excerpt": ".intro p::text",
+      "pdf_url": ".download-chunk::attr(href)"
+    },
+    "pagination": "..paging__unit--next a::attr(href)"
+  },
+  "Health2Spider": {
+    "scope_selector": ".column-1 a",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": ".cc-pdf-description::text",
+      "pdf_url": "a::attr(href)"
+    },
+    "pagination": ".paginate_button.next::attr(href)"
+  },
+  "JmaSpider": {
+    "scope_selector": "td",
+    "extractors": {
+      "title":"a span::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    }
+  },
+   "CbePaymentArticleSpider": {
+    "scope_selector": ".title-heading a",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    }
+  },
+  "BsiBundPdfSpider": {
+      "initial_proxy": true,
+    "categories_links": ".links li a::attr(href)",
+    "scope_selector": "h2+ p",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "p::text",
+      "pdf_url": "a::attr(href)"
+    }
+  },
+  "CharlesRussellSpeechlysSpider": {
+    "headers": {
+      "X-Crawlera-Region": "AE"
+    },
+    "scope_selector": ".promoBlockWrap a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "BqprimeSpider": {
+    "headers": {
+      "X-Crawlera-Region": "IN"
+    },
+    "scope_selector": ".cardImageHeadlineHorizontal-m__content__2TXB8 a, .image-and-title-m__hero-image__1aw2W a,.cardHeadlineAuthorVertical-m__wrapper__esCCA a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "dubaichamberWhatsHappeningNewsSpider": {
+      "initial_proxy": true,
+     "categories_links": ".cont-box a::attr(href)",
+    "scope_selector": ".cont-box a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "AiSpider": {
+     "headers": {
+      "X-Crawlera-Region": "AE"
+    },
+    "scope_selector": ".x-section.mijo-0.mijo-1.mijo-2.mijo-4 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "DcdtPdfSpider": {
+    "scope_selector": ".pd-float a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+    "BmwkPdfSpider": {
+    "not_allowed_keyword": [
+      "index.html"
+    ],
+    "scope_selector": ".card-action a",
+    "extractors": {
+      "title":"na",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    },
+    "pagination": ".pagination-link::attr(href)"
+  },
+  "CentralbankPdfSpider": {
+    "scope_selector": ".et_pb_text_inner p a",
+    "extractors": {
+      "title":"a::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    }
+  },
+  "CbiSpider": {
+    "scope_selector": "blockquote",
+    "extractors": {
+      "title":"pre span span::text",
+      "excerpt": "na",
+      "pdf_url": "a::attr(href)"
+    }
+  }
+}
