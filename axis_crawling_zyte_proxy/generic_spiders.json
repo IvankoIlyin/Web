@@ -1,0 +1,334 @@
+{
+  "buienradarBeSpider": {
+    "categories_links": ".Navigationbar_DropDownMenu__I53oV a::attr(href)",
+    "scope_selector": ".block-wrap .link, .country",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "internetgazetBeSpider": {
+     "zyte_proxy": true,
+    "headers": {
+      "X-Crawlera-Region": "BE"
+    },
+    "categories_links": "h1 a::attr(href)",
+    "scope_selector": ".berichttit1 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "belgiumBeSpider": {
+    "categories_links": ".facet-item a::attr(href)",
+    "scope_selector": ".node__more",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+      "pagination": ".next a::attr(href)"
+  },
+  "theguardianComSpider": {
+    "categories_links": ".dcr-1ikbe4v li a::attr(href)",
+    "scope_selector": ".dcr-lv2v9o",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "verkeerscentrumBeSpider": {
+    "scope_selector": ".news-item",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+      "pagination": ".pager__item--next a::attr(href)"
+  },
+  "roulartaBeSpider": {
+     "zyte_proxy": true,
+    "headers": {
+      "X-Crawlera-Region": "BE"
+    },
+    "scope_selector": ".list-item a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "tipsenweetjesNlSpider": {
+    "categories_links": "#menu-hoofdmenu a::attr(href)",
+    "scope_selector": ".front-view-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "noodweerBeSpider": {
+    "categories_links": "#menu-blog-categorieen a::attr(href)",
+    "scope_selector": ".mb-0 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination a::attr(href)"
+  },
+  "heusdenZolderEuSpider": {
+    "categories_links": "#main a::attr(href)",
+    "scope_selector": ".leesmeer",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "middelkerkeBeSpider": {
+     "zyte_proxy": true,
+    "headers": {
+      "X-Crawlera-Region": "BE"
+    },
+    "scope_selector": ".card.teaser-large a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next a::attr(href)"
+  },
+  "dekrantenkoppenBeSpider": {
+    "categories_links": ".dropdown-item::attr(href),.nav-link::attr(href)",
+    "scope_selector": "li a+ a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "histoiresroyalesFrSpider": {
+    "not_allowed_keyword": ["#"],
+    "categories_links": ".sub-menu a::attr(href)",
+    "scope_selector": ".post-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "bruxellessecreteComSpider": {
+    "categories_links": ".smn-menu-list__link::attr(href)",
+    "scope_selector": ".word-breaker a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+     "pagination": ".page-item__next .page-link::attr(href)"
+  },
+  "adheseComSpider": {
+    "scope_selector": ".lnk",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "dejongeturkenComSpider": {
+    "not_allowed_keyword": ["https://www.dejongeturken.com/contact/"],
+    "categories_links": "#menu-nieuws-1 a::attr(href)",
+    "scope_selector": ".td-module-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".last+ a::attr(href)"
+  },
+  "secureAvaazOrgSpider": {
+    "scope_selector": "p a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "dezondagBeSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "ostbelgiendirektBeSpider": {
+    "not_allowed_keyword": ["https://ostbelgiendirekt.be/kontakt","https://ostbelgiendirekt.be/service/"],
+    "categories_links": "#menu-main-1 a::attr(href)",
+    "scope_selector": ".readmore",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "editiepajotComSpider": {
+    "categories_links": ".menu ul a::attr(href)",
+    "scope_selector": "#col_big p a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "sintNiklaasBeSpider": {
+    "scope_selector": ".field-group-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pager-item--next a::attr(href)"
+  },
+  "scienceClimatEnergieBeSpider": {
+    "not_allowed_keyword": ["https://www.science-climat-energie.be/sce-pdf/"],
+    "categories_links": "#primary-menu a::attr(href)",
+    "scope_selector": ".entry-content p a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "starwalkSpaceSpider": {
+    "scope_selector": ".o2bzl80 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "belgTwentyFourComSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".post-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".first-last-pages a::attr(href)"
+  },
+  "updayComSpider": {
+    "categories_links": ".navigation_menuItem__bGPOC a::attr(href)",
+    "scope_selector": ".articleCard_headline__O2jbJ a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination_next__9KQd0 a::attr(href)"
+  },
+  "derijkstebelgenBeSpider": {
+    "not_allowed_keyword": ["https://derijkstebelgen.com"],
+    "categories_links": "#menu-topnav-1 a::attr(href)",
+    "scope_selector": ".more-link, .vermogende a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "tvluxBeSpider": {
+    "categories_links": ".subnav-menu li a::attr(href)",
+    "scope_selector": ".linkbox a:nth-child(1)",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".nextpostslink::attr(href)"
+  },
+  "surveycompareNetSpider": {
+    "categories_links": ".top-nav a::attr(href)",
+    "scope_selector": "#category-overview a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "curioctopusNlSpider": {
+    "categories_links": ".cat a::attr(href)",
+    "scope_selector": ".card a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "belgaBeSpider": {
+    "allowed_domains": ["belga.prezly.com"],
+    "categories_links": "#menu-headermenu a::attr(href)",
+    "scope_selector": ".story-card__link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "insaugaComSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".grid-article-double a:not(.article-tag)",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "singtaoCaSpider": {
+    "categories_links": ".top-menu-button::attr(href)",
+    "scope_selector": ".td-module-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".extend~ .page+ a::attr(href)"
+  },
+
+  "mtlblogComSpider": {
+    "categories_links": ".hamburger__list-topics-wrapper a::attr(href)",
+    "scope_selector": ".custom-post-headline",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "cknewstodayCaSpider": {
+    "categories_links": ".overflow-hidden::attr(href)",
+    "scope_selector": ".article_articlesLargeRegularContainer__ShAPQ a:nth-child(2)",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "buzzfeednewsComSpider": {
+    "categories_links": ".link-hover--underline-gray::attr(href)",
+    "scope_selector": ".newsblock-story-card__link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "koreatimesNetSpider": {
+    "categories_links": ".category01::attr(href)",
+    "scope_selector": "p a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".PagedList-skipToNext a::attr(href)"
+  },
+  "torontolifeComSpider": {
+    "categories_links": ".primary-navigation__item a::attr(href)",
+    "scope_selector": ".feed-card-page--split__headline a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "readersdigestCaSpider": {
+    "zyte_proxy": true,
+    "headers": {
+      "X-Crawlera-Region": "CA"
+    },
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".category-card-content a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "patriotsWinSpider": {
+    "scope_selector": ".post .title",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "vedettequebecComSpider": {
+    "categories_links": "#menu-top-menu-1 a::attr(href)",
+    "scope_selector": ".td-module-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".extend+ a::attr(href)"
+  },
+  "newsCreadersNetSpider": {
+    "categories_links": ".dq~ td a::attr(href)",
+    "scope_selector": ".newslist a:nth-child(2)",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pages a::attr(href)"
+  },
+  "selectionCaSpider": {
+    "zyte_proxy": true,
+    "headers": {
+      "X-Crawlera-Region": "CA"
+    },
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".category-card-content a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "theblastComSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": "h2 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination-next a::attr(href)"
+  }
+}

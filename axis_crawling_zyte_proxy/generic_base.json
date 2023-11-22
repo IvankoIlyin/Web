@@ -1,0 +1,9 @@
+{
+  "UqnPdfSpider": {
+    "scope_selector": ".pb-3.border-bottom.mb-3",
+    "extractors": {
+      "title": "a::text",
+       "link": "a::attr(href)"
+     }
+  }
+}

@@ -25,7 +25,7 @@ def get_spider_data(clean_rss):
 
 
 if __name__ == '__main__':
-    clean_rss = 'CbiSpider'
+    clean_rss = 'odiaIgComBrSpider'
     message = get_spider_data(clean_rss)
     if clean_rss in generic_spider_configs:
         spider = create_spider_class(clean_rss, generic_spider_configs[clean_rss], message)

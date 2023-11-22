@@ -1,0 +1,27 @@
+{
+"FeminaFrSpider": {
+    "categories_links": ".HeaderMenu-item a::attr(href)",
+    "scope_selector": ".BlockHotContent-Card a:nth-child(2), .BlockSameTheme-item a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page-item a::attr(href)"
+  },
+
+  "EpaperOesterreichArticlespider": {
+    "scope_selector": ".buttons-block",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "alsharqiyaSpider": {
+    "scope_selector": ".title-left h3",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "zyte_proxy": true,
+    "headers": {
+      "X-Crawlera-Region": "IN"
+    }
+  }
+}

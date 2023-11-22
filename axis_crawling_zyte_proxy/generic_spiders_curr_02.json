@@ -1,0 +1,465 @@
+{
+  "11aliveComSpider": {
+    "scope_selector": ".story-row__title-link,.story-row__title-link , .headline-list__title , .story-list__title-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "alabamanewscenterComSpider": {
+    "process_items_in_category_page": "#content .fusion-responsive-typography-calculated a",
+    "categories_links": "#menu-main-menu .awb-menu__main-a_regular::attr(href)",
+    "scope_selector": "#content .fusion-responsive-typography-calculated a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "appenmediaComSpider": {
+    "not_allowed_keyword": ["{url}"],
+    "scope_selector": ".tnt-headline .tnt-asset-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "capcityNewsSpider": {
+    "process_items_in_category_page": ".entry-title a",
+    "categories_links": ".nav-link::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "carriagetownenewsComSpider": {
+    "scope_selector": ".tnt-headline .tnt-asset-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "cbs17ComSpider": {
+    "process_items_in_category_page": ".article-list__article-title .article-list__article-link",
+    "categories_links": ".sub-menu a::attr(href)",
+    "scope_selector": ".article-list__article-title .article-list__article-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "cbs42ComSpider": {
+    "process_items_in_category_page": ".article-list__article-title .article-list__article-link",
+    "categories_links": ".sub-menu a::attr(href)",
+    "scope_selector": ".article-list__article-title .article-list__article-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "cobbcountycourierComSpider": {
+    "process_items_in_category_page": "article h3 a",
+    "categories_links": "#menu-departments a::attr(href)",
+    "scope_selector": "article h3 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "communityimpactComSpider": {
+    "scope_selector": ".text-dark",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "concordmonitorComSpider": {
+    "process_items_in_category_page": "table:nth-child(32) td a , style+ table table td:nth-child(3) a , td td+ td div a, td table+ div a",
+    "categories_links": "table+ table table a::attr(href)",
+    "scope_selector": "td td div a ,  a+ table td a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "crossroadstodayComSpider": {
+    "process_items_in_category_page": ".tnt-headline .tnt-asset-link",
+    "categories_links": ".nav.navbar-nav li a::attr(href)",
+    "scope_selector": ".tnt-headline .tnt-asset-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "ctinsiderComSpider": {
+    "process_items_in_category_page": ".fourPack--item-headline , .corePackage--item-header .hdn-analytics , #zoneAL .hdn-analytics",
+    "categories_links": "#navigation--subMenu .hdn-analytics::attr(href)",
+    "scope_selector": ".dynamicSpotlight--item-header , .dynamic-river__headline",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "mDailyadventComSpider": {
+    "process_items_in_category_page": ".List_main__17Bou a",
+    "categories_links": ".CommonHeader_active__yUOTI~ a::attr(href)",
+    "scope_selector": ".List_main__17Bou a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "decaturishComSpider": {
+     "zyte_proxy": true,
+    "headers": {
+      "X-Crawlera-Region": "US"
+    },
+    "process_items_in_category_page": ".tt-post-title",
+    "categories_links": "#nav a::attr(href)",
+    "scope_selector": ".tt-post-title",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "diarioMxSpider": {
+    "scope_selector": ".separacion_b a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "eagletribuneComSpider": {
+    "process_items_in_category_page": ".tnt-headline .tnt-asset-link",
+    "categories_links": "#mobile-nav-left_menu .navbar-nav .nav-link::attr(href)",
+    "scope_selector": ".tnt-headline .tnt-asset-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "elliderusaComSpider": {
+    "process_items_in_category_page": ".blog-lists-title h3 a",
+    "categories_links": "#wrapper-container #catmenu a::attr(href)",
+    "scope_selector": ".tpcrn-read-more",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "elperiodicousaComSpider": {
+    "process_items_in_category_page": ".td-module-title a",
+    "categories_links": ".block-mega-child-cats a::attr(href)",
+    "scope_selector": ".td-module-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "forsythnewsComSpider": {
+    "process_items_in_category_page": ".anvil-content-box__link, .anvil-content-list-detailed__content",
+    "categories_links": "#mainMenuTabs a::attr(href)",
+    "scope_selector": ".anvil-content-box__link, .anvil-content-list-detailed__content",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "fox4newsComSpider": {
+    "process_items_in_category_page": ".info-header a , .curated-list__article a",
+    "categories_links": "#main-nav .global-nav-item::attr(href)",
+    "scope_selector": ".info-header a , .curated-list__article a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "gwinnettdailypostComSpider": {
+    "scope_selector": ".tnt-headline .tnt-asset-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "hooversunComSpider": {
+    "process_items_in_category_page": ".mp-text a",
+    "categories_links": "#topnav .mainnav a::attr(href)",
+    "scope_selector": ".mp-text a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "indepthnhOrgSpider": {
+    "process_items_in_category_page": ".entry-title a , #homepage-featured a",
+    "categories_links": "#main-nav a::attr(href)",
+    "scope_selector": ".entry-title a , #homepage-featured a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "insidenovaComSpider": {
+    "scope_selector": ".tnt-headline .tnt-asset-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "ktarComSpider": {
+    "scope_selector": ".options a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "ledgertranscriptComSpider": {
+    "process_items_in_category_page": ".homeboxTextOnly a , .col-xs-9 a",
+    "categories_links": ".CMSListMenuLink::attr(href)",
+    "scope_selector": ".homeboxTextOnly a , .col-xs-9 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "localnews8ComSpider": {
+    "process_items_in_category_page": ".story__title a",
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".story__title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "mdjonlineComSpider": {
+    "scope_selector": ".tnt-headline .tnt-asset-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "middletownpressComSpider": {
+    "process_items_in_category_page": ".fourPack--item-headline , .corePackage--item-header .hdn-analytics , #zoneAL .hdn-analytics",
+    "categories_links": "#navigation--subMenu .hdn-analytics::attr(href)",
+    "scope_selector": ".dynamicSpotlight--item-header , .dynamic-river__headline",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "newsMonroelocalOrgSpider": {
+    "scope_selector": ".mh-posts-list-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "montanarightnowComSpider": {
+    "scope_selector": ".tnt-headline .tnt-asset-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "myfox8ComSpider": {
+    "process_items_in_category_page": ".article-list__article-title .article-list__article-link",
+    "categories_links": ".sub-menu a::attr(href)",
+    "scope_selector": ".article-list__article-title .article-list__article-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "nbcpalmspringsComSpider": {
+    "process_items_in_category_page": "#entravision_chameleon_widget_post_title-13 a , #entravision_chameleon_widget_post_title-11 a",
+    "categories_links": "#menu-menu-top a::attr(href)",
+    "scope_selector": "#entravision_chameleon_widget_post_title-14 a , #entravision_chameleon_widget_post_title-11 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "newsbreakComSpider": {
+    "scope_selector": "a+ a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "nhbrComSpider": {
+    "scope_selector": "article .entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "nhmagazineComSpider": {
+    "process_items_in_category_page": "article .entry-title a",
+    "categories_links": "#menu-new-hampshire-magazine-sections-1 .menu-item-type-post_type a::attr(href)",
+    "scope_selector": "article .entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "noozhawkComSpider": {
+    "process_items_in_category_page": ".entry-title a",
+    "categories_links": "#menu-primary-1 a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "northcentralnewsNetSpider": {
+    "process_items_in_category_page": "article .entry-title a",
+    "categories_links": "#et-menu .menu-item a::attr(href)",
+    "scope_selector": "article .entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "otmjComSpider": {
+    "process_items_in_category_page": "article .entry-title a",
+    "categories_links": "#menu-categories a::attr(href)",
+    "scope_selector": "article .entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "patchComSpider": {
+    "zyte_proxy": true,
+    "headers": {
+      "X-Crawlera-Region": "US"
+    },
+    "scope_selector": ".styles_Card__Title__wGs5B a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "postregisterComSpider": {
+    "process_items_in_category_page": ".tnt-headline .tnt-asset-link",
+    "categories_links": "#mobile-nav-left_menu .navbar-nav .nav-link::attr(href)",
+    "scope_selector": ".tnt-headline .tnt-asset-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "potomaclocalComSpider": {
+    "scope_selector": ".headline__title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "seacoastcurrentComSpider": {
+    "scope_selector": "a.title",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "sentinelcoloradoComSpider": {
+    "process_items_in_category_page": ".entry-title a",
+    "categories_links": "#menu-primary-1 a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "starTelegramComSpider": {
+    "scope_selector": "article h3 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "chicagoSuntimesComSpider": {
+    "process_items_in_category_page": ".PagePromo-title a",
+    "categories_links": ".NavigationItem-items a::attr(href)",
+    "scope_selector": ".PagePromo-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "thecheyennepostComSpider": {
+    "process_items_in_category_page": ".tnt-headline .tnt-asset-link",
+    "categories_links": "#main-nav_menu .nav-link::attr(href)",
+    "scope_selector": ".tnt-headline .tnt-asset-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "thenewstnComSpider": {
+    "scope_selector": ".tnt-headline .tnt-asset-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "triadCityBeatComSpider": {
+    "process_items_in_category_page": ".link-wrap",
+    "categories_links": ".nav-main-link::attr(href)",
+    "scope_selector": ".link-wrap",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "victoriaadvocateComSpider": {
+    "scope_selector": ".tnt-headline .tnt-asset-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "waltontribuneComSpider": {
+    "scope_selector": ".tnt-headline .tnt-asset-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "wbrcComSpider": {
+    "process_items_in_category_page": ".headline a",
+    "categories_links": ".links-group a::attr(href)",
+    "scope_selector": ".headline a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "wfaaComSpider": {
+    "process_items_in_category_page": ".headline-list__title, .story-list__title-link, .story-row__title-link",
+    "categories_links": ".header__subnav-link_type_text::attr(href)",
+    "scope_selector": ".headline-list__title , .story-list__title-link , .story-row__title-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "wfmynews2ComSpider": {
+    "process_items_in_category_page": ".headline-list__title, .story-list__title-link, .story-row__title-link",
+    "categories_links": ".header__subnav-link_type_text::attr(href)",
+    "scope_selector": ".headline-list__title , .story-list__title-link , .story-row__title-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "williamsonsourceComSpider": {
+    "scope_selector": ".td-module-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "wmurComSpider": {
+    "scope_selector": ".feed-item-title",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "wokqComSpider": {
+    "process_items_in_category_page": "article .title",
+    "categories_links": ".hassub a::attr(href)",
+    "scope_selector": "article .title",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "wrtvComSpider": {
+    "scope_selector": "a.ListItem ",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "wtocComSpider": {
+    "process_items_in_category_page": ".headline a",
+    "categories_links": ".links-group a::attr(href)",
+    "scope_selector": ".headline a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "wtopComSpider": {
+    "scope_selector": ".post__template-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "wttwComSpider": {
+    "process_items_in_category_page": ".feature-title a, #colC-left a",
+    "categories_links": "#wttw-nav-primary a::attr(href)",
+    "scope_selector": "#block-views-block-homepage-blogs-block-1 a, #views-bootstrap-homepage-video-block-1 a,.view-small-header a,h2 a,#schedule a,#programlist a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "wvtm13ComSpider": {
+    "scope_selector": ".feed-item-title",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "zip06ComSpider": {
+    "process_items_in_category_page": "#ew-article-list-23 a, .tango a",
+    "categories_links": ".menu .title::attr(href)",
+    "scope_selector": ".lead-hede a, .headline a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  }
+}

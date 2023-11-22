@@ -1,548 +1,1589 @@
 {
-  "AaSpider": {
-    "scope_selector": ".konu-alt-yazi a, h3 a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "AbpliveSpider": {
-    "scope_selector": ".other_news a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "alhayaCategory38Spider": {
-    "headers": {
-      "X-Crawlera-Region": "PS"
-    },
-    "scope_selector": ".cat-title a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "AniSpider": {
-    "scope_selector": ".read-more",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "AsianageSpider": {
-    "scope_selector": ".noPadding div div :nth-child(2) a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "AsianetnewsSpider": {
-    "scope_selector": ".mobrightcol a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "bbcBrazilSpider": {
-    "scope_selector": ".e1f5wbog1",
-    "extractors": {
-      "link": "a::attr(href)"
-    },
-    "pagination": ".ssrcss-u1ho06-StyledListItem-PageButtonListItem a::attr(href)"
-  },
-  "bbcNigeriaSpider": {
-    "scope_selector": ".e1f5wbog1",
-    "extractors": {
-      "link": "a::attr(href)"
-    },
-    "pagination": ".ssrcss-p733us-PageButtonContainer-StyledNumberedPageButton a::attr(href)"
-  },
-  "BostonGlobeSpider": {
-    "scope_selector": ".margin_bottom a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "brazilianReportSpider": {
-    "initial_proxy": true,
-    "categories_links": "#menu-bx-main-menu-1 .menu-item-object-category a::attr(href)",
-    "scope_selector": ".news-card a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "brazzilSpider": {
-    "categories_links": ".menu-item-39417-0 a , .menu-item-38690-0 a , .menu-item-38689-0  a::attr(href)",
-    "scope_selector": ".article-title a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "BusinessStandardSpider": {
-    "scope_selector": ".cardlist  a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "ClydecoSpider": {
-    "categories_links": ".featuredInsight__cta a::attr(href)",
-    "scope_selector": ".card__cta",
-    "extractors": {
-      "link": "a::attr(href)"
-    },
-    "pagination": ".pagination__link a::attr(href)"
-  },
-  "Cnn10Spider": {
-    "not_allowed_keyword": [
-      "/cnn10-newsletter",
-      "/www.youtube.com/"
-    ],
-    "scope_selector": ".cd__headline a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "CoursupremeSpider": {
-    "scope_selector": ".views-field.views-field-title a",
-    "extractors": {
-      "link": "a::attr(href)"
-    },
-    "pagination": ".pagination a::attr(href)"
-  },
-  "DailynewsegyptSpider": {
-    "scope_selector": ".entry-title a",
-    "extractors": {
-      "link": "a::attr(href)"
-    },
-    "pagination": ".pagination-number a::attr(href)"
-  },
-  "DeccanchronicleSpider": {
-    "scope_selector": ".mt-2 .mt-2 a:nth-child(2)",
+  "feminaFrSpider": {
+    "categories_links": ".HeaderMenu-item a::attr(href)",
+    "scope_selector": ".BlockHotContent-Card a:nth-child(2), .BlockSameTheme-item a",
     "extractors": {
       "link": "a::attr(href)"
     },
     "pagination": ".page-item a::attr(href)"
   },
-  "dffeSpider": {
-    "scope_selector": ".views-field-title a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "DhaSpider": {
-    "scope_selector": ".cat-list-card__item a, .category-card ",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "dsbdArticleSpider": {
-    "scope_selector": ".views-field-title a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "EditionSpider": {
-    "scope_selector": ".container__link",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "elpaisSpider": {
-    "categories_links": "#csw ._df a::attr(href)",
-    "scope_selector": ".c_t a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-  "EntrackrArticleSpider": {
-    "scope_selector": ".elementor-page-title a",
+  "infosFrSpider": {
+    "categories_links": "#menu-main-menu-1 a::attr(href)",
+    "scope_selector": ".mh-loop-title a",
     "extractors": {
       "link": "a::attr(href)"
     },
-    "pagination": ".elementor-pagination a::attr(href)"
+    "pagination": ".nextpostslink::attr(href)"
   },
-  "EntrepreneurSpider": {
-    "scope_selector": ".pb-2 .block",
+  "creusotInfosComSpider": {
+    "categories_links": "li+ li a::attr(href)",
+    "scope_selector": ".newsListContent a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "lemediaenFourFourTwoFrSpider": {
+    "not_allowed_keyword": [
+      "/videos/",
+      "/interview/"
+    ],
+    "categories_links": ".mega-menu-item a::attr(href)",
+    "scope_selector": ".posts-title a",
     "extractors": {
       "link": "a::attr(href)"
     },
-    "pagination": "#content .justify-end a::attr(href)"
+    "pagination": ".site__navigation__next a::attr(href)"
   },
-  "FrontlineSpider": {
-    "scope_selector": ".content .title a",
+  "montceauNewsCom": {
+    "categories_links": "#menu_list a::attr(href)",
+    "scope_selector": ".nosticky a",
     "extractors": {
       "link": "a::attr(href)"
     }
   },
-  "GulftimesSpider": {
-    "scope_selector": ".article-title a",
+  "resistancerepublicaineComSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".mh-posts-list-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next.page-numbers::attr(href)"
+  },
+  "greenpeaceFr": {
+    "scope_selector": ".article-body h3 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pager a::attr(href)"
+  },
+  "lecourrierdesstrategesFrSpider": {
+    "scope_selector": ".jeg_post_title a",
     "extractors": {
       "link": "a::attr(href)"
     }
   },
-  "IndependentArticleSpider": {
-    "scope_selector": ".jnaeMw .title",
+  "terrafeminaComSpider": {
+    "not_allowed_keyword": [
+      "/www.facebook.com/",
+      "/twitter.com/",
+      "/fr.pinterest.com/",
+      "linkedin.com/"
+    ],
+    "categories_links": ".c-header__item a::attr(href)",
+    "scope_selector": ".c-article-card__title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".c-pagination__item--next a::attr(href)"
+  },
+  "lalettrepatrioteComSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".col-sm-7 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page-link.next::attr(href)"
+  },
+  "lesCrisesFrSpider": {
+    "categories_links": "#categories .category_label::attr(href)",
+    "scope_selector": ".textuals .title",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination a::attr(href)"
+  },
+  "mondeDiplomatiqueFrSpider": {
+    "categories_links": "#menu .suivi::attr(href)",
+    "scope_selector": "#contenu ul a",
     "extractors": {
       "link": "a::attr(href)"
     }
   },
-  "IndianExpressSpider": {
+  "lsaConsoFrSpider": {
+    "categories_links": ".linkSimple::attr(href)",
+    "scope_selector": ".is-displayBlock",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".editoPaginationType1__link::attr(href)"
+  },
+  "lepetitjournalComSpider": {
+    "categories_links": ".mb-2 li .hover\\:text-lpj-primary::attr(href)",
+    "scope_selector": ".adresses__item",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "opexThreeSixtyComSpider": {
+    "categories_links": ".sub-menu li a::attr(href)",
+    "scope_selector": ".post-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".nextpostslink::attr(href)"
+  },
+  "lelibrepenseurOrgSpider": {
+    "categories_links": ".jeg_subcat_item li a::attr(href)",
+    "scope_selector": ".jeg_readmore ",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page_nav.next::attr(href)"
+  },
+  "lesmoutonsenragesFrSpider": {
+    "categories_links": "#menu-item-95345 .sub-menu li a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination a::attr(href)"
+  },
+  "francesoirFrSpider": {
+    "categories_links": ".dropdown-item ::attr(href)",
+    "scope_selector": "article a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "sciencepostFrSpider": {
+    "categories_links": "#g1-primary-nav-menu a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "lorientlejourComSpider": {
+    "categories_links": ".has-sub a::attr(href)",
+    "scope_selector": "article a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "contrepointsOrgSpider": {
+    "categories_links": "option ::attr(value)",
+    "scope_selector": ".cp_mp_info_ctn h3 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".cesis_nav_next a::attr(href)"
+  },
+  "actuOneSevenFrSpider": {
+    "categories_links": ".menu-categories a::attr(href)",
     "scope_selector": ".title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next-button a::attr(href)"
+  },
+  "causeurFrSpider": {
+    "categories_links": ".tdb-mega-menu > a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".last+ a::attr(href)"
+  },
+  "professionGendarmeComSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": "#posts-nav a::attr(href)"
+  },
+  "positivrFrSpider": {
+    "not_allowed_keyword": [
+      "/hubs.ly/",
+      "/positivr.fr/contact/",
+      "/positivr.fr/lp-offrir/",
+      "/positivr.fr/panier/",
+      "/positivr.fr/partenaires/",
+      "/podcasts.podinstall.com/positivr-positivr/",
+      "/positivr.fr/a-propos/"
+    ],
+    "categories_links": ".submenu li a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".nextpostslink::attr(href)"
+  },
+  "madmoizelleComSpider": {
+    "categories_links": ".pl-2 .navigation-link::attr(href)",
+    "scope_selector": ".post-card__link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "connexionfranceComSpider": {
+    "categories_links": ".Header_categoryNavLink__8PTJf::attr(href)",
+    "scope_selector": ".article-teaser a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".link-bar-arrow::attr(href) ,.pagination-next a::attr(href)"
+  },
+  "alternativesEconomiquesFrSpider": {
+    "not_allowed_keyword": [
+      "https://www.alternatives-economiques.fr/data"
+    ],
+    "categories_links": ".c-header__menu a::attr(href)",
+    "scope_selector": ".o-teaser__link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "vanityfairFrSpider": {
+    "categories_links": ".jyKUwf::attr(href)",
+    "scope_selector": ".summary-item__hed-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".button--primary::attr(href)"
+  },
+  "gqmagazineFrSpider": {
+    "categories_links": ".dgDiYX .navigation__link::attr(href)",
+    "scope_selector": ".summary-item__hed-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".button--primary::attr(href)"
+  },
+  "agoravoxFrSpider": {
+    "categories_links": ".hasArrow:nth-child(4) a::attr(href) , .hasArrow:nth-child(3) a::attr(href) , .hasArrow:nth-child(2) a::attr(href)",
+    "scope_selector": "#col1 h3 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".lien_pagination::attr(href)"
+  },
+  "reseauinternationalNetSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".block-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next.page-numbers::attr(href)"
+  },
+  "slateFrSpider": {
+    "not_allowed_keyword": [
+      "https://korii.slate.fr/",
+      "/newsletters",
+      "/studio/productions",
+      "/series",
+      "/audio/",
+      "/grand-format/"
+    ],
+    "categories_links": ".navigation__link a::attr(href)",
+    "scope_selector": ".content__title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "amomamaFrSpider": {
+    "not_allowed_keyword": [
+      "/about-us",
+      "/contact-us",
+      "/adv-with-us",
+      "/terms-of-use",
+      "/privacy",
+      "/impressum"
+    ],
+    "categories_links": ".ej::attr(href)",
+    "scope_selector": ".Ae.-X.sa",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".ea .fa:nth-child(3)::attr(href)"
+  },
+  "bvoltaireFrSpider": {
+    "scope_selector": ".article-more-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pages-numbers a::attr(href)"
+  },
+  "macommuneInfoSpider": {
+    "categories_links": ".sub-menu-slider a::attr(href)",
+    "scope_selector": ".titre_article",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "konbiniComSpider": {
+     "not_allowed_keyword": [
+      "https://mediagroup.konbini.com/page/kewl",
+      "https://podcasts.konbini.com/",
+      "https://games.konbini.com/mynameis",
+      "/bc/",
+      "/recherche/"
+    ],
+    "categories_links": ".items-center li a::attr(href)",
+    "scope_selector": ".text-xl.font-bold a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "centrePresseFrSpider": {
+    "categories_links": "#head_navigation a::attr(href)",
+    "scope_selector": ".titre a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "dailygeekshowComSpider": {
+    "not_allowed_keyword": ["/videos/"],
+    "categories_links": ".block-mega-child-cats a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".last+ a::attr(href)"
+  },
+  "mesopinionsComSpider": {
+    "not_allowed_keyword": ["https://www.mesopinions.com/soutenir?source=header-menu","https://www.mesopinions.com/mobilisation-cause-animale"],
+    "categories_links": ".sub-item::attr(href),.menu-btn-no-dropdown::attr(href)",
+    "scope_selector": ".mo-list-item",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".mo-page-next::attr(href)"
+  },
+  "faitsdiversOrgSpider": {
+    "categories_links": "li~ li+ li a::attr(href)",
+    "scope_selector": ".titrearticle h2 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": "#gestionpages a::attr(href)"
+  },
+  "cashroadsterComSpider": {
+    "categories_links": "#menu-main-menu-2 a::attr(href)",
+    "scope_selector": ".archive-list-text a, .head-latest-list  li a, .feat-main-sub a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "epresseFrSpider": {
+    "categories_links": ".nav-item a::attr(href)",
+    "scope_selector": ".title-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "planetesThreeSixtyFrSpider": {
+    "scope_selector": ".td-module-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".last+ a::attr(href)"
+  },
+  "lacommereFourThreeFrSpider": {
+    "categories_links": ".maximenuck2 li a::attr(href),.sport_menu::attr(href) , .faitdivers_menu::attr(href)",
+    "scope_selector": ".catItemTitle a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination-next .pagenav::attr(href)"
+  },
+  "corsenetinfosCorsicaSpider": {
+    "categories_links": ".main_menu a::attr(href)",
+    "scope_selector": ".titre_article a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pager a::attr(href)"
+  },
+  "keraunosOrgSpider": {
+    "categories_links": ".dropdown-item a::attr(href)",
+    "scope_selector": ".g-font-size-22.smart-font-size-14 a, .col-12.col-lg-4 a, .u-btn-primary, .col-12.col-lg-8 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "qactusFrSpider": {
+    "categories_links": "#primary-menu a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "lescrieursduwebComSpider": {
+    "categories_links": "#menu-more-button-bottom-menu a::attr(href), .bb-mb-el a::attr(href)",
+    "scope_selector": "#post-items a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "retronewsFrSpider": {
+    "headers": {"X-Crawlera-Region": "FR"},
+    "categories_links": "#block-bean-suggestion-recherche-home-et-men a::attr(href), .mega-menu-col:nth-child(1) li a::attr(href)",
+    "scope_selector": ".page-result a, .stretched-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "laminutedericardoComSpider": {
+    "scope_selector": ".aiovg-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next.page-numbers::attr(href)"
+  },
+  "tvlFrSpider": {
+    "scope_selector": ".mb-2 .col a, .preview a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "alloforfaitFrSpider": {
+    "not_allowed_keyword": [
+      "/page/"
+    ],
+    "scope_selector": ".center a:not(.page-numbers)",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next.page-numbers::attr(href)"
+  },
+  "papergeekFrSpider": {
+    "categories_links": ".menu-news.menu-item .menu-item-object-category a::attr(href)",
+    "scope_selector": ".entry-title-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next-page::attr(href)"
+  },
+  "anguillesousrocheComSpider": {
+    "categories_links": "#categories-3 li a::attr(href)",
+    "scope_selector": ".post-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "lactucitoyenneFrSpider": {
+    "categories_links": ".menu-tete a::attr(href)",
+    "scope_selector": ".cover",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": "ul+ .btn::attr(href)"
+  },
+  "frontpopulaireFrSpider": {
+    "not_allowed_keyword": [
+      "/fpplus",
+      "/revues",
+      "/twitter.com/",
+      "/www.facebook.com/",
+      "/www.youtube.com/","/www.instagram.com/","/www.linkedin.com/","/rss","/login","/fete-des-peres","/promo-houellebecq?=","/abo."
+    ],
+    "categories_links": "#header-menu li a::attr(href)",
+    "scope_selector": ".column a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "paperblogFrSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "categories_links": "#header-menu a::attr(href)",
+    "scope_selector": ".lnk-red-underlined ",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next-page a::attr(href)"
+  },
+  "stratpolComSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "not_allowed_keyword": ["/auteurs/","/librairie/"],
+    "categories_links": ".menu-item-object-page a::attr(href)",
+    "scope_selector": ".pt-cv-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "ahTwentyTwentyOrgSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next.page-numbers::attr(href)"
+  },
+  "crashdebugFrSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "not_allowed_keyword": ["/informatik","/loisirss"],
+    "categories_links": "#t3-mainnav a::attr(href)",
+    "scope_selector": ".list-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination a::attr(href)"
+  },
+  "graziaFrSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "categories_links": "#menu-menu_header a::attr(href)",
+    "scope_selector": ".caption_wrapper a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page-numbers::attr(href)"
+  },
+  "bibamagazineFrSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "categories_links": "#menu-menu_header a::attr(href)",
+    "scope_selector": ".info_title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page-numbers::attr(href)"
+  },
+  "egaliteetreconciliationFrSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "categories_links": ".subbed::attr(href),.submenu li a::attr(href)",
+    "scope_selector": ".tit_er a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination_page_suivante::attr(href)"
+  },
+  "hautsdefranceFrSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "categories_links": "#thematiques a::attr(href)",
+    "scope_selector": ".post-listing-item a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "charliehebdoFrSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".cha_excerpt",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "scienceEtVieComSpider": {
+    "not_allowed_keyword": ["javascript:void(0)"],
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".post-item  a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "reporterreNetSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "categories_links": "#mots-cles a::attr(href)",
+    "scope_selector": ".article-item",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next a::attr(href)"
+  },
+  "neonmagFrSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "categories_links": ".nav-menu li a::attr(href)",
+    "scope_selector": ".card-content-title",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next a::attr(href)"
+  },
+  "ripostelaiqueComSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next.page-numbers::attr(href)"
+  },
+  "phoenixjpNetSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "FR"},
+    "scope_selector": ".newsUrl a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "noticiasUolComBrSpider": {
+    "categories_links": ".submenu-item li a::attr(href)",
+    "scope_selector": ".thumbnails-wrapper a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "neTenUolComBrSpider": {
+    "not_allowed_keyword": ["#sidebarmenu"],
+    "categories_links": ".title-section a::attr(href)",
+    "scope_selector": ".content, .content a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "cnnbrasilComBrSpider": {
+    "categories_links": "#menu-editorias a::attr(href)",
+    "scope_selector": ".home__list__item a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "oantagonistaUolComBrSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "BR"},
+    "categories_links": "#menu-header-oa-v3 a::attr(href)",
+    "scope_selector": ".card-title-description",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "noticiasdatvUolComBrSpider": {
+    "categories_links": ".header-menu-item a::attr(href)",
+    "scope_selector": ".item-artigo a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page-link::attr(href)"
+  },
+  "ptQuizurComSpider": {
+    "categories_links": "a.item::attr(href)",
+    "scope_selector": ".postLink a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "natelinhaUolComBrSpider": {
+    "categories_links": ".align-items-center li a::attr(href)",
+    "scope_selector": ".titulo-destaque a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "contigoUolComBrSpider": {
+    "categories_links": ".nav-link.py-1::attr(href)",
+    "scope_selector": ".col-sm-6, .col-9 a ",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+     "pagination": ".page-link::attr(href)"
+  },
+  "bolUolComBrSpider": {
+    "categories_links": ".menuBol__link::attr(href)",
+    "scope_selector": ".thumbnails-wrapper a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "oliberalComSpider": {
+    "categories_links": ".menu-vertical-item a::attr(href) ,.menu-vertical-subitem a::attr(href)",
+    "scope_selector": ".titulo a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+     "pagination": ".pagination a::attr(href)"
+  },
+  "vivendobauruComBrSpider": {
+    "categories_links": ".cat-item a::attr(href)",
+    "scope_selector": ".more-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+     "pagination": ".next.page-numbers::attr(href)"
+  },
+  "idinheiroComBrSpider": {
+    "categories_links": ".css-eagf88::attr(href)",
+    "scope_selector": "article a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+     "pagination": ".next.pagination__link::attr(href)"
+  },
+  "observatoriodatvUolComBrSpider": {
+    "categories_links": ".menu-mobile li a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "aventurasnahistoriaUolComBrSpider": {
+    "categories_links": "#navbarSupportedContent .py-1::attr(href)",
+    "scope_selector": ".col-sm-6 a:nth-child(2), .col-9 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+     "pagination": ".page-link::attr(href)"
+  },
+  "conselhosetruquesComSpider": {
+    "categories_links": "#menu-header-main a::attr(href)",
+    "scope_selector": ".front-view-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "carasUolComBrSpider": {
+    "categories_links": ".nav-link.py-1::attr(href)",
+    "scope_selector": ".col-sm-6 a:nth-child(2), .col-9 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+     "pagination": ".page-link::attr(href)"
+  },
+  "uolComBrSpider": {
+    "categories_links": ".showcaseDefault__item a::attr(href)",
+    "scope_selector": ".thumbnails-wrapper a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "globoComSpider": {
+    "categories_links": ".title-headline a::attr(href)",
+    "scope_selector": ".feed-post-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "novamulherComSpider": {
+    "categories_links": "#nav-sections a::attr(href)",
+    "scope_selector": ".results-list--headline-container a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "umcomoComBrSpider": {
+    "categories_links": ".lista_menu .ga::attr(href)",
+    "scope_selector": ".link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "cenapopUolComBrSpider": {
+    "categories_links": ".nav-link::attr(href)",
+    "scope_selector": ".col-sm-6 a:nth-child(2), .col-9 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+     "pagination": ".page-link::attr(href)"
+  },
+  "uolComBrSplachSpider": {
+    "categories_links": ".heading-style a::attr(href)",
+    "scope_selector": ".thumbnails-wrapper a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "ehowComBrSpider": {
+    "categories_links": ".vertical-list .category a::attr(href)",
+    "scope_selector": ".tile a, .item a, .hero-left a, .hero-right a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "congressoemfocoUolComBr": {
+    "categories_links": ".menu-item a::attr(href)",
+    "scope_selector": ".font-lh-11 ",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "compreruralComSpider": {
+    "categories_links": ".menu-item a::attr(href)",
+    "scope_selector": ".title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next.page-numbers::attr(href)"
+  },
+  "clickpetroleoegasComBrSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".fdnw-card-title",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next.page-numbers::attr(href)"
+  },
+  "blogSeedtaComSpider": {
+    "scope_selector": ".main_link",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next-posts-link::attr(href)"
+  },
+  "musicaObservatoriodosfamososUolComBrSpider": {
+    "scope_selector": ".entry-title a, .elementor-post__title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "noticiasagricolasComBrSpider": {
+    "categories_links": "#main-nav a::attr(href)",
+    "scope_selector": ".horizontal a, .mostrar-historico",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next a::attr(href)"
+  },
+  "peopleTodayComSpider": {
+    "categories_links": ".bgnav a::attr(href)",
+    "scope_selector": ".jeg_post_title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "assiscityComSpider": {
+    "categories_links": "nav li a::attr(href)",
+    "scope_selector": ".box-corpo a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".box-listagem a::attr(href)"
+  },
+  "onibusbrasilComSpider": {
+    "categories_links": ".col-md-3 a::attr(href), .col-md-2~ .p-1+ .p-1 a::attr(href)",
+    "scope_selector": ".img-thumb-wrapper a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page-item:nth-child(3) a::attr(href)"
+  },
+  "awebicComSpider": {
+    "not_allowed_keyword": ["/sobre/","/principios-editoriais/","/contato/","/politica-de-privacidade/"],
+    "categories_links": "#primary a::attr(href)",
+    "scope_selector": ".loop__item__link",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination  a::attr(href)"
+  },
+  "folhaUolComBrSpider": {
+    "not_allowed_keyword": ["#sidebarmenu-"],
+    "categories_links": ".c-list-menu__item .u-link-clean::attr(href)",
+    "scope_selector": ".c-headline__content a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "clicrbsComBrSpider": {
+    "categories_links": ".menu-subitem a::attr(href)",
+    "scope_selector": ".article-card a:nth-child(2)",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "observatoriodosfamososUolComBrSpider": {
+    "categories_links": ".menu-item-object-page a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+     "pagination": ".page-numbers::attr(href)"
+  },
+  "buzzfeedComBrSpider": {
+    "categories_links": ".header-link::attr(href)",
+    "scope_selector": ".post-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "augustourgenteComBrSpider": {
+    "categories_links": ".label-name::attr(href)",
+    "scope_selector": ".entry-title-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "esportesEstadaoComBrSpider": {
+    "categories_links": ".item a::attr(href)",
+    "scope_selector": ".noticias-mais-recenter--item a:nth-child(2)",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "verdinhoitabunaBlogBrSpider": {
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+     "pagination": "#blog-pager-older-link a::attr(href)"
+  },
+   "correiowebComBrSpider": {
+     "allowed_domains": ["correiobraziliense.com.br","concursos.correioweb.com.br","correiobraziliense.com.br","tvbrasilia.com.br","clube.fm","classificadoscb.com.br","correiobraziliense.lugarcerto.com.br","concursos.correioweb.com.br","central.correioweb.com.br","buscacb.correiobraziliense.com.br","correioweb.com.br"],
+    "categories_links": ".burger a::attr(href)",
+    "scope_selector": ".list-news li a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "rondoniatualComSpider": {
+    "categories_links": "#main-navigation a::attr(href)",
+    "scope_selector": ".post-title.post-url",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".older a::attr(href)"
+  },
+  "zappeandoComBrSpider": {
+    "categories_links": ".bOipbL a::attr(href)",
+    "scope_selector": ".sc-13ohk6q-0.odibl",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "noticiasdemogiComBrSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".heading-size-1 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next.page-numbers::attr(href)"
+  },
+  "estadaomatogrossoComBrSpider": {
+    "categories_links": ".idx1-tpl1341-menu-principal-flex #navbar li a::attr(href)",
+    "scope_selector": ".col-lg-10 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "ficarbonitaComSpider": {
+    "categories_links": "#menu-topo a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".nav-previous a::attr(href)"
+  },
+  "boatosOrgSpider": {
+    "categories_links": "#categories-5 li a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next.page-numbers::attr(href)"
+  },
+  "revistalofficielComBrSpider": {
+    "categories_links": ".aside-nav__content__list__item a::attr(href)",
+    "scope_selector": ".stack",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination__list a::attr(href)"
+  },
+  "horabrasilComBrSpider": {
+    "categories_links": "#main-navigation a::attr(href)",
+    "scope_selector": ".post-title",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".older a::attr(href)"
+  },
+  "misterstoryComSpider": {
+    "categories_links": ".bgnav a::attr(href)",
+    "scope_selector": ".jeg_post_title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "camposTwentyFourHorasComBr": {
+    "categories_links": ".nav-link::attr(href)",
+    "scope_selector": ".elementor-widget-container div div div div:nth-child(2) :nth-child(1) a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "blogdojucaUolComBrSpider": {
+    "scope_selector": ".thumbnails-wrapper a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "diariodoacoComBrSpider": {
+    "categories_links": ".navbar-nav a::attr(href)",
+    "scope_selector": ".post-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+     "pagination": ".page-link::attr(href)"
+  },
+  "contrafatosComBrSpider": {
+    "categories_links": "#menu-menu_topo-1 a::attr(href)",
+    "scope_selector": ".zox-art-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+   "camposemfocoComBrSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".post-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+     "pagination": ".last-page a::attr(href)"
+  },
+  "tastyareaComSpider": {
+    "scope_selector": ".card",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "jrJorBrSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".cm-post-date a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "viaFourOneComBrSpider": {
+    "not_allowed_keyword": ["/contato/"],
+    "categories_links": ".nav-categories a::attr(href)",
+    "scope_selector": ".content a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "oroloComBrSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".elementor-post__title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+     "pagination": ".page-numbers::attr(href)"
+  },
+  "cavokComBrSpider": {
+    "categories_links": ".bgnav a::attr(href)",
+    "scope_selector": ".jeg_post_title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "semprefamiliaComBrSpider": {
+    "not_allowed_keyword": ["https://www.facebook.com/","https://www.linkedin.com/","https://twitter.com/","https://wa.me/"],
+    "categories_links": ".square.c-explorer-slider li a::attr(href)",
+    "scope_selector": ".trigger-gtm",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next-pagination::attr(href)"
+  },
+  "cacodarosaComSpider": {
+    "categories_links": ".gridEditoriaisF a::attr(href)",
+    "scope_selector": ".flex_c.fullW",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "diarinhoNetSpider": {
+    "categories_links": ".w3-bar-item::attr(href)",
+    "scope_selector": ".w3-col.m8.l6.div_1_3col a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "fimdalinhaComBrSpider": {
+    "scope_selector": ".title-post a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "portalonorteComBrSpider": {
+    "categories_links": ".sub-menu a::attr(href)",
+    "scope_selector": ".linkNoticia a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".arrowRight::attr(href)"
+  },
+   "gameofglamComSpider": {
+    "scope_selector": ".archive-list-text a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination a::attr(href)"
+  },
+  "alexandrejoseComSpider": {
+    "categories_links": "#menu-cabecalho-3 a::attr(href)",
+    "scope_selector": ".td-module-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".last+ a::attr(href)"
+  },
+  "testosteronaBlogBrSpider": {
+    "categories_links": ".menu-item a::attr(href)",
+    "scope_selector": ".side-title-post a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "visaonoticiasComSpider": {
+     "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "BR"},
+    "categories_links": "#cssmenu a::attr(href)",
+    "scope_selector": ".col-sm-6 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".linkseis::attr(href)"
+  },
+   "sulbahianewsComBrSpider": {
+    "categories_links": "#sidebarCollapse2+ .pb-4 .nav-link::attr(href)",
+    "scope_selector": ".link",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page-link::attr(href)"
+  },
+  "araraquaraTwentyFourHorasComBrSpider": {
+    "categories_links": ".overflowable-item a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "maisminasOrgSpider": {
+    "categories_links": "#menu-principal-1 a::attr(href)",
+    "scope_selector": ".td-module-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".last+ a::attr(href)"
+  },
+   "portalpalotinaComBrSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".elementor-post__read-more",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "culturamixComSpider": {
+    "categories_links": ".cat-item a::attr(href)",
+    "scope_selector": ".box a:nth-child(1)",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".sright a::attr(href)"
+  },
+  "blogdobgComBrSpider": {
+     "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "BR"},
+    "categories_links": ".category-link::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "varginhaonlineComBrSpider": {
+    "categories_links": "#menu a::attr(href)",
+    "scope_selector": ".titulo_lista_noticia a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pag-navegacao_right a::attr(href)"
+  },
+  "portalnovonorteComBrSpider": {
+    "categories_links": ".menu-topo a::attr(href)",
+    "scope_selector": ".lista-interna",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".paginacao a:nth-last-child(1)::attr(href)"
+  },
+  "tnonlineUolComBrSpider": {
+    "not_allowed_keyword": ["https://api.whatsapp.com/","https://www.facebook.com/"],
+    "categories_links": ".mw-pad-l-15.tn-f-12 a::attr(href)",
+    "scope_selector": ".tn-bg-white a:nth-child(2)",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "acheisudoesteComBrSpider": {
+    "categories_links": ".sm-full a::attr(href)",
+    "scope_selector": ".er-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination a::attr(href)"
+  },
+  "eutotalComSpider": {
+    "categories_links": ".main-menu a::attr(href)",
+    "scope_selector": ".article-card a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page--jump a::attr(href)"
+  },
+  "odiaIgComBrSpider": {
+    "initial_proxy": true,
+    "headers": {"X-Crawlera-Region": "BR"},
+    "categories_links": ".nav-link::attr(href)",
+    "scope_selector": ".linha a, .item-label-href",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "doithousesComSpider": {
+    "categories_links": "#menu-main-menu a::attr(href)",
+    "scope_selector": "h3 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "FourOitoComBrSpider": {
+    "not_allowed_keyword": ["https://twitter.com/","https://www.bistek.com.br/"],
+    "categories_links": "a[data-track-category=\"HeaderLink\"]::attr(href)",
+    "scope_selector": ".items-center:not(.destaque--tag)  a:nth-child(2)",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next a::attr(href)"
+  },
+  "midianewsComBrSpider": {
+    "not_allowed_keyword": ["https://www.midianews.com.br/mais-lidas","https://www.midianews.com.br/enquete-lista"],
+    "categories_links": "#bs-example-navbar-collapse-1 a::attr(href)",
+    "scope_selector": ".titulo-secao a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "aosfatosOrgSpider": {
+    "not_allowed_keyword": ["/mais/?utm_source=site&utm_campaign=aosfatosmais&utm_medium=menu","/eleicoes-"],
+    "categories_links": ".menu a::attr(href)",
+    "scope_selector": ".entry-item-card",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next-arrow::attr(href)"
+  },
+  "correiodeminasComBrSpider": {
+    "not_allowed_keyword": ["https://bet365.vxcase.com/","https://correiodeminas.com.br/contato/","/ola-mundo/"],
+    "categories_links": ".bgnav a::attr(href)",
+    "scope_selector": ".jeg_post_title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "topmidianewsComBrSpider": {
+    "categories_links": ".mobileNao a::attr(href)",
+    "scope_selector": ".linkNoticia",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": "a[rel=\"next\"]::attr(href)"
+  },
+  "folhamaxComSpider": {
+    "categories_links": ".c-nav-hover::attr(href)",
+    "scope_selector": ".col-sm-8 a:nth-child(2)",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "gooutsideComBrSpider": {
+    "not_allowed_keyword": ["https://www.assine3.com.br/","http://www.rockyspirit.com.br/"],
+    "categories_links": "#menu-principal-1 a::attr(href)",
+    "scope_selector": ".td-module-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".last+ a::attr(href)"
+  },
+  "cadaminutoComBrSpider": {
+    "categories_links": ".font-semibold::attr(href)",
+    "scope_selector": "article a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next a::attr(href)"
+  },
+  "tempoComSpider": {
+    "categories_links": ".elemento-navegacion::attr(href)",
+    "scope_selector": ".titular a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "bnewsComBrSpider": {
+    "categories_links": ".cor-primaria::attr(href)",
+    "scope_selector": ".mb-2 a:nth-child(2)",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page-item:last-child a::attr(href)"
+  },
+  "nsctotalComBrSpider": {
+    "not_allowed_keyword": ["https://www.nsccomunicacao.com.br/","https://www.usuarionsc.com.br/","https://publicidadelegal.nsctotal.com.br/","https://enem.nsctotal.com.br/?_ga=2.93104795.746120580.1664208979-2129734716.1624892726","https://mundoconectado.com.br/","https://adrenaline.com.br/","https://loja.nsctotal.com.br/","https://www.itapemafm.com.br/","https://www.atlantidasc.com.br/","https://flip.nsctotal.com.br/"],
+    "categories_links": ".menu-item a::attr(href)",
+    "scope_selector": ".title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "gazetawebComSpider": {
+    "categories_links": ".menu-item a::attr(href)",
+    "scope_selector": ".latest-new_context-link, .noticies-item ",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page-item:last-child a::attr(href)"
+  },
+  "opetroleoComBrSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".card-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".jeg_pagination a:last-child::attr(href)"
+  },
+  "aredeInfoSpider": {
+    "categories_links": ".category-li-pagina-inicial .mw-link-decoration::attr(href)",
+    "scope_selector": ".mw-link-decoration",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "migalhasComBrSpider": {
+    "categories_links": ".grupo__links a::attr(href)",
+    "scope_selector": ".topico__texto a:nth-child(2)",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".paginacao__btn:last-child::attr(href)"
+  },
+  "amomeupetOrgSpider": {
+    "categories_links": ".mpl__list-header+ .mpl__list a::attr(href)",
+    "scope_selector": ".widget__title",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": "a[rel=\"next\"]::attr(href)"
+  },
+  "plenoNewsBrazilSpider": {
+    "categories_links": ".nav a::attr(href)",
+    "scope_selector": ".news-block h3 a, .post-block h3 a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "theinterceptComSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".wide-story-card a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "otvfocoComBrSpider": {
+    "categories_links": "#primary-menu a::attr(href)",
+    "scope_selector": "#primary .col-md-6 a",
     "extractors": {
       "link": "a::attr(href)"
     },
     "pagination": ".page-numbers a::attr(href)"
   },
-  "jseArticleSpider": {
-    "scope_selector": ".card__link",
+  "socientificaComBrSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "movimentocountryComSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".td-module-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".last+ a::attr(href)"
+  },
+  "gcmaisComBrSpider": {
+    "categories_links": "#menu-menu-cabecalho-hamburguer-superior a::attr(href)",
+    "scope_selector": ".article_box a",
     "extractors": {
       "link": "a::attr(href)"
     }
   },
-  "kbcSpider": {
-    "scope_selector": ".title .btn-link",
+  "atardeComBrSpider": {
+    "not_allowed_keyword":["http://edicaodigital.atarde.com.br/"],
+    "categories_links": ".mw-header-content-nav .mw-link-decoration::attr(href)",
+    "scope_selector": "article .mw-link-decoration",
     "extractors": {
       "link": "a::attr(href)"
     }
   },
-  "AcmPdfSpider": {
-    "scope_selector": ".search-result-item a",
-    "extractors": {
-      "link": "a::attr(href)"
-    },
-    "pagination": ".m-pager__item a::attr(href)"
-  },
-
-  "AnsmSanteArticleSpider": {
-    "categories_links": ".news-item::attr(href)",
-    "scope_selector": ".col-md-offset-1.col-md-9",
-    "extractors": {
-      "title":".media-body::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    },
-    "categories_pagination": ".pagination a::attr(href)"
-  },
-  "ArcomPdf2Spider": {
-    "categories_links": ".views-field-view-node a::attr(href)",
-    "scope_selector": ".paragraph",
-    "extractors": {
-      "title":".field--name-field-document-name h3::text",
-      "excerpt": "na",
-      "pdf_url": ".field--file-link a::attr(href)"
-    },
-    "categories_pagination": ".page-item a::attr(href)"
-  },
-  "ArcomPdfSpider": {
-    "categories_links": ".views-field-view-node a::attr(href)",
-    "scope_selector": ".paragraph",
-    "extractors": {
-      "title":".field--name-field-document-name h3::text",
-      "excerpt": "na",
-      "pdf_url": ".field--file-link a::attr(href)"
-    },
-    "categories_pagination": ".page-item a::attr(href)"
-  },
-  "Autoriteitpersoonsgegevens2PdfSpider": {
-    "categories_links": "#main-content li a::attr(href)",
-    "scope_selector": ".external",
-    "extractors": {
-      "title":".linktitle::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    }
-  },
-   "AutoriteTransportsPdfSpider": {
-    "scope_selector": ".list-articles article",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    },
-     "categories_pagination": ".facetwp-pager a:nth-child(6) ::attr(href)"
-  },
-   "BalochistanSpider": {
-     "categories_links": ".acts-rule-list a::attr(href)",
-    "scope_selector": "tbody tr",
-    "extractors": {
-      "title":"td::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    }
-  },
-  "BmelPdfSpider": {
+  "climatempoComBrSpider": {
     "initial_proxy": true,
-     "categories_links": ".c-searchteaser__more a::attr(href)",
-    "scope_selector": ".c-linklist__li",
+    "headers": {"X-Crawlera-Region": "BR"},
+    "categories_links": "#news-categories-menu .actTriggerGA::attr(href)",
+    "scope_selector": "article a:not(.link), .sticky2Equalizer .border-bot a",
     "extractors": {
-      "title":"a::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
+      "link": "a::attr(href)"
     },
-     "categories_pagination": ".c-pagination__link::attr(href)"
+    "pagination": ".pagination .arrow:last-child a::attr(href)"
   },
-  "BmiBundPdfSpider": {
-    "initial_proxy": true,
-     "categories_links": ".c-search-teaser__link::attr(href)",
-    "scope_selector": ".c-content-linklist__li",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    },
-     "categories_pagination": ".advancedSearch li  a::attr(href)"
-  },
-  "BmuvPdfSpider": {
-     "categories_links": ".rf-c-articles-list__body a::attr(href)",
-    "scope_selector": ".rf-c-ce-download-list li",
-    "extractors": {
-      "title":"span::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    },
-     "categories_pagination": ".rf-c-articles-list+ .rf-c-menu-pagination a::attr(href)"
-  },
-  "BundesfinanzministeriumPdfSpider": {
-     "categories_links": ".bmf-resultlist-teaser-link::attr(href)",
-    "scope_selector": ".bmf-akkordeon-panelText",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    },
-     "categories_pagination": ".bmf-navIndex-entry a::attr(href)"
-  },
-  "BundeskartellamtPdfSpider": {
-    "initial_proxy": true,
-     "categories_links": "td a::attr(href)",
-    "scope_selector": "#wrapperContent",
-    "extractors": {
-      "title":".isFirstInSlot+ p::text",
-      "excerpt": "na",
-      "pdf_url": ".downloadLink a::attr(href)"
-    },
-     "categories_pagination": "#searchResultIndexLast a::attr(href)"
-  },
-  "CbnSpider": {
-    "scope_selector": ".dbasetable td:nth-child(2)",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": "na",
-      "pdf_url": " a::attr(href)"
-    },
-     "pagination": "#ContentTextinner br~ a::attr(href)"
-  },
-  "CcdGovSpider": {
-    "scope_selector": ".border.py-3",
-    "extractors": {
-      "title":".col-8.text-black.text-right font::text",
-      "excerpt": "na",
-      "pdf_url": ".col-8.text-right.text-black a:nth-child(2)::attr(href)"
-    }
-  },
-   "CentralBankOtherNoticeSpider": {
-    "scope_selector": ".card-body",
-    "extractors": {
-      "title":".card-title::text",
-      "excerpt": "na",
-      "pdf_url": ".d-flex.justify-content-between a::attr(href)"
-    }
-  },
-  "CmaPdfSpider": {
-    "scope_selector": ".pd-float a",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    },
-     "pagination": ".pagination-list li a::attr(href)"
-  },
-  "CnmvPdfSpider": {
-    "scope_selector": ".P_como_li a",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    }
-  },
-  "CulturePdfSpider": {
-     "categories_links": ".doc-item-link::attr(href)",
-    "scope_selector": ".file-link a",
-    "extractors": {
-      "title":"a span::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    },
-     "categories_pagination": ".pagination-mc a::attr(href)"
-  },
-  "DpmaPdfSpider": {
-    "scope_selector": ".textbereich > ul a",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    }
-  },
-  "EducationSpider": {
-    "scope_selector": ".TitleCell a",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    }
-  },
-  "dsbdPublicationsSpider": {
-    "scope_selector": ".views-col",
-    "extractors": {
-      "title":".views-field-title span::text",
-      "excerpt": ".views-field.views-field-body p::text ",
-      "pdf_url": "a::attr(href)"
-    }
-  },
-  "EnergyPdfSpider": {
-     "initial_proxy": true,
-    "scope_selector": ".in a",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    }
-  },
-  "FiaSpider": {
-     "initial_proxy": true,
-    "scope_selector": ".how-to-complain a",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    }
-  },
-  "ficSpider": {
-    "scope_selector": ".cc-pdf-imagecol+ td",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": ".cc-pdf-description::text",
-      "pdf_url": "a::attr(href)"
-    },
-    "pagination": ".cc-paging a::attr(href)"
-  },
-  "Government2PdfSpider": {
-    "categories_links": ".publication::attr(href)",
-    "scope_selector": ".article.content",
-    "extractors": {
-      "title":"h1.download::text",
-      "excerpt": ".intro p::text",
-      "pdf_url": ".download-chunk::attr(href)"
-    },
-    "pagination": "..paging__unit--next a::attr(href)"
-  },
-  "GovernmentPdfSpider": {
-    "categories_links": ".publication::attr(href)",
-    "scope_selector": ".article.content",
-    "extractors": {
-      "title":"h1.download::text",
-      "excerpt": ".intro p::text",
-      "pdf_url": ".download-chunk::attr(href)"
-    },
-    "pagination": "..paging__unit--next a::attr(href)"
-  },
-  "Health2Spider": {
-    "scope_selector": ".column-1 a",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": ".cc-pdf-description::text",
-      "pdf_url": "a::attr(href)"
-    },
-    "pagination": ".paginate_button.next::attr(href)"
-  },
-  "JmaSpider": {
-    "scope_selector": "td",
-    "extractors": {
-      "title":"a span::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    }
-  },
-   "CbePaymentArticleSpider": {
-    "scope_selector": ".title-heading a",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    }
-  },
-  "BsiBundPdfSpider": {
-      "initial_proxy": true,
-    "categories_links": ".links li a::attr(href)",
-    "scope_selector": "h2+ p",
-    "extractors": {
-      "title":"a::text",
-      "excerpt": "p::text",
-      "pdf_url": "a::attr(href)"
-    }
-  },
-  "CharlesRussellSpeechlysSpider": {
-    "headers": {
-      "X-Crawlera-Region": "AE"
-    },
-    "scope_selector": ".promoBlockWrap a",
+  "bloomberglineaComBrSpider": {
+    "categories_links": ".tracking-header::attr(href)",
+    "scope_selector": ".mb-2 a, .md\\:leading-6 a",
     "extractors": {
       "link": "a::attr(href)"
     }
   },
-  "BqprimeSpider": {
-    "headers": {
-      "X-Crawlera-Region": "IN"
+  "diariodocentrodomundoComBrSpider": {
+    "categories_links": ".menu li a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "conexaopoliticaComBrSpider": {
+    "categories_links": ".bgnav a::attr(href)",
+    "scope_selector": ".jeg_post_title a",
+    "extractors": {
+      "link": "a::attr(href)"
     },
-    "scope_selector": ".cardImageHeadlineHorizontal-m__content__2TXB8 a, .image-and-title-m__hero-image__1aw2W a,.cardHeadlineAuthorVertical-m__wrapper__esCCA a",
+    "pagination": ".next::attr(href)"
+  },
+  "jornalcorreiodovaleComBrSpider": {
+    "categories_links": "#categories-3 a::attr(href)",
+    "scope_selector": ".jeg_post_title a",
     "extractors": {
       "link": "a::attr(href)"
-    }
-  },
-  "dubaichamberWhatsHappeningNewsSpider": {
-      "initial_proxy": true,
-     "categories_links": ".cont-box a::attr(href)",
-    "scope_selector": ".cont-box a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-   "AiSpider": {
-     "headers": {
-      "X-Crawlera-Region": "AE"
     },
-    "scope_selector": ".x-section.mijo-0.mijo-1.mijo-2.mijo-4 a",
+    "pagination": ".next::attr(href)"
+  },
+  "diariosmComBrSpider": {
+    "categories_links": ".nav-link::attr(href)",
+    "scope_selector": ".md a",
     "extractors": {
       "link": "a::attr(href)"
-    }
-  },
-  "DcdtPdfSpider": {
-    "scope_selector": ".pd-float a",
-    "extractors": {
-      "link": "a::attr(href)"
-    }
-  },
-    "BmwkPdfSpider": {
-    "not_allowed_keyword": [
-      "index.html"
-    ],
-    "scope_selector": ".card-action a",
-    "extractors": {
-      "title":"na",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
     },
-    "pagination": ".pagination-link::attr(href)"
+    "pagination": ".pagination a::attr(href)"
   },
-  "CentralbankPdfSpider": {
-    "scope_selector": ".et_pb_text_inner p a",
+  "leisecamaricaComBrSpider": {
+    "categories_links": "#jetmenu a::attr(href)",
+    "scope_selector": ".img_shadow",
     "extractors": {
-      "title":"a::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    }
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next a::attr(href)"
   },
-  "CbiSpider": {
-    "scope_selector": "blockquote",
+  "aeroflapComBrSpider": {
+    "not_allowed_keyword":["#"],
+    "categories_links": "#menu-main-menu a::attr(href)",
+    "scope_selector": ".box-title a",
     "extractors": {
-      "title":"pre span span::text",
-      "excerpt": "na",
-      "pdf_url": "a::attr(href)"
-    }
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "capitalistComBrSpider": {
+    "not_allowed_keyword":["https://cursos.escolaeducacao.com.br/"],
+    "categories_links": "#menu-main-navigation a::attr(href)",
+    "scope_selector": ".infinite-post a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".pagination a::attr(href)"
+  },
+  "portaltemponovoComBrSpider": {
+    "categories_links": "#menu-menu-topo-2 a::attr(href)",
+    "scope_selector": ".td-module-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".last+ a::attr(href)"
+  },
+  "guiamuriaeComBrSpider": {
+    "categories_links": ".entry-content  li a::attr(href)",
+    "scope_selector": ".post-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".last-page a::attr(href)"
+  },
+  "redebrasilatualComBrSpider": {
+    "categories_links": "#main-menu a::attr(href)",
+    "scope_selector": ".card--title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next a::attr(href)"
+  },
+  "poaTwentyFourHorasComBrSpider": {
+    "categories_links": ".menu-item-object-category a::attr(href)",
+    "scope_selector": ".elementor-post__title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".page-numbers::attr(href)"
+  },
+  "oimparcialComBrSpider": {
+    "categories_links": ".menu-item a::attr(href)",
+    "scope_selector": ".block--separator a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
+  },
+  "afnoticiasComBrSpider": {
+    "not_allowed_keyword":["https://api.whatsapp.com/send?phone=55063992428694","/secult","/tjto"],
+    "categories_links": ".menu li a::attr(href)",
+    "scope_selector": ".col-md-9 .row div :nth-child(2) a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".btn-secondary::attr(href)"
+  },
+  "saocarlosagoraComBrSpider": {
+    "categories_links": ".submenu a::attr(href), .menuContent a::attr(href)",
+    "scope_selector": ".noticiaTexto a",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": "a[rel=\"next\"]::attr(href)"
+  },
+  "aquinoticiasComSpider": {
+    "categories_links": ".sub-menu li a::attr(href), #menu-mobile .text-decoration-none::attr(href)",
+    "scope_selector": ".feed-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".py-2::attr(href), .next::attr(href)"
+  },
+  "agorarnComBrSpider": {
+    "categories_links": ".center .linkblue::attr(href)",
+    "scope_selector": ".h2.strong.linkblack",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".nav-previous a::attr(href)"
+  },
+  "folhabvComBrSpider": {
+    "categories_links": ".menu-links li a::attr(href)",
+    "scope_selector": ".feed-link",
+    "extractors": {
+      "link": "a::attr(href)"
+    },
+    "pagination": ".next::attr(href)"
   }
 }

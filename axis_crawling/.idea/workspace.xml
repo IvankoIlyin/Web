@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="390e29b7-d9ae-45e6-911c-9abd09513188" name="Changes" comment="" />
+    <list default="true" id="390e29b7-d9ae-45e6-911c-9abd09513188" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Task/.idea/Task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task/.idea/Task.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Task/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Task/Task/Task/spiders/inews.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Task/Task/Task/spiders/inews.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axis_crawling/axis_dev.csv" beforeDir="false" afterPath="$PROJECT_DIR$/axis_crawling/axis_dev.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axis_crawling/generic_spider_run.json" beforeDir="false" afterPath="$PROJECT_DIR$/axis_crawling/generic_spider_run.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axis_crawling/generic_spider_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/axis_crawling/generic_spider_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/axis_crawling/generic_spiders.json" beforeDir="false" afterPath="$PROJECT_DIR$/axis_crawling/generic_spiders.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +32,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/University/Third-ourse/secondTerm/Geom/lab3",
+    "last_opened_file_path": "D:/newscather/Web/axis_crawling_zyte_proxy",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
