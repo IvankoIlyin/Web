@@ -3,9 +3,9 @@ import json
 
 from config import *
 
-input_directory = "articles"
+input_directory = "D:\\newscather\Web\\bad_patterns\\bad_patterns_cleaning\\bad_patterns_cleaning\\articles"
 
-output_directory = "reports"
+output_directory = "D:\\newscather\Web\\bad_patterns\\bad_patterns_cleaning\\bad_patterns_cleaning\\reports"
 os.makedirs(output_directory, exist_ok=True)
 
 

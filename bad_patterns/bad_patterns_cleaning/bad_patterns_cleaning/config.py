@@ -17,16 +17,11 @@ headers_full_parser_api = {
 }
 
 bad_patterns = {
-    # 'copyShortcut': 'https://v3-api.newscatcherapi.com/api/search?q="copyShortcut"&from_=2023/10/26 hours ago&page_size=1000&by_parse_date=true',
-    # 'SKIP ADVERTISEMENT': 'https://v3-api.newscatcherapi.com/api/search?q="SKIP ADVERTISEMENT"&from_=2023/10/26 hours ago&page_size=1000&by_parse_date=true',
-    #'Terms and Conditions and Privacy Policy': 'https://v3-api.newscatcherapi.com/api/search?q="terms and conditions and privacy policy"&from_=2023/10/31&page_size=1000&by_parse_date=true',
-    #'Click here for updates': 'https://v3-api.newscatcherapi.com/api/search?q="Click here for updates"&from_=2023/10/31&page_size=1000&by_parse_date=true',
-    # 'Alabama Alaska': 'https://v3-api.newscatcherapi.com/api/search?page_size=1000&page=1&from_=2023/10/31&q="Alabama Alaska"&by_parse_date=true',
-     'Your cookie preferences': 'https://v3-api.newscatcherapi.com/api/search?from_=2023/10/26 hours ago&page_size=1000&page=1&q="your cookie preferences"&by_parse_date=true'
-    # 'youtube.com': 'https://v3-api.newscatcherapi.com/api/search?page_size=1000&by_parse_date=true&from_=7 days ago&q="youtube.com"',
-    # 'docs.google.com': 'https://v3-api.newscatcherapi.com/api/search?page_size=1000&by_parse_date=true&from_=7 days ago&q="docs.google.com"',
-    # 'Please enable JS and disable any ad blocker': 'https://v3-api.newscatcherapi.com/api/search?page_size=1000&by_parse_date=true&from_=3 days ago&q="Please enable JS and disable any ad blocker"'
-    # 'enter your email address': 'https://v3-api.newscatcherapi.com/api/search?page_size=1000&by_parse_date=true&from_=7 days ago&q="enter your email address"'
-    # 'insertPoint': 'https://v3-api.newscatcherapi.com/api/search?page_size=1000&by_parse_date=true&from_=7 days ago&q="insertPoint"'
-    #'Please upgrade your browser to view': 'https://v3-api.newscatcherapi.com/api/search?page_size=1000&by_parse_date=true&from_=7 days ago&q="Please upgrade your browser to view"'
+    'Skip to content':'http://v3-api.newscatcherapi.com/api/search?q="Skip to content"&from_=30 days ago&page_size=1000&by_parse_date=true'
+    # 'BackGround Color':'https://v3-api.newscatcherapi.com/api/search?q="BackGround Color"&from_=120 days ago&page_size=1000&by_parse_date=true',
+    # 'console.log':'https://v3-api.newscatcherapi.com/api/search?q="console.log"&from_=120 days ago&page_size=1000&by_parse_date=true',
+    # 'background-color':'https://v3-api.newscatcherapi.com/api/search?q="background-color"&from_=120 days ago&page_size=1000&by_parse_date=true',
+    # 'Media Only Screen':'https://v3-api.newscatcherapi.com/api/search?q="Media Only Screen"&from_=360 days ago&page_size=1000&by_parse_date=true',
+    # 'Console Log':'https://v3-api.newscatcherapi.com/api/search?q="Console Log"&from_=360 days ago&page_size=1000&by_parse_date=true',
+    # 'Please Wait':'https://v3-api.newscatcherapi.com/api/search?q="Please Wait"&from_=360 days ago&page_size=1000&by_parse_date=true'
 }
