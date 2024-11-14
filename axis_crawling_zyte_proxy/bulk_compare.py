@@ -34,7 +34,7 @@ if __name__ == '__main__':
     if not os.path.exists('compare_log'):
         os.mkdir('compare_log')
 
-    generic_spider_configs = json.loads(open('generic_spiders.json').read())
+    generic_spider_configs = json.loads(open('generic_spiders_US_Dept_multi_countries_Ivan_0611.json').read())
     try:
         tested_spiders = json.loads(open('compare_log/00_tested_spiders.json').read())
     except:
@@ -47,7 +47,7 @@ if __name__ == '__main__':
         if clean_rss in tested_spiders:
             print('already tested: %s' % clean_rss)
             continue
-        csv_reader = csv.DictReader(open('axis_dev.csv'))
+        csv_reader = csv.DictReader(open('axis_dev_US_Dept_multi_countries_Ivan_0611.csv'))
         print('%s ==> %s' % (clean_rss, count))
         count += 1
         try:

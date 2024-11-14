@@ -17,7 +17,7 @@ logging.basicConfig(
 )
 
 
-generic_spider_configs = json.loads(open('generic_spiders_curr_02.json').read())
+generic_spider_configs = json.loads(open('generic_spiders_Fullintel_batch_1.json').read())
 
 
 class CustomProxyMiddleware(object):
@@ -40,14 +40,14 @@ class CustomProxyMiddleware(object):
         return random_proxy
 
 def get_spider_data(clean_rss):
-    csv_reader = csv.DictReader(open('axis_dev_curr_02.csv'))
+    csv_reader = csv.DictReader(open('axis_dev_Fullintel_batch_1.csv'))
     for spider in csv_reader:
         if spider['clean_rss'] == clean_rss:
             return spider
 
 
 if __name__ == '__main__':
-    clean_rss = 'alSeyassahComSpider'
+    clean_rss = 'ViaggiCorriereItSpider'
     message = get_spider_data(clean_rss)
     if clean_rss in generic_spider_configs:
         spider = create_spider_class(clean_rss, generic_spider_configs[clean_rss], message)

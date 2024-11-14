@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="16b767f0-e508-42b6-b9ce-ddabefa9327e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/US_Dept_Ivan_0811.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/axis_dev_US_Dept_multi_countries_Ivan_0611.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/generic_spiders_US_Dept_multi_countries_Ivan_0611.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/.idea/axis_crawling_zyte_proxy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/.idea/axis_crawling_zyte_proxy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/axis_base.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/axis_dev.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/axis_dev_curr.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/axis_dev_curr_02.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/axis_fin.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/bulk_compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/bulk_compare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/compare_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/compare_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/generic_base.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/generic_fin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/generic_spider_run.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/generic_spider_run.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/generic_spider_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/generic_spider_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/generic_spiders.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/generic_spiders_curr.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/generic_spiders_curr_02.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/multiple_spider_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/multiple_spider_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../axis_crawling_zyte_proxy/requirements.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2ohLBhvVwY0y1TEh6Rt19c8RssS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/vilyi/USER_DATA/NEWSCATCHER/github_repo/Web/axis_crawling_zyte_proxy",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16b767f0-e508-42b6-b9ce-ddabefa9327e" name="Changes" comment="" />
+      <created>1731316726427</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731316726427</updated>
+      <workItem from="1731316727907" duration="10000" />
+      <workItem from="1731325438109" duration="112000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

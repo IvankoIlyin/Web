@@ -36,7 +36,7 @@ class CustomProxyMiddleware(object):
 
 
 def get_spider_data(clean_rss):
-    csv_reader = csv.DictReader(open('axis_dev.csv'))
+    csv_reader = csv.DictReader(open('axis_dev_US_Dept_multi_countries_Ivan_0611.csv'))
     for spider in csv_reader:
         if spider['clean_rss'] == clean_rss:
             return spider

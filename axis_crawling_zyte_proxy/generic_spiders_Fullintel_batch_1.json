@@ -1,0 +1,20 @@
+{
+  "BusinesstravellerComSpider": {
+    "zyte_proxy": true,
+    "headers": {
+      "X-Crawlera-Region": "US"
+    },
+    "categories_links": "#menu-international-menu .menu-item a::attr(href)",
+    "scope_selector": ".latest_grid_inner a.green_hover",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  },
+  "ViaggiCorriereItSpider": {
+    "categories_links": "#top-menu a::attr(href)",
+    "scope_selector": ".entry-title a",
+    "extractors": {
+      "link": "a::attr(href)"
+    }
+  }
+}

@@ -202,8 +202,8 @@ def compare_data(multiple_py_out, generic_spider_out):
 if __name__ == '__main__':
     clean_rss = 'AbpliveSpider'
 
-    csv_reader = csv.DictReader(open('axis_dev.csv'))
-    generic_spider_configs = json.loads(open('generic_spiders.json').read())
+    csv_reader = csv.DictReader(open('axis_dev_US_Dept_multi_countries_Ivan_0611.csv'))
+    generic_spider_configs = json.loads(open('generic_spiders_US_Dept_multi_countries_Ivan_0611.json').read())
     message = get_spider_data(clean_rss, csv_reader)
 
     settings = {

@@ -1,0 +1,5 @@
+base_url,clean_rss,clean_url,flag,gn_mode,topic,type,country
+https://www.businesstraveller.com/,BusinesstravellerComSpider,businesstraveller.com,1,2,news,article,US
+https://viaggi.corriere.it/,ViaggiCorriereItSpider,viaggi.corriere.it,1,2,news,article,US
+
+
